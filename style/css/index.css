@@ -1,0 +1,32 @@
+.background-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.container-fluid {
+  z-index: 1;
+  padding: 0;
+}
+
+.header {
+  padding: 0 15px;
+  height: 100vh;
+  background-color: rgba(61, 72, 83, 0.9);
+}
+.header-main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-main > div {
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+/*# sourceMappingURL=index.css.map */
