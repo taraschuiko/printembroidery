@@ -1,6 +1,17 @@
-@import "../css/font.css";
+@font-face {
+  font-family: "Museo";
+  src: url("../../data/font/Museosanscyrl500.woff2") format("woff2"), url("../../data/font/Museosanscyrl500.woff") format("woff"), url("../../data/font/Museosanscyrl500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo";
+  src: url("../../data/font/MuseoSansCyrl-700.woff") format("woff"), url("../../data/font/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 body {
-  font-family: Museo, "Times New Roman", Arial, sans-serif;
+  font-family: Museo, Arial, sans-serif;
   font-weight: 500;
 }
 
@@ -13,7 +24,7 @@ h6 {
   font-weight: 700;
 }
 
-.btn, .btn-card, .btn-main {
+.btn, .btn-whatwedo, .btn-main {
   display: inline-block;
   padding: 8px 20px;
   border-radius: 8px;
@@ -21,7 +32,7 @@ h6 {
   border: 2px solid transparent;
   transition: all 0.1s ease;
 }
-.btn:hover, .btn-card:hover, .btn-main:hover {
+.btn:hover, .btn-whatwedo:hover, .btn-main:hover {
   text-decoration: none;
 }
 
@@ -34,10 +45,10 @@ h6 {
   border-color: #fff;
 }
 
-.btn-card {
+.btn-whatwedo {
   border-color: #3d4853;
 }
-.btn-card:hover {
+.btn-whatwedo:hover {
   color: inherit;
   text-decoration: underline;
 }
@@ -130,24 +141,68 @@ h6 {
   text-align: center;
   margin-bottom: 50px;
 }
-.whatwedo .card-box {
+.whatwedo-items {
   justify-content: center;
 }
-.whatwedo .card {
+.whatwedo-item {
   border: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
 }
-.whatwedo .card h3 {
+.whatwedo-item h3 {
   font-size: 22px;
   margin: 30px 0 10px 0;
 }
-.whatwedo .card p {
+.whatwedo-item p {
   font-size: 16px;
   margin-bottom: 20px;
+}
+
+.trust {
+  background: #f1f4f8;
+  padding: 200px 0 100px 0;
+  color: #3d4853;
+}
+.trust h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.trust-item {
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.trust-item-icon {
+  background: rgba(244, 152, 121, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 155px;
+}
+.trust-item-icon svg {
+  width: 60%;
+  fill: #f49879;
+}
+.trust-item h3 {
+  font-size: 22px;
+  margin: 30px 0 10px 0;
+}
+.trust-item p {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=index.css.map */
