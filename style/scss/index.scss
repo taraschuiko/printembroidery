@@ -1,5 +1,28 @@
 // sass --watch style/scss/index.scss style/css/index.css
 
+@import "../css/font.css";
+
+body {
+  font-family: Museo, "Times New Roman", Arial, sans-serif; // todo remove times
+  font-weight: 500;
+}
+
+.button-main {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: #3bce95;
+  color: #fff;
+  border: 2px solid transparent;
+  transition: border-color .3s ease;
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    border-color: #fff;
+  }
+}
+
 .background-video {
   position: fixed;
   top: 50%;
@@ -16,19 +39,77 @@
 }
 
 .header {
-  padding: 0 15px;
+  padding: 50px 15px;
   height: 100vh;
   background-color: rgba(61, 72, 83, 0.9);
 
-  &-main {
+  .container {
+    flex-direction: column;
     height: 100%;
+    position: relative;
+  }
+
+  &-top {
+    // padding: 50px 0;
+    align-items: space-between;
+    color: #fff;
+    z-index: 2;
+
+    .header-menu {
+      display: flex;
+      margin-bottom: 0;
+      align-items: center;
+
+      li {
+        list-style: none;
+
+        a {
+          color: inherit;
+          font-size: 16px;
+        }
+
+        &:not(:last-child) {
+          margin-right: 50px;
+        }
+
+        &.not-active a {
+          opacity: 0.2;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &-main {
+    padding-top: 22vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 
     &>div {
-      transform: translateY(-50%);
-      text-align: center
+      text-align: center;
+      color: #fff;
     }
+
+    h1 {
+      font-size: 48px;
+      line-height: 1.25;
+      margin-bottom: 20px;
+      margin-right: 8%;
+      margin-left: 8%;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.56;
+      margin-bottom: 30px;
+    }
+
   }
 }

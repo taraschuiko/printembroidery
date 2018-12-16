@@ -1,3 +1,24 @@
+@import "../css/font.css";
+body {
+  font-family: Museo, "Times New Roman", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.button-main {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: #3bce95;
+  color: #fff;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.button-main:hover {
+  text-decoration: none;
+  color: #fff;
+  border-color: #fff;
+}
+
 .background-video {
   position: fixed;
   top: 50%;
@@ -14,19 +35,65 @@
 }
 
 .header {
-  padding: 0 15px;
+  padding: 50px 15px;
   height: 100vh;
   background-color: rgba(61, 72, 83, 0.9);
 }
-.header-main {
+.header .container {
+  flex-direction: column;
   height: 100%;
+  position: relative;
+}
+.header-top {
+  align-items: space-between;
+  color: #fff;
+  z-index: 2;
+}
+.header-top .header-menu {
+  display: flex;
+  margin-bottom: 0;
+  align-items: center;
+}
+.header-top .header-menu li {
+  list-style: none;
+}
+.header-top .header-menu li a {
+  color: inherit;
+  font-size: 16px;
+}
+.header-top .header-menu li:not(:last-child) {
+  margin-right: 50px;
+}
+.header-top .header-menu li.not-active a {
+  opacity: 0.2;
+}
+.header-top .header-menu li.not-active a:hover {
+  opacity: 1;
+}
+.header-main {
+  padding-top: 22vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 .header-main > div {
-  transform: translateY(-50%);
   text-align: center;
+  color: #fff;
+}
+.header-main h1 {
+  font-size: 48px;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  margin-right: 8%;
+  margin-left: 8%;
+}
+.header-main p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.56;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */
