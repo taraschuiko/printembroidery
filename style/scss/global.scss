@@ -1,8 +1,16 @@
 @import "./font.scss";
+@import "./colors.scss";
+
+* {
+  margin: 0;
+  position: relative;
+}
 
 body {
   font-family: Museo, Arial, sans-serif;
   font-weight: 500;
+  color: $textColor;
+  margin: 0;
 }
 
 h1,
@@ -19,15 +27,11 @@ h2 {
   line-height: 1.25;
 }
 
-p {
-  margin-bottom: 0;
-}
-
 .btn {
   display: inline-block;
   padding: 8px 20px;
   border-radius: 8px;
-  color: #3d4853;
+  color: $textColor;
   border: 2px solid transparent;
   transition: all .1s ease;
 

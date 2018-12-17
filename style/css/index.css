@@ -10,9 +10,16 @@
   font-weight: 700;
   font-style: normal;
 }
+* {
+  margin: 0;
+  position: relative;
+}
+
 body {
   font-family: Museo, Arial, sans-serif;
   font-weight: 500;
+  color: #3d4853;
+  margin: 0;
 }
 
 h1,
@@ -29,8 +36,54 @@ h2 {
   line-height: 1.25;
 }
 
-p {
-  margin-bottom: 0;
+.btn, .whatwedo-btn, .btn-main, .readytoorder-button, .sewing-btn, .header-main .header-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: #3d4853;
+  border: 2px solid transparent;
+  transition: all 0.1s ease;
+}
+.btn:hover, .whatwedo-btn:hover, .btn-main:hover, .readytoorder-button:hover, .sewing-btn:hover, .header-main .header-btn:hover {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Museo";
+  src: url("../../data/font/Museosanscyrl500.woff2") format("woff2"), url("../../data/font/Museosanscyrl500.woff") format("woff"), url("../../data/font/Museosanscyrl500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo";
+  src: url("../../data/font/MuseoSansCyrl-700.woff") format("woff"), url("../../data/font/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  position: relative;
+}
+
+body {
+  font-family: Museo, Arial, sans-serif;
+  font-weight: 500;
+  color: #3d4853;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.25;
 }
 
 .btn, .whatwedo-btn, .btn-main, .readytoorder-button, .sewing-btn, .header-main .header-btn {
@@ -46,34 +99,92 @@ p {
 }
 
 .nav {
-  align-items: space-between;
   color: #fff;
   z-index: 2;
   padding: 50px 0;
 }
-.nav-menu {
-  display: flex;
-  margin-bottom: 0;
-  align-items: center;
-}
-.nav-menu li {
-  list-style: none;
-}
-.nav-menu li a {
-  color: inherit;
-  font-size: 16px;
-}
-.nav-menu li:not(:last-child) {
-  margin-right: 50px;
-}
-.nav-menu li.not-active a {
-  opacity: 0.2;
-  transition: all 0.1s ease;
-}
-.nav-menu li.not-active a:hover {
-  opacity: 1;
-}
 
+@media screen and (min-width: 1200px) {
+  .nav-menu {
+    display: flex;
+  }
+  .nav-menu ul {
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+  }
+  .nav-menu li {
+    list-style: none;
+  }
+  .nav-menu li a {
+    color: inherit;
+    font-size: 16px;
+  }
+  .nav-menu li:not(:last-child) {
+    margin-right: 50px;
+  }
+  .nav-menu li.not-active a {
+    opacity: 0.2;
+    transition: all 0.1s ease;
+  }
+  .nav-menu li.not-active a:hover {
+    opacity: 1;
+  }
+  .nav-menu-icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .nav-menu--closed {
+    display: none;
+  }
+  .nav-menu--opened {
+    padding: 50px 0;
+    background: rgba(241, 244, 248, 0.9);
+    color: #3d4853;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+  }
+  .nav-menu--opened ul {
+    display: flex;
+    margin-bottom: 0;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-menu--opened li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  .nav-menu--opened li a {
+    color: inherit;
+    font-size: 16px;
+  }
+  .nav-menu--opened li.not-active a {
+    opacity: 0.2;
+    transition: all 0.1s ease;
+  }
+  .nav-menu--opened li.not-active a:hover {
+    opacity: 1;
+  }
+  .nav-menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .nav-menu-icon svg {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+  }
+}
 .footer {
   background: #3d4853;
   padding: 100px 0;
@@ -142,6 +253,7 @@ p {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  margin: 0;
 }
 .header-main > div {
   text-align: center;

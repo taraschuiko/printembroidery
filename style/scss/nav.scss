@@ -1,34 +1,120 @@
+@import "./global.scss";
+
 .nav {
-  align-items: space-between;
   color: #fff;
   z-index: 2;
   padding: 50px 0;
+}
 
-  &-menu {
-    display: flex;
-    margin-bottom: 0;
-    align-items: center;
+@media screen and (min-width: 1200px) {
+  .nav {
+    &-menu {
+      display: flex;
 
-    li {
-      list-style: none;
-
-      a {
-        color: inherit;
-        font-size: 16px;
+      ul {
+        display: flex;
+        margin-bottom: 0;
+        align-items: center;
       }
 
-      &:not(:last-child) {
-        margin-right: 50px;
-      }
+      li {
+        list-style: none;
 
-      &.not-active a {
-        opacity: 0.2;
-        transition: all .1s ease;
+        a {
+          color: inherit;
+          font-size: 16px;
+        }
 
-        &:hover {
-          opacity: 1;
+        &:not(:last-child) {
+          margin-right: 50px;
+        }
+
+        &.not-active a {
+          opacity: 0.2;
+          transition: all .1s ease;
+
+          &:hover {
+            opacity: 1;
+          }
         }
       }
+
+      &-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nav {
+    &-menu--closed {
+      display: none;
+    }
+
+    &-menu--opened {
+      padding: 50px 0;
+      background: rgba($color: $bgLight, $alpha: 0.9);
+      color: $textColor;
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 3;
+
+      ul {
+        display: flex;
+        margin-bottom: 0;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      li {
+        list-style: none;
+        margin-bottom: 10px;
+
+        a {
+          color: inherit;
+          font-size: 16px;
+        }
+
+        &.not-active a {
+          opacity: 0.2;
+          transition: all .1s ease;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &-menu-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      svg {
+        fill: #fff;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &-menu-fade {
+      // position: fixed;
+      // top: 0;
+      // right: 0;
+      // bottom: 0;
+      // left: 0;
+      // background: $textColor;
+      // opacity: 0.8;
+      // z-index: 2;
     }
   }
 }
