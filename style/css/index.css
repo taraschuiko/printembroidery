@@ -289,7 +289,7 @@ p {
   position: relative;
 }
 .header-main {
-  padding-top: 16vh;
+  padding: 16vh 0;
   width: 100%;
   display: flex;
   justify-content: center;
