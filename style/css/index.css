@@ -36,6 +36,10 @@ h2 {
   line-height: 1.25;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 .btn, .whatwedo-btn, .btn-main, .readytoorder-button, .sewing-btn, .header-main .header-btn {
   display: inline-block;
   padding: 8px 20px;
@@ -86,6 +90,10 @@ h2 {
   line-height: 1.25;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 .btn, .whatwedo-btn, .btn-main, .readytoorder-button, .sewing-btn, .header-main .header-btn {
   display: inline-block;
   padding: 8px 20px;
@@ -133,12 +141,12 @@ h2 {
 }
 .nav .hamburger-icon {
   fill: #fff;
-  cursor: pointer;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 .nav .hamburger-icon svg {
+  cursor: pointer;
   width: 24px;
   height: 24px;
 }
@@ -225,6 +233,9 @@ h2 {
 .footer-cards {
   margin-top: 60px;
 }
+.footer-card {
+  margin-bottom: 60px;
+}
 .footer-card h3 {
   font-size: 16px;
   margin-bottom: 20px;
@@ -278,7 +289,7 @@ h2 {
   position: relative;
 }
 .header-main {
-  padding-top: 22vh;
+  padding-top: 16vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -361,6 +372,8 @@ h2 {
   align-items: center;
   padding: 30px 15px;
   text-align: center;
+  margin-bottom: 30px;
+  height: 330px;
 }
 .trust-item-icon {
   background: rgba(244, 152, 121, 0.1);
@@ -419,6 +432,17 @@ h2 {
   background: #f7f6f4;
   padding: 80px 0;
 }
+.sewing-content {
+  margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+  .sewing-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .sewing h2 {
   margin-bottom: 25px;
 }
@@ -429,12 +453,22 @@ h2 {
   display: flex;
   align-items: center;
   margin-bottom: 25px;
+  font-weight: bold;
 }
 .sewing-gift svg {
   width: 25px;
   height: 25px;
   fill: #f49879;
   margin-right: 25px;
+}
+@media (max-width: 576px) {
+  .sewing-gift {
+    flex-direction: column;
+  }
+  .sewing-gift svg {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 .sewing-right img {
   width: 100%;
