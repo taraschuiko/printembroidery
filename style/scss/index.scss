@@ -1,6 +1,7 @@
 // sass --watch style/scss/index.scss style/css/index.css
 
 @import "./global.scss";
+@import "./nav.scss";
 @import "./footer.scss";
 
 .btn-main {
@@ -30,7 +31,6 @@
 }
 
 .header {
-  padding: 50px 15px;
   height: 100vh;
   background-color: rgba(61, 72, 83, 0.9);
 
@@ -38,40 +38,6 @@
     flex-direction: column;
     height: 100%;
     position: relative;
-  }
-
-  &-top {
-    align-items: space-between;
-    color: #fff;
-    z-index: 2;
-
-    .header-menu {
-      display: flex;
-      margin-bottom: 0;
-      align-items: center;
-
-      li {
-        list-style: none;
-
-        a {
-          color: inherit;
-          font-size: 16px;
-        }
-
-        &:not(:last-child) {
-          margin-right: 50px;
-        }
-
-        &.not-active a {
-          opacity: 0.2;
-          transition: all .1s ease;
-
-          &:hover {
-            opacity: 1;
-          }
-        }
-      }
-    }
   }
 
   &-main {
