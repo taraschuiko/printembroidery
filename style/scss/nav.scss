@@ -4,117 +4,136 @@
   color: #fff;
   z-index: 2;
   padding: 50px 0;
-}
 
-@media screen and (min-width: 1200px) {
-  .nav {
-    &-menu {
+  &-menu {
+    display: flex;
+
+    ul {
       display: flex;
+      margin-bottom: 0;
+      align-items: center;
+    }
 
-      ul {
-        display: flex;
-        margin-bottom: 0;
-        align-items: center;
+    li {
+      list-style: none;
+
+      a {
+        color: inherit;
+        font-size: 16px;
       }
 
-      li {
-        list-style: none;
-
-        a {
-          color: inherit;
-          font-size: 16px;
-        }
-
-        &:not(:last-child) {
-          margin-right: 50px;
-        }
-
-        &.not-active a {
-          opacity: 0.2;
-          transition: all .1s ease;
-
-          &:hover {
-            opacity: 1;
-          }
-        }
+      &:not(:last-child) {
+        margin-right: 50px;
       }
 
-      &-icon {
-        display: none;
+      &.not-active a {
+        opacity: 0.2;
+        transition: all .1s ease;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
-  }
-}
 
-@media screen and (max-width: 1200px) {
-  .nav {
-    &-menu--closed {
+    &-icon {
+      display: none;
+    }
+  }
+
+  .hamburger-icon {
+    fill: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .hamburger {
+    width: 200px;
+    height: 100%;
+    z-index: 1000;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: $bgLight;
+    color: $textColor;
+    text-align: right;
+    padding: 54px 30px;
+    -webkit-transition: all .5s cubic-bezier(.65, .05, .36, 1);
+    -moz-transition: all .5s cubic-bezier(.65, .05, .36, 1);
+    -ms-transition: all .5s cubic-bezier(.65, .05, .36, 1);
+    -o-transition: all .5s cubic-bezier(.65, .05, .36, 1);
+    transition: all .5s cubic-bezier(.65, .05, .36, 1);
+    z-index: 2;
+  }
+
+  .hamburger--closed {
+    right: -300px;
+  }
+
+  .hamburger ul {
+    list-style: none;
+    width: 100%;
+  }
+
+  .hamburger li {
+    margin: 8px 0;
+    width: 100%
+  }
+
+  .hamburger li:hover a {
+    text-decoration: underline;
+  }
+
+  .hamburger li a {
+    color: inherit;
+    // padding: 6px;
+  }
+
+  .hamburger-lang {
+    display: flex;
+  }
+
+  .hamburger-fade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  .hamburger-fade--closed {
+    display: none;
+  }
+
+  // Switching menus
+
+  @media screen and (min-width: 1200px) {
+    &-menu {
+      display: flex;
+    }
+
+    .hamburger {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    &-menu {
       display: none;
     }
 
-    &-menu--opened {
-      padding: 50px 0;
-      background: rgba($color: $bgLight, $alpha: 0.9);
-      color: $textColor;
-      display: flex;
-      flex-direction: column;
-      width: 40%;
-      height: 100vh;
-      position: fixed;
-      top: 0;
-      right: 0;
-      z-index: 3;
-
-      ul {
-        display: flex;
-        margin-bottom: 0;
-        align-items: flex-end;
-        flex-direction: column;
-        width: 100%;
-      }
-
-      li {
-        list-style: none;
-        margin-bottom: 10px;
-
-        a {
-          color: inherit;
-          font-size: 16px;
-        }
-
-        &.not-active a {
-          opacity: 0.2;
-          transition: all .1s ease;
-
-          &:hover {
-            opacity: 1;
-          }
-        }
-      }
-    }
-
-    &-menu-icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-
-      svg {
-        fill: #fff;
-        width: 24px;
-        height: 24px;
-      }
-    }
-
-    &-menu-fade {
-      // position: fixed;
-      // top: 0;
-      // right: 0;
-      // bottom: 0;
-      // left: 0;
-      // background: $textColor;
-      // opacity: 0.8;
-      // z-index: 2;
+    .hamburger {
+      display: block;
     }
   }
 }

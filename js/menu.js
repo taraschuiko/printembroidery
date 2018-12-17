@@ -1,9 +1,7 @@
-const icon = document.getElementsByClassName("nav-menu-icon")[0];
-const menu = document.getElementsByClassName("nav-menu")[0];
-
-function openMenu() {
-  console.log(menu.classList);
-
-}
-
-icon.addEventListener("click", openMenu);
+jQuery(document).ready(function ($) {
+  $(".hamburger-icon, .hamburger-fade").on("click", function (t) {
+    t.preventDefault();
+    $(".hamburger").toggleClass("hamburger--closed");
+    $(".hamburger-fade").toggleClass("hamburger-fade--closed");
+  })
+});
