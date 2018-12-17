@@ -282,6 +282,7 @@ p {
 
 .header {
   height: 100vh;
+  min-height: 550px;
   background-color: rgba(61, 72, 83, 0.9);
 }
 .header .container {
