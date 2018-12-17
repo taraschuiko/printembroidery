@@ -143,7 +143,7 @@ h2 {
   height: 24px;
 }
 .nav .hamburger {
-  width: 200px;
+  width: 250px;
   height: 100%;
   z-index: 1000;
   list-style: none;
@@ -200,6 +200,9 @@ h2 {
   .nav .hamburger {
     display: none;
   }
+  .nav .hamburger-icon {
+    display: none;
+  }
 }
 @media screen and (max-width: 1200px) {
   .nav-menu {
@@ -207,6 +210,9 @@ h2 {
   }
   .nav .hamburger {
     display: block;
+  }
+  .nav .hamburger-icon {
+    display: flex;
   }
 }
 
