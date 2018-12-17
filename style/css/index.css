@@ -33,7 +33,7 @@ p {
   margin-bottom: 0;
 }
 
-.btn, .whatwedo-btn, .btn-main, .sewing-btn, .header-main .header-btn {
+.btn, .whatwedo-btn, .btn-main, .readytoorder-button, .sewing-btn, .header-main .header-btn {
   display: inline-block;
   padding: 8px 20px;
   border-radius: 8px;
@@ -41,15 +41,15 @@ p {
   border: 2px solid transparent;
   transition: all 0.1s ease;
 }
-.btn:hover, .whatwedo-btn:hover, .btn-main:hover, .sewing-btn:hover, .header-main .header-btn:hover {
+.btn:hover, .whatwedo-btn:hover, .btn-main:hover, .readytoorder-button:hover, .sewing-btn:hover, .header-main .header-btn:hover {
   text-decoration: none;
 }
 
-.btn-main, .sewing-btn, .header-main .header-btn {
+.btn-main, .readytoorder-button, .sewing-btn, .header-main .header-btn {
   background-color: #3bce95;
   color: #fff;
 }
-.btn-main:hover, .sewing-btn:hover, .header-main .header-btn:hover {
+.btn-main:hover, .readytoorder-button:hover, .sewing-btn:hover, .header-main .header-btn:hover {
   color: #fff;
   text-decoration: underline;
 }
@@ -266,6 +266,16 @@ p {
 }
 .sewing-right img {
   width: 100%;
+}
+
+.readytoorder {
+  padding: 100px 0;
+  text-align: center;
+  background: #f1f4f8;
+}
+.readytoorder h2,
+.readytoorder p {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */

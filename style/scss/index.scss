@@ -275,3 +275,18 @@
     }
   }
 }
+
+.readytoorder {
+  padding: 100px 0;
+  text-align: center;
+  background: #f1f4f8;
+
+  h2,
+  p {
+    margin-bottom: 20px;
+  }
+
+  &-button {
+    @extend .btn-main;
+  }
+}
