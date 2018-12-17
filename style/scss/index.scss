@@ -41,13 +41,17 @@
   }
 
   &-main {
-    padding: 16vh 0;
+    padding: 14vh 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
     margin: 0;
+
+    @media (max-width: 768px) {
+      padding: 0;
+    }
 
     &>div {
       text-align: center;

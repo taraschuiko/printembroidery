@@ -289,13 +289,18 @@ p {
   position: relative;
 }
 .header-main {
-  padding: 16vh 0;
+  padding: 14vh 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
   margin: 0;
+}
+@media (max-width: 768px) {
+  .header-main {
+    padding: 0;
+  }
 }
 .header-main > div {
   text-align: center;
