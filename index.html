@@ -322,67 +322,21 @@
         <a href="#" class="readytoorder-button"> Замовити </a>
       </div>
     </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div>
-              <img src="./data/img/logo.svg" alt="Print Embroidery" />
-            </div>
-          </div>
-        </div>
-        <div class="row footer-cards">
-          <!-- Card -->
-          <div class="col-12 col-lg-6 col-xl-3 footer-card">
-            <h3>Знайдіть нас</h3>
-            <p>
-              0 поверх, площа Ринок, 1,<br />
-              Івано-Франківськ, Україна
-            </p>
-          </div>
-
-          <!-- Card -->
-          <div class="col-12 col-lg-6 col-xl-3 footer-card">
-            <h3>Напишіть нам</h3>
-            <p>
-              <a href="mailto:info@printembroidery.com.ua">info@printembroidery.com.ua</a>
-            </p>
-          </div>
-
-          <!-- Card -->
-          <div class="col-12 col-lg-6 col-xl-3 footer-card">
-            <h3>Подзвоніть нам</h3>
-            <p>
-              +380 (67) 710 59 69 <br />
-              +380 (99) 966 04 24 <br />
-              +380 (73) 471 22 42
-            </p>
-          </div>
-
-          <!-- Card -->
-          <div class="col-12 col-lg-6 col-xl-3 footer-card">
-            <h3>Слідкуйте за нами</h3>
-            <p>
-              <a href="https://www.facebook.com/printembroidery.com.ua" target="_blank" class="footer-icon">
-                <i class="fab fa-facebook"></i>
-              </a>
-              <a href="https://www.instagram.com/printembroidery.com.ua" target="_blank" class="footer-icon">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <footer class="footer" id="footer"></footer>
   </div>
 
   <!-- Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+  <!-- Import HTML -->
+  <script>
+    $(function () {
+      $("#footer").load("./footer.html");
+    })
+  </script>
   <!-- Menu -->
   <script src="./js/hamburger.js"></script>
 </body>
