@@ -74,6 +74,7 @@
     position: fixed;
     top: 0;
     right: 0;
+    overflow-y: scroll;
     background: #fff;
     color: $textColor;
     -webkit-transition: all .3s cubic-bezier(.65, .05, .36, 1);
