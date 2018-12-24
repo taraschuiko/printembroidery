@@ -1,7 +1,6 @@
 jQuery(document).ready(function ($) {
-  $(".hamburger-icon svg, .hamburger-fade").on("click", function (t) {
+  $(".mobile-menu-icon svg, .mobile-menu-close").on("click", function (t) {
     t.preventDefault();
-    $(".hamburger").toggleClass("hamburger--closed");
-    $(".hamburger-fade").toggleClass("hamburger-fade--closed");
+    $(".mobile-menu").toggleClass("mobile-menu--closed");
   })
 });
