@@ -1,435 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Print Embroidery</title>
-    <link rel="icon" type="image/png" href="./data/img/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style/css/index.css" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-      crossorigin="anonymous"
-    />
-  </head>
 
-  <body>
-    <!-- SVG -->
-    <svg
-      aria-hidden="true"
-      style="position: absolute; width: 0; height: 0; overflow: hidden;"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-    >
-      <defs>
-        <symbol id="icon-delivery" viewBox="0 0 32 32">
-          <title>delivery</title>
-          <path
-            fill="#3d4853"
-            style="fill: inherit"
-            d="M28.692 10.859c-0.004-0.103-0.018-0.2-0.042-0.294l0.002 0.010 0.001 0.011c-0.009-0.035-0.028-0.065-0.040-0.097-0.026-0.080-0.054-0.149-0.089-0.214l0.003 0.007c-0.021-0.036-0.052-0.067-0.076-0.1-0.040-0.056-0.079-0.113-0.127-0.16-0.032-0.033-0.073-0.057-0.111-0.087-0.047-0.036-0.089-0.080-0.14-0.109l-0.017-0.007-0.013-0.009-4.173-2.308-12.949 7.151v3.887l-2.539-1.396v-3.681c0-0.516 0.040-0.596 0.489-0.848l12.044-6.745-4.325-2.393c-0.177-0.101-0.389-0.16-0.615-0.16-0.23 0-0.445 0.061-0.63 0.168l0.006-0.003 0.007-0.004-11.413 6.345c-0.007 0.004-0.012 0.004-0.017 0.007-0.057 0.033-0.103 0.079-0.153 0.12-0.032 0.025-0.069 0.048-0.099 0.077-0.049 0.049-0.088 0.108-0.129 0.165-0.023 0.032-0.052 0.061-0.071 0.095-0.031 0.056-0.060 0.123-0.083 0.192l-0.002 0.008-0.003 0.009c-0.011 0.033-0.028 0.064-0.037 0.093-0.023 0.081-0.037 0.174-0.039 0.27v0.004c-0.001 0.020-0.009 0.040-0.009 0.060v10.163c0 0.461 0.249 0.885 0.653 1.111l11.431 6.348c0.055 0.031 0.115 0.048 0.172 0.069 0.040 0.016 0.080 0.037 0.123 0.049 0.097 0.025 0.209 0.040 0.323 0.040 0.117 0 0.23-0.015 0.338-0.043l-0.009 0.002h-0.009c0.041-0.011 0.081-0.032 0.124-0.048 0.057-0.021 0.116-0.037 0.171-0.069l0.025-0.013 0.004-0.004 11.4-6.333c0.391-0.222 0.651-0.635 0.651-1.109 0-0.001 0-0.001 0-0.002v0-10.161c0-0.021-0.007-0.039-0.007-0.059v-0.003zM17.271 25.271v-7.213l8.889-4.973v7.245l-8.889 4.941z"
-          ></path>
-        </symbol>
-        <symbol id="icon-quality" viewBox="0 0 32 32">
-          <title>quality</title>
-          <path
-            fill="#3d4853"
-            style="fill: inherit"
-            d="M3.361 19.387l0.003-0.001 0.001 0.009c-0.030-0.102-0.047-0.219-0.047-0.34 0-0.233 0.063-0.452 0.174-0.64l-0.003 0.006 1.403-2.425-1.397-2.419c-0.108-0.183-0.172-0.404-0.172-0.64 0-0.468 0.252-0.877 0.628-1.098l0.006-0.003 2.425-1.404v-2.792c0-0.703 0.569-1.271 1.271-1.271h2.792l1.405-2.429c0.225-0.378 0.631-0.628 1.096-0.628 0.234 0 0.454 0.063 0.642 0.174l-0.006-0.003 2.424 1.403 2.421-1.396c0.183-0.109 0.403-0.174 0.638-0.174 0.118 0 0.232 0.016 0.34 0.047l0-0.001c0.327 0.094 0.594 0.306 0.759 0.585l0.003 0.006 1.4 2.424h2.792c0.703 0 1.271 0.571 1.271 1.271v2.793l2.429 1.404c0.378 0.225 0.627 0.632 0.627 1.097 0 0.233-0.063 0.452-0.172 0.639l0.003-0.006-1.4 2.425 1.396 2.419c0.109 0.183 0.173 0.404 0.173 0.641 0 0.468-0.253 0.877-0.63 1.098l-0.006 0.003-2.425 1.401v2.793c0 0.702-0.569 1.271-1.271 1.271v0h-2.792l-1.4 2.424-0.004 0.005c-0.224 0.38-0.631 0.63-1.097 0.63-0.234 0-0.453-0.063-0.641-0.174l0.006 0.003-2.424-1.403-2.419 1.396c-0.183 0.108-0.404 0.172-0.639 0.172-0.468 0-0.877-0.252-1.099-0.627l-0.003-0.006-1.404-2.423h-2.791c-0.702 0-1.271-0.569-1.271-1.271v0-2.793l-2.431-1.405c-0.286-0.168-0.497-0.438-0.585-0.759l-0.002-0.009zM14.223 19.923c0 0 0 0 0.001 0s0-0 0.001-0v0l5.777-5.776c0.161-0.161 0.261-0.384 0.261-0.629 0-0.492-0.398-0.89-0.89-0.89-0.246 0-0.468 0.1-0.629 0.261l-4.521 4.523-1.415-1.413c-0.161-0.16-0.383-0.259-0.627-0.259-0.491 0-0.889 0.398-0.889 0.889 0 0.246 0.1 0.469 0.262 0.63l0 0 2.671 2.665z"
-          ></path>
-        </symbol>
-        <symbol id="icon-speed" viewBox="0 0 32 32">
-          <title>speed</title>
-          <path
-            fill="#3d4853"
-            style="fill: inherit"
-            d="M16 3.301c-7.001 0-12.699 5.697-12.699 12.699s5.697 12.699 12.699 12.699c7.001 0 12.699-5.697 12.699-12.699s-5.697-12.699-12.699-12.699zM14.732 16.525v-5.604c0-0.701 0.568-1.269 1.269-1.269s1.269 0.568 1.269 1.269v0 4.553l2.54 2.54c0.23 0.23 0.372 0.547 0.372 0.898 0 0.701-0.569 1.27-1.27 1.27-0.351 0-0.668-0.142-0.898-0.372l-3.283-3.285z"
-          ></path>
-        </symbol>
-        <symbol id="icon-support" viewBox="0 0 32 32">
-          <title>support</title>
-          <path
-            fill="#3d4853"
-            style="fill: inherit"
-            d="M5.841 13.459h-1.205c-0.736 0-1.333 0.597-1.333 1.333v0 7.492c0 0.736 0.597 1.333 1.333 1.333v0h2.413c0.736 0 1.333-0.597 1.333-1.333v0-8.825c0.005-4.206 3.413-7.614 7.618-7.619h0c4.206 0.004 7.615 3.412 7.62 7.618v12.7h-5.080c0-0.702-0.569-1.271-1.271-1.271v0h-2.476c-0.736 0-1.333 0.597-1.333 1.333v0 1.143c0 0.736 0.597 1.333 1.333 1.333v0h10.095c0.702 0 1.271-0.569 1.271-1.271v0-3.809h1.205c0.736 0 1.333-0.597 1.333-1.333v0-7.492c0-0.736-0.597-1.333-1.333-1.333v0h-1.205c0-5.601-4.559-10.157-10.159-10.157-5.603 0-10.16 4.557-10.16 10.157z"
-          ></path>
-        </symbol>
-        <symbol id="icon-gift" viewBox="0 0 32 32">
-          <title>gift</title>
-          <path
-            fill="#3d4853"
-            style="fill: inherit"
-            d="M14.667 29.333v-10.667h-9.333v9.333c0 0.736 0.597 1.333 1.333 1.333v0h8zM26.667 28v-9.333h-9.333v10.667h8c0.736 0 1.333-0.597 1.333-1.333v0zM28 9.333h-2.945c0.177-0.567 0.279-1.219 0.279-1.894 0-0.037-0-0.074-0.001-0.111l0 0.006c0-2.573-2.093-4.667-4.667-4.667-2.163 0-3.607 1.976-4.539 4.113-0.919-2.020-2.436-4.113-4.795-4.113-2.573 0-4.667 2.093-4.667 4.667 0 0.795 0.105 1.452 0.279 2h-2.945c-0.736 0-1.333 0.597-1.333 1.333v0 4c0 0.736 0.597 1.333 1.333 1.333v0h10.667v-2.667h2.667v2.667h10.667c0.736 0 1.333-0.597 1.333-1.333v0-4c0-0.736-0.597-1.333-1.333-1.333v0zM20.667 5.333c1.103 0 2 0.897 2 2 0 2-0.835 2-1.333 2h-3.304c0.681-2.101 1.671-4 2.637-4zM9.333 7.333c0-1.103 0.897-2 2-2 1.184 0 2.285 2.033 2.931 4h-3.597c-0.499 0-1.333 0-1.333-2z"
-          ></path>
-        </symbol>
-        <symbol id="icon-menu" viewBox="0 0 32 32">
-          <title>menu</title>
-          <path
-            fill="#3d4853"
-            style="fill: inherit"
-            d="M6.667 8h18.667c0.736 0 1.333 0.597 1.333 1.333s-0.597 1.333-1.333 1.333v0h-18.667c-0.736 0-1.333-0.597-1.333-1.333s0.597-1.333 1.333-1.333v0zM6.667 14.667h18.667c0.736 0 1.333 0.597 1.333 1.333s-0.597 1.333-1.333 1.333v0h-18.667c-0.736 0-1.333-0.597-1.333-1.333s0.597-1.333 1.333-1.333v0zM6.667 21.333h18.667c0.736 0 1.333 0.597 1.333 1.333s-0.597 1.333-1.333 1.333v0h-18.667c-0.736 0-1.333-0.597-1.333-1.333s0.597-1.333 1.333-1.333v0z"
-          ></path>
-        </symbol>
-      </defs>
-    </svg>
-    <!-- SVG end -->
-    <video
-      src="./data/video/header.mp4"
-      class="background-video"
-      autoplay
-      loop
-      muted
-    ></video>
-    <div class="container-fluid">
-      <header class="header">
-        <div class="container">
-          <nav class="nav row">
-            <div class="col-10 col-xl-3">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Print Embroidery</title>
+  <link rel="icon" type="image/png" href="./data/img/favicon.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style/css/index.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+    crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- SVG -->
+  <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="icon-delivery" viewBox="0 0 32 32">
+        <title>delivery</title>
+        <path fill="#3d4853" style="fill: inherit" d="M28.692 10.859c-0.004-0.103-0.018-0.2-0.042-0.294l0.002 0.010 0.001 0.011c-0.009-0.035-0.028-0.065-0.040-0.097-0.026-0.080-0.054-0.149-0.089-0.214l0.003 0.007c-0.021-0.036-0.052-0.067-0.076-0.1-0.040-0.056-0.079-0.113-0.127-0.16-0.032-0.033-0.073-0.057-0.111-0.087-0.047-0.036-0.089-0.080-0.14-0.109l-0.017-0.007-0.013-0.009-4.173-2.308-12.949 7.151v3.887l-2.539-1.396v-3.681c0-0.516 0.040-0.596 0.489-0.848l12.044-6.745-4.325-2.393c-0.177-0.101-0.389-0.16-0.615-0.16-0.23 0-0.445 0.061-0.63 0.168l0.006-0.003 0.007-0.004-11.413 6.345c-0.007 0.004-0.012 0.004-0.017 0.007-0.057 0.033-0.103 0.079-0.153 0.12-0.032 0.025-0.069 0.048-0.099 0.077-0.049 0.049-0.088 0.108-0.129 0.165-0.023 0.032-0.052 0.061-0.071 0.095-0.031 0.056-0.060 0.123-0.083 0.192l-0.002 0.008-0.003 0.009c-0.011 0.033-0.028 0.064-0.037 0.093-0.023 0.081-0.037 0.174-0.039 0.27v0.004c-0.001 0.020-0.009 0.040-0.009 0.060v10.163c0 0.461 0.249 0.885 0.653 1.111l11.431 6.348c0.055 0.031 0.115 0.048 0.172 0.069 0.040 0.016 0.080 0.037 0.123 0.049 0.097 0.025 0.209 0.040 0.323 0.040 0.117 0 0.23-0.015 0.338-0.043l-0.009 0.002h-0.009c0.041-0.011 0.081-0.032 0.124-0.048 0.057-0.021 0.116-0.037 0.171-0.069l0.025-0.013 0.004-0.004 11.4-6.333c0.391-0.222 0.651-0.635 0.651-1.109 0-0.001 0-0.001 0-0.002v0-10.161c0-0.021-0.007-0.039-0.007-0.059v-0.003zM17.271 25.271v-7.213l8.889-4.973v7.245l-8.889 4.941z"></path>
+      </symbol>
+      <symbol id="icon-quality" viewBox="0 0 32 32">
+        <title>quality</title>
+        <path fill="#3d4853" style="fill: inherit" d="M3.361 19.387l0.003-0.001 0.001 0.009c-0.030-0.102-0.047-0.219-0.047-0.34 0-0.233 0.063-0.452 0.174-0.64l-0.003 0.006 1.403-2.425-1.397-2.419c-0.108-0.183-0.172-0.404-0.172-0.64 0-0.468 0.252-0.877 0.628-1.098l0.006-0.003 2.425-1.404v-2.792c0-0.703 0.569-1.271 1.271-1.271h2.792l1.405-2.429c0.225-0.378 0.631-0.628 1.096-0.628 0.234 0 0.454 0.063 0.642 0.174l-0.006-0.003 2.424 1.403 2.421-1.396c0.183-0.109 0.403-0.174 0.638-0.174 0.118 0 0.232 0.016 0.34 0.047l0-0.001c0.327 0.094 0.594 0.306 0.759 0.585l0.003 0.006 1.4 2.424h2.792c0.703 0 1.271 0.571 1.271 1.271v2.793l2.429 1.404c0.378 0.225 0.627 0.632 0.627 1.097 0 0.233-0.063 0.452-0.172 0.639l0.003-0.006-1.4 2.425 1.396 2.419c0.109 0.183 0.173 0.404 0.173 0.641 0 0.468-0.253 0.877-0.63 1.098l-0.006 0.003-2.425 1.401v2.793c0 0.702-0.569 1.271-1.271 1.271v0h-2.792l-1.4 2.424-0.004 0.005c-0.224 0.38-0.631 0.63-1.097 0.63-0.234 0-0.453-0.063-0.641-0.174l0.006 0.003-2.424-1.403-2.419 1.396c-0.183 0.108-0.404 0.172-0.639 0.172-0.468 0-0.877-0.252-1.099-0.627l-0.003-0.006-1.404-2.423h-2.791c-0.702 0-1.271-0.569-1.271-1.271v0-2.793l-2.431-1.405c-0.286-0.168-0.497-0.438-0.585-0.759l-0.002-0.009zM14.223 19.923c0 0 0 0 0.001 0s0-0 0.001-0v0l5.777-5.776c0.161-0.161 0.261-0.384 0.261-0.629 0-0.492-0.398-0.89-0.89-0.89-0.246 0-0.468 0.1-0.629 0.261l-4.521 4.523-1.415-1.413c-0.161-0.16-0.383-0.259-0.627-0.259-0.491 0-0.889 0.398-0.889 0.889 0 0.246 0.1 0.469 0.262 0.63l0 0 2.671 2.665z"></path>
+      </symbol>
+      <symbol id="icon-speed" viewBox="0 0 32 32">
+        <title>speed</title>
+        <path fill="#3d4853" style="fill: inherit" d="M16 3.301c-7.001 0-12.699 5.697-12.699 12.699s5.697 12.699 12.699 12.699c7.001 0 12.699-5.697 12.699-12.699s-5.697-12.699-12.699-12.699zM14.732 16.525v-5.604c0-0.701 0.568-1.269 1.269-1.269s1.269 0.568 1.269 1.269v0 4.553l2.54 2.54c0.23 0.23 0.372 0.547 0.372 0.898 0 0.701-0.569 1.27-1.27 1.27-0.351 0-0.668-0.142-0.898-0.372l-3.283-3.285z"></path>
+      </symbol>
+      <symbol id="icon-support" viewBox="0 0 32 32">
+        <title>support</title>
+        <path fill="#3d4853" style="fill: inherit" d="M5.841 13.459h-1.205c-0.736 0-1.333 0.597-1.333 1.333v0 7.492c0 0.736 0.597 1.333 1.333 1.333v0h2.413c0.736 0 1.333-0.597 1.333-1.333v0-8.825c0.005-4.206 3.413-7.614 7.618-7.619h0c4.206 0.004 7.615 3.412 7.62 7.618v12.7h-5.080c0-0.702-0.569-1.271-1.271-1.271v0h-2.476c-0.736 0-1.333 0.597-1.333 1.333v0 1.143c0 0.736 0.597 1.333 1.333 1.333v0h10.095c0.702 0 1.271-0.569 1.271-1.271v0-3.809h1.205c0.736 0 1.333-0.597 1.333-1.333v0-7.492c0-0.736-0.597-1.333-1.333-1.333v0h-1.205c0-5.601-4.559-10.157-10.159-10.157-5.603 0-10.16 4.557-10.16 10.157z"></path>
+      </symbol>
+      <symbol id="icon-gift" viewBox="0 0 32 32">
+        <title>gift</title>
+        <path fill="#3d4853" style="fill: inherit" d="M14.667 29.333v-10.667h-9.333v9.333c0 0.736 0.597 1.333 1.333 1.333v0h8zM26.667 28v-9.333h-9.333v10.667h8c0.736 0 1.333-0.597 1.333-1.333v0zM28 9.333h-2.945c0.177-0.567 0.279-1.219 0.279-1.894 0-0.037-0-0.074-0.001-0.111l0 0.006c0-2.573-2.093-4.667-4.667-4.667-2.163 0-3.607 1.976-4.539 4.113-0.919-2.020-2.436-4.113-4.795-4.113-2.573 0-4.667 2.093-4.667 4.667 0 0.795 0.105 1.452 0.279 2h-2.945c-0.736 0-1.333 0.597-1.333 1.333v0 4c0 0.736 0.597 1.333 1.333 1.333v0h10.667v-2.667h2.667v2.667h10.667c0.736 0 1.333-0.597 1.333-1.333v0-4c0-0.736-0.597-1.333-1.333-1.333v0zM20.667 5.333c1.103 0 2 0.897 2 2 0 2-0.835 2-1.333 2h-3.304c0.681-2.101 1.671-4 2.637-4zM9.333 7.333c0-1.103 0.897-2 2-2 1.184 0 2.285 2.033 2.931 4h-3.597c-0.499 0-1.333 0-1.333-2z"></path>
+      </symbol>
+      <symbol id="icon-menu" viewBox="0 0 32 32">
+        <title>menu</title>
+        <path fill="#3d4853" style="fill: inherit" d="M6.667 8h18.667c0.736 0 1.333 0.597 1.333 1.333s-0.597 1.333-1.333 1.333v0h-18.667c-0.736 0-1.333-0.597-1.333-1.333s0.597-1.333 1.333-1.333v0zM6.667 14.667h18.667c0.736 0 1.333 0.597 1.333 1.333s-0.597 1.333-1.333 1.333v0h-18.667c-0.736 0-1.333-0.597-1.333-1.333s0.597-1.333 1.333-1.333v0zM6.667 21.333h18.667c0.736 0 1.333 0.597 1.333 1.333s-0.597 1.333-1.333 1.333v0h-18.667c-0.736 0-1.333-0.597-1.333-1.333s0.597-1.333 1.333-1.333v0z"></path>
+      </symbol>
+    </defs>
+  </svg>
+  <!-- SVG end -->
+  <!-- <video src="./data/video/header.mp4" class="background-video" autoplay loop muted></video> -->
+  <div class="container-fluid">
+    <header class="header">
+      <video src="./data/video/header.mp4" class="header-video" autoplay loop muted></video>
+      <div class="header-overlay"></div>
+      <div class="container">
+        <nav class="nav nav-sticky row" id="nav">
+          <div class="col-10 col-xl-3">
+            <a href="/">
+              <img src="./data/img/logo-light.svg" alt="Logo" />
+            </a>
+          </div>
+          <div class="nav-menu col-xl-9">
+            <ul class="col-xl-9">
+              <li><a href="/" class="nav-menu--active">Головна</a></li>
+              <li><a href="services.html">Послуги</a></li>
+              <li><a href="methods.html">Оплата і доставка</a></li>
+              <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+            <ul class="col-xl-3 nav-mene">
+              <li><a href="#" class="nav-menu--active">UA</a></li>
+              <li><a href="#">EN</a></li>
+              <li><a href="#">RU</a></li>
+            </ul>
+          </div>
+          <!-- mobile menu -->
+          <div class="col-2 mobile-menu-icon">
+            <svg>
+              <use xlink:href="#icon-menu"></use>
+            </svg>
+          </div>
+          <div class="mobile-menu mobile-menu--closed">
+            <div class="mobile-menu-top">
               <a href="/">
-                <img src="./data/img/logo-light.svg" alt="Logo" />
-              </a>
+                <img src="./data/img/logo-dark.svg" alt="Home" /></a>
+              <img src="./data/img/menu-close.svg" alt="Close" class="mobile-menu-close" />
             </div>
-            <div class="nav-menu col-xl-9">
-              <ul class="col-xl-9">
-                <li><a href="/" class="nav-menu--active">Головна</a></li>
-                <li><a href="services.html">Послуги</a></li>
-                <li><a href="methods.html">Оплата і доставка</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
-              </ul>
-              <ul class="col-xl-3 nav-mene">
-                <li><a href="#" class="nav-menu--active">UA</a></li>
-                <li><a href="#">EN</a></li>
-                <li><a href="#">RU</a></li>
-              </ul>
-            </div>
-            <!-- mobile menu -->
-            <div class="col-2 mobile-menu-icon">
-              <svg><use xlink:href="#icon-menu"></use></svg>
-            </div>
-            <div class="mobile-menu mobile-menu--closed">
-              <div class="mobile-menu-top">
-                <a href="/">
-                  <img src="./data/img/logo-dark.svg" alt="Home"
-                /></a>
-                <img
-                  src="./data/img/menu-close.svg"
-                  alt="Close"
-                  class="mobile-menu-close"
-                />
-              </div>
-              <ul>
-                <li>
-                  <a
-                    href="index.html"
-                    class="mobile-menu-item mobile-menu--active"
-                    >Головна</a
-                  >
-                </li>
-                <li>
-                  <a href="direct-print.html" class="mobile-menu-item">Прямий цифровий друк</a>
-                </li>
-                <li>
-                  <a href="thermo-print.html" class="mobile-menu-item">Термотрансферний друк</a>
-                </li>
-                <li>
-                  <a href="embroidery.html" class="mobile-menu-item">Машинна вишивка нитками</a>
-                </li>
-                <li>
-                  <a href="sequin.html" class="mobile-menu-item">Машинна вишивка паєтками</a>
-                </li>
-                <li>
-                  <a href="rhinestone.html" class="mobile-menu-item">Нанесення стразів</a>
-                </li>
-                <li>
-                  <a href="methods.html" class="mobile-menu-item"
-                    >Оплата і доставка</a
-                  >
-                </li>
-                <li>
-                  <a href="contacts.html" class="mobile-menu-item">Контакти</a>
-                </li>
-                <li class="mobile-menu-lang">
-                  <a href="#" class="mobile-menu--active">UA</a>
-                  <a href="#">EN</a> <a href="#">RU</a>
-                </li>
-              </ul>
-            </div>
-            <!-- mobile menu end -->
-          </nav>
-          <div class="header-main row">
-            <div class="col col-12 col-lg-8 col-xl-6">
-              <h1>Оздоблення одягу на замовлення</h1>
-              <p>
-                Прямий і термотрансферний друк, машинна вишивка нитками і
-                паєтками, нанесення страз на одяг з доставкою в Україні
-              </p>
-              <a href="#" class="header-btn"> Замовити </a>
-            </div>
+            <ul>
+              <li>
+                <a href="index.html" class="mobile-menu-item mobile-menu--active">Головна</a>
+              </li>
+              <li>
+                <a href="direct-print.html" class="mobile-menu-item">Прямий цифровий друк</a>
+              </li>
+              <li>
+                <a href="thermo-print.html" class="mobile-menu-item">Термотрансферний друк</a>
+              </li>
+              <li>
+                <a href="embroidery.html" class="mobile-menu-item">Машинна вишивка нитками</a>
+              </li>
+              <li>
+                <a href="sequin.html" class="mobile-menu-item">Машинна вишивка паєтками</a>
+              </li>
+              <li>
+                <a href="rhinestone.html" class="mobile-menu-item">Нанесення стразів</a>
+              </li>
+              <li>
+                <a href="methods.html" class="mobile-menu-item">Оплата і доставка</a>
+              </li>
+              <li>
+                <a href="contacts.html" class="mobile-menu-item">Контакти</a>
+              </li>
+              <li class="mobile-menu-lang">
+                <a href="#" class="mobile-menu--active">UA</a>
+                <a href="#">EN</a> <a href="#">RU</a>
+              </li>
+            </ul>
+          </div>
+          <!-- mobile menu end -->
+        </nav>
+        <div class="header-main row">
+          <div class="col col-12 col-lg-8 col-xl-6">
+            <h1>Оздоблення одягу на замовлення</h1>
+            <p>
+              Прямий і термотрансферний друк, машинна вишивка нитками і
+              паєтками, нанесення страз на одяг з доставкою в Україні
+            </p>
+            <a href="#" class="header-btn"> Замовити </a>
           </div>
         </div>
-      </header>
-      <section class="whatwedo">
-        <div class="container">
-          <h2>Чим ми займаємося?</h2>
-          <div class="row whatwedo-items">
-            <!-- Item -->
-            <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
-              <div>
-                <img
-                  srcset="
+      </div>
+    </header>
+    <section class="whatwedo">
+      <div class="container">
+        <h2>Чим ми займаємося?</h2>
+        <div class="row whatwedo-items">
+          <!-- Item -->
+          <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
+            <div>
+              <img srcset="
                     ./data/img/straight-print.jpg    1x,
                     ./data/img/straight-print@2x.jpg 2x,
                     ./data/img/straight-print@3x.jpg 3x
                   "
-                  alt="Прямий друк"
-                />
-              </div>
-              <h3>Прямий цифровий друк</h3>
-              <p>
-                Безпосередній друк фарбами на одязі тільки з натуральних тканин.
-              </p>
-              <a href="#" class="whatwedo-btn">Дізнатись більше</a>
+                alt="Прямий друк" />
             </div>
+            <h3>Прямий цифровий друк</h3>
+            <p>
+              Безпосередній друк фарбами на одязі тільки з натуральних тканин.
+            </p>
+            <a href="#" class="whatwedo-btn">Дізнатись більше</a>
+          </div>
 
-            <!-- Item -->
-            <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
-              <div>
-                <img
-                  srcset="
+          <!-- Item -->
+          <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
+            <div>
+              <img srcset="
                     ./data/img/thermo-print.jpg    1x,
                     ./data/img/thermo-print@2x.jpg 2x,
                     ./data/img/thermo-print@3x.jpg 3x
                   "
-                  alt="Термотрансферний друк"
-                />
-              </div>
-              <h3>Термотрансферний друк</h3>
-              <p>Друк плівкою на натуральному і синтетичному одязі.</p>
-              <a href="#" class="whatwedo-btn">Дізнатись більше</a>
+                alt="Термотрансферний друк" />
             </div>
+            <h3>Термотрансферний друк</h3>
+            <p>Друк плівкою на натуральному і синтетичному одязі.</p>
+            <a href="#" class="whatwedo-btn">Дізнатись більше</a>
+          </div>
 
-            <!-- Item -->
-            <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
-              <div>
-                <img
-                  srcset="
+          <!-- Item -->
+          <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
+            <div>
+              <img srcset="
                     ./data/img/embroidery.jpg    1x,
                     ./data/img/embroidery@2x.jpg 2x,
                     ./data/img/embroidery@3x.jpg 3x
                   "
-                  alt="Вишивка"
-                />
-              </div>
-              <h3>Машинна вишивка нитками</h3>
-              <p>Нанесення малюнку нитками за допомогою вишивальної машини.</p>
-              <a href="#" class="whatwedo-btn">Дізнатись більше</a>
+                alt="Вишивка" />
             </div>
+            <h3>Машинна вишивка нитками</h3>
+            <p>Нанесення малюнку нитками за допомогою вишивальної машини.</p>
+            <a href="#" class="whatwedo-btn">Дізнатись більше</a>
+          </div>
 
-            <!-- Item -->
-            <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
-              <div>
-                <img
-                  srcset="
+          <!-- Item -->
+          <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
+            <div>
+              <img srcset="
                     ./data/img/sequin.jpg    1x,
                     ./data/img/sequin@2x.jpg 2x,
                     ./data/img/sequin@3x.jpg 3x
                   "
-                  alt="Паєтки"
-                />
-              </div>
-              <h3>Машинна вишивка паєтками</h3>
-              <p>Оздоблення одягу блискучими плоскими кружечками.</p>
-              <a href="#" class="whatwedo-btn">Дізнатись більше</a>
+                alt="Паєтки" />
             </div>
+            <h3>Машинна вишивка паєтками</h3>
+            <p>Оздоблення одягу блискучими плоскими кружечками.</p>
+            <a href="#" class="whatwedo-btn">Дізнатись більше</a>
+          </div>
 
-            <!-- Item -->
-            <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
-              <div>
-                <img
-                  srcset="
+          <!-- Item -->
+          <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
+            <div>
+              <img srcset="
                     ./data/img/rhinestone.jpg    1x,
                     ./data/img/rhinestone@2x.jpg 2x,
                     ./data/img/rhinestone@3x.jpg 3x
                   "
-                  alt="стрази"
-                />
+                alt="стрази" />
+            </div>
+            <h3>Нанесення стразів</h3>
+            <p>Імітація коштовних каменів за допомогою свинцевого скла.</p>
+            <a href="#" class="whatwedo-btn">Дізнатись більше</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="trust">
+      <div class="container">
+        <h2>Довіряють тисячі компаній та людей</h2>
+        <div class="row">
+          <!-- Item -->
+          <div class="col-xs-12 col-sm-6 col-xl-3">
+            <div class="trust-item">
+              <div class="trust-item-icon">
+                <svg>
+                  <use xlink:href="#icon-speed"></use>
+                </svg>
               </div>
-              <h3>Нанесення стразів</h3>
-              <p>Імітація коштовних каменів за допомогою свинцевого скла.</p>
-              <a href="#" class="whatwedo-btn">Дізнатись більше</a>
+              <h3>Швидкість</h3>
+              <p>Реалізація замовлення від 24 годин</p>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col-xs-12 col-sm-6 col-xl-3">
+            <div class="trust-item">
+              <div class="trust-item-icon">
+                <svg>
+                  <use xlink:href="#icon-quality"></use>
+                </svg>
+              </div>
+              <h3>Якість</h3>
+              <p>Використання матеріалів провідних марок</p>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col-xs-12 col-sm-6 col-xl-3">
+            <div class="trust-item">
+              <div class="trust-item-icon">
+                <svg>
+                  <use xlink:href="#icon-support"></use>
+                </svg>
+              </div>
+              <h3>Підтримка</h3>
+              <p>Допомога при оформленні замовлення</p>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col-xs-12 col-sm-6 col-xl-3">
+            <div class="trust-item">
+              <div class="trust-item-icon">
+                <svg>
+                  <use xlink:href="#icon-delivery"></use>
+                </svg>
+              </div>
+              <h3>Доставка</h3>
+              <p>Відправка готової продукції по Україні</p>
             </div>
           </div>
         </div>
-      </section>
-      <section class="trust">
-        <div class="container">
-          <h2>Довіряють тисячі компаній та людей</h2>
-          <div class="row">
-            <!-- Item -->
-            <div class="col-xs-12 col-sm-6 col-xl-3">
-              <div class="trust-item">
-                <div class="trust-item-icon">
-                  <svg><use xlink:href="#icon-speed"></use></svg>
-                </div>
-                <h3>Швидкість</h3>
-                <p>Реалізація замовлення від 24 годин</p>
-              </div>
-            </div>
-
-            <!-- Item -->
-            <div class="col-xs-12 col-sm-6 col-xl-3">
-              <div class="trust-item">
-                <div class="trust-item-icon">
-                  <svg><use xlink:href="#icon-quality"></use></svg>
-                </div>
-                <h3>Якість</h3>
-                <p>Використання матеріалів провідних марок</p>
-              </div>
-            </div>
-
-            <!-- Item -->
-            <div class="col-xs-12 col-sm-6 col-xl-3">
-              <div class="trust-item">
-                <div class="trust-item-icon">
-                  <svg><use xlink:href="#icon-support"></use></svg>
-                </div>
-                <h3>Підтримка</h3>
-                <p>Допомога при оформленні замовлення</p>
-              </div>
-            </div>
-
-            <!-- Item -->
-            <div class="col-xs-12 col-sm-6 col-xl-3">
-              <div class="trust-item">
-                <div class="trust-item-icon">
-                  <svg><use xlink:href="#icon-delivery"></use></svg>
-                </div>
-                <h3>Доставка</h3>
-                <p>Відправка готової продукції по Україні</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="testimonial">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-8 offset-xl-2 quote">
-              <img
-                src="./data/img/quote.svg"
-                alt="цитата"
-                class="quote-symbol"
-              />
-              <div>
-                <p class="quote-text">
-                  Bonfire went above and beyond to help us create a killer shirt
-                  design and make our fundraiser a total success!
-                </p>
-                <div class="quote-author">
-                  <img src="./data/img/author.jpg" alt="Автор" />
-                  <p>Наталя Ярмоленко</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="sewing">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-xs-12 col-md-7 col-xl-6 sewing-content">
-              <h2>Пошиття одягу на замовлення</h2>
-              <p class="sewing-description">
-                Потребуєте футболки, кофти чи іншого одягу? Замовте пошиття
-                одягу під ваші потреби з якісної тканини для подального друку чи
-                вишивки на ньому.
+      </div>
+    </section>
+    <section class="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8 offset-xl-2 quote">
+            <img src="./data/img/quote.svg" alt="цитата" class="quote-symbol" />
+            <div>
+              <p class="quote-text">
+                Bonfire went above and beyond to help us create a killer shirt
+                design and make our fundraiser a total success!
               </p>
-              <div class="sewing-gift">
-                <svg><use xlink:href="#icon-gift"></use></svg>
-                <p>Безкоштовна доставка по Україні від 5 штук</p>
+              <div class="quote-author">
+                <img src="./data/img/author.jpg" alt="Автор" />
+                <p>Наталя Ярмоленко</p>
               </div>
-              <a href="#" class="sewing-btn">Переглянути каталог</a>
             </div>
-            <div
-              class="col-6 offset-3 offset-md-0 col-md-5 offset-xl-1 sewing-right"
-            >
-              <img
-                srcset="
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sewing">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xs-12 col-md-7 col-xl-6 sewing-content">
+            <h2>Пошиття одягу на замовлення</h2>
+            <p class="sewing-description">
+              Потребуєте футболки, кофти чи іншого одягу? Замовте пошиття
+              одягу під ваші потреби з якісної тканини для подального друку чи
+              вишивки на ньому.
+            </p>
+            <div class="sewing-gift">
+              <svg>
+                <use xlink:href="#icon-gift"></use>
+              </svg>
+              <p>Безкоштовна доставка по Україні від 5 штук</p>
+            </div>
+            <a href="#" class="sewing-btn">Переглянути каталог</a>
+          </div>
+          <div class="col-6 offset-3 offset-md-0 col-md-5 offset-xl-1 sewing-right">
+            <img srcset="
                   ./data/img/sewing.png    1x,
                   ./data/img/sewing@2x.png 2x,
                   ./data/img/sewing@3x.png 3x
                 "
-                alt="Пошиття"
-              />
-            </div>
+              alt="Пошиття" />
           </div>
         </div>
-      </section>
-      <section class="testimonial">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-8 offset-xl-2 quote">
-              <img
-                src="./data/img/quote.svg"
-                alt="цитата"
-                class="quote-symbol"
-              />
-              <div>
-                <p class="quote-text">
-                  Bonfire went above and beyond to help us create a killer shirt
-                  design and make our fundraiser a total success!
-                </p>
-                <div class="quote-author">
-                  <img src="./data/img/author.jpg" alt="Автор" />
-                  <p>Наталя Ярмоленко</p>
-                </div>
+      </div>
+    </section>
+    <section class="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8 offset-xl-2 quote">
+            <img src="./data/img/quote.svg" alt="цитата" class="quote-symbol" />
+            <div>
+              <p class="quote-text">
+                Bonfire went above and beyond to help us create a killer shirt
+                design and make our fundraiser a total success!
+              </p>
+              <div class="quote-author">
+                <img src="./data/img/author.jpg" alt="Автор" />
+                <p>Наталя Ярмоленко</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="readytoorder">
-        <div class="container">
-          <h2>Готові замовити?</h2>
-          <p>
-            Ви лише один крок від замовлення вашого наступного унікального
-            дизайну.
-          </p>
-          <a href="#" class="readytoorder-button"> Замовити </a>
-        </div>
-      </section>
-      <footer class="footer" id="footer"></footer>
-    </div>
+      </div>
+    </section>
+    <section class="readytoorder">
+      <div class="container">
+        <h2>Готові замовити?</h2>
+        <p>
+          Ви лише один крок від замовлення вашого наступного унікального
+          дизайну.
+        </p>
+        <a href="#" class="readytoorder-button"> Замовити </a>
+      </div>
+    </section>
+    <footer class="footer" id="footer"></footer>
+  </div>
 
-    <!-- Bootstrap -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Import HTML -->
-    <script>
-      $(function() {
-        $("#footer").load("./reusable/footer.html");
-      });
-    </script>
-    <!-- Menu -->
-    <script src="./js/hamburger.js"></script>
-  </body>
+  <!-- Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!-- Import HTML -->
+  <script>
+    $(function () {
+      $("#footer").load("./reusable/footer.html");
+    });
+  </script>
+  <!-- Menu -->
+  <script src="./js/mobile-menu.js"></script>
+</body>
+
 </html>
