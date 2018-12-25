@@ -206,7 +206,7 @@ p {
 }
 .nav .mobile-menu-icon p {
   cursor: pointer;
-  padding-top: 8px;
+  padding-top: 6px;
 }
 .nav .mobile-menu--active {
   color: #f49879 !important;
