@@ -63,7 +63,7 @@
       padding: 0;
     }
 
-    & > div {
+    &>div {
       text-align: center;
       color: #fff;
     }
@@ -243,10 +243,10 @@
     margin-bottom: 25px;
     font-weight: bold;
 
-    svg {
-      width: 25px;
-      height: 25px;
-      fill: #f49879;
+    .gift {
+      font-family: icon;
+      font-size: 24px;
+      color: #f49879;
       margin-right: 25px;
     }
 
