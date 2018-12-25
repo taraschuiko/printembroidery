@@ -31,6 +31,8 @@ p {
   margin-bottom: 0;
 }
 
+// Buttons
+
 .btn {
   display: inline-block;
   padding: 8px 20px;
@@ -41,5 +43,28 @@ p {
 
   &:hover {
     text-decoration: none;
+  }
+}
+
+.btn-main {
+  @extend .btn;
+  background-color: #3bce95;
+  color: #fff;
+
+  &:hover {
+    background: #3c8a74;
+    color: #fff;
+  }
+}
+
+.btn-secondary {
+  @extend .btn;
+  background: #fff;
+  border-color: #3d4853;
+
+  &:hover {
+    color: #fff;
+    border-color: #3d4853;
+    background: #3d4853;
   }
 }

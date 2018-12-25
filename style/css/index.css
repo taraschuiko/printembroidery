@@ -40,7 +40,7 @@ p {
   margin-bottom: 0;
 }
 
-.btn, .whatwedo-btn, .btn-main, .readytoorder-button, .sewing-btn, .header-main .header-btn {
+.btn, .btn-secondary, .btn-main, .readytoorder-button, .sewing-btn, .header-main .header-btn {
   display: inline-block;
   padding: 8px 20px;
   border-radius: 8px;
@@ -48,8 +48,27 @@ p {
   border: 2px solid transparent;
   transition: all 0.1s ease;
 }
-.btn:hover, .whatwedo-btn:hover, .btn-main:hover, .readytoorder-button:hover, .sewing-btn:hover, .header-main .header-btn:hover {
+.btn:hover, .btn-secondary:hover, .btn-main:hover, .readytoorder-button:hover, .sewing-btn:hover, .header-main .header-btn:hover {
   text-decoration: none;
+}
+
+.btn-main, .readytoorder-button, .sewing-btn, .header-main .header-btn {
+  background-color: #3bce95;
+  color: #fff;
+}
+.btn-main:hover, .readytoorder-button:hover, .sewing-btn:hover, .header-main .header-btn:hover {
+  background: #3c8a74;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #fff;
+  border-color: #3d4853;
+}
+.btn-secondary:hover {
+  color: #fff;
+  border-color: #3d4853;
+  background: #3d4853;
 }
 
 @font-face {
@@ -94,7 +113,7 @@ p {
   margin-bottom: 0;
 }
 
-.btn, .whatwedo-btn, .btn-main, .readytoorder-button, .sewing-btn, .header-main .header-btn {
+.btn, .btn-main, .readytoorder-button, .sewing-btn, .header-main .header-btn, .btn-secondary {
   display: inline-block;
   padding: 8px 20px;
   border-radius: 8px;
@@ -102,8 +121,27 @@ p {
   border: 2px solid transparent;
   transition: all 0.1s ease;
 }
-.btn:hover, .whatwedo-btn:hover, .btn-main:hover, .readytoorder-button:hover, .sewing-btn:hover, .header-main .header-btn:hover {
+.btn:hover, .btn-main:hover, .readytoorder-button:hover, .sewing-btn:hover, .header-main .header-btn:hover, .btn-secondary:hover {
   text-decoration: none;
+}
+
+.btn-main, .readytoorder-button, .sewing-btn, .header-main .header-btn {
+  background-color: #3bce95;
+  color: #fff;
+}
+.btn-main:hover, .readytoorder-button:hover, .sewing-btn:hover, .header-main .header-btn:hover {
+  background: #3c8a74;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #fff;
+  border-color: #3d4853;
+}
+.btn-secondary:hover {
+  color: #fff;
+  border-color: #3d4853;
+  background: #3d4853;
 }
 
 .nav {
@@ -128,6 +166,7 @@ p {
 .nav-menu li a {
   color: inherit;
   font-size: 16px;
+  transition: all 0.1s ease;
 }
 .nav-menu li a:hover {
   opacity: 0.5;
@@ -279,15 +318,6 @@ p {
   opacity: 0.8;
 }
 
-.btn-main, .readytoorder-button, .sewing-btn, .header-main .header-btn {
-  background-color: #3bce95;
-  color: #fff;
-}
-.btn-main:hover, .readytoorder-button:hover, .sewing-btn:hover, .header-main .header-btn:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
 .container-fluid {
   z-index: 1;
   padding: 0;
@@ -386,13 +416,6 @@ p {
 .whatwedo-item p {
   font-size: 16px;
   margin-bottom: 20px;
-}
-.whatwedo-btn {
-  border-color: #3d4853;
-}
-.whatwedo-btn:hover {
-  color: inherit;
-  text-decoration: underline;
 }
 
 .trust {
