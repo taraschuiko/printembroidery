@@ -189,11 +189,11 @@ p {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  font-family: icon;
+  font-size: 36px;
 }
-.nav .mobile-menu-icon svg {
+.nav .mobile-menu-icon p {
   cursor: pointer;
-  width: 36px;
-  height: 36px;
 }
 .nav .mobile-menu--active {
   color: #f49879 !important;
@@ -453,9 +453,12 @@ p {
   width: 155px;
   height: 155px;
 }
-.trust-item-icon svg {
-  width: 60%;
-  fill: #f49879;
+.trust-item-icon .trust-icon {
+  padding-top: 18px;
+  font-family: icon;
+  color: #f49879;
+  line-height: 0;
+  font-size: 90px;
 }
 .trust-item h3 {
   font-size: 22px;

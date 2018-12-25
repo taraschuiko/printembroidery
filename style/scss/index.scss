@@ -153,9 +153,12 @@
       width: 155px;
       height: 155px;
 
-      svg {
-        width: 60%;
-        fill: #f49879;
+      .trust-icon {
+        padding-top: 18px;
+        font-family: icon;
+        color: #f49879;
+        line-height: 0;
+        font-size: 90px;
       }
     }
 

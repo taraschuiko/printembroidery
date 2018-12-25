@@ -52,11 +52,11 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-family: icon;
+    font-size: 36px;
 
-    svg {
+    p {
       cursor: pointer;
-      width: 36px;
-      height: 36px;
     }
   }
 
