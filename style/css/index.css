@@ -151,9 +151,8 @@ p {
 }
 .nav .mobile-menu-icon svg {
   cursor: pointer;
-  width: 34px;
-  height: 34px;
-  padding: 6px;
+  width: 36px;
+  height: 36px;
 }
 .nav .mobile-menu--active {
   color: #f49879 !important;
