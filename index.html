@@ -14,12 +14,10 @@
 
 <body>
   <div class="container-fluid">
-    <header class="header">
-      <video src="./data/video/header.mp4" class="header-video" autoplay loop muted></video>
-      <div class="header-overlay"></div>
+    <nav class="nav" id="nav">
       <div class="container">
-        <nav class="nav nav-sticky row" id="nav">
-          <div class="col-10 col-xl-3">
+        <div class="row">
+          <div class="col-10 col-xl-3 nav-logo">
             <a href="/">
               <img src="./data/img/logo-light.svg" alt="Logo" />
             </a>
@@ -37,49 +35,55 @@
               <li><a href="#">RU</a></li>
             </ul>
           </div>
-          <!-- mobile menu -->
           <div class="col-2 mobile-menu-icon">
             <p>g</p>
           </div>
-          <div class="mobile-menu mobile-menu--closed">
-            <div class="mobile-menu-top">
-              <a href="/">
-                <img src="./data/img/logo-dark.svg" alt="Home" /></a>
-              <img src="./data/img/menu-close.svg" alt="Close" class="mobile-menu-close" />
-            </div>
-            <ul>
-              <li>
-                <a href="index.html" class="mobile-menu-item mobile-menu--active">Головна</a>
-              </li>
-              <li>
-                <a href="direct-print.html" class="mobile-menu-item">Прямий цифровий друк</a>
-              </li>
-              <li>
-                <a href="thermo-print.html" class="mobile-menu-item">Термотрансферний друк</a>
-              </li>
-              <li>
-                <a href="embroidery.html" class="mobile-menu-item">Машинна вишивка нитками</a>
-              </li>
-              <li>
-                <a href="sequin.html" class="mobile-menu-item">Машинна вишивка паєтками</a>
-              </li>
-              <li>
-                <a href="rhinestone.html" class="mobile-menu-item">Нанесення стразів</a>
-              </li>
-              <li>
-                <a href="methods.html" class="mobile-menu-item">Оплата і доставка</a>
-              </li>
-              <li>
-                <a href="contacts.html" class="mobile-menu-item">Контакти</a>
-              </li>
-              <li class="mobile-menu-lang">
-                <a href="#" class="mobile-menu--active">UA</a>
-                <a href="#">EN</a> <a href="#">RU</a>
-              </li>
-            </ul>
-          </div>
-          <!-- mobile menu end -->
-        </nav>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="mobile-menu mobile-menu--closed">
+        <div class="mobile-menu-top">
+          <a href="/">
+            <img src="./data/img/logo-dark.svg" alt="Home" /></a>
+          <img src="./data/img/menu-close.svg" alt="Close" class="mobile-menu-close" />
+        </div>
+        <ul>
+          <li>
+            <a href="index.html" class="mobile-menu-item mobile-menu--active">Головна</a>
+          </li>
+          <li>
+            <a href="direct-print.html" class="mobile-menu-item">Прямий цифровий друк</a>
+          </li>
+          <li>
+            <a href="thermo-print.html" class="mobile-menu-item">Термотрансферний друк</a>
+          </li>
+          <li>
+            <a href="embroidery.html" class="mobile-menu-item">Машинна вишивка нитками</a>
+          </li>
+          <li>
+            <a href="sequin.html" class="mobile-menu-item">Машинна вишивка паєтками</a>
+          </li>
+          <li>
+            <a href="rhinestone.html" class="mobile-menu-item">Нанесення стразів</a>
+          </li>
+          <li>
+            <a href="methods.html" class="mobile-menu-item">Оплата і доставка</a>
+          </li>
+          <li>
+            <a href="contacts.html" class="mobile-menu-item">Контакти</a>
+          </li>
+          <li class="mobile-menu-lang">
+            <a href="#" class="mobile-menu--active">UA</a>
+            <a href="#">EN</a> <a href="#">RU</a>
+          </li>
+        </ul>
+      </div>
+      <!-- mobile menu end -->
+    </nav>
+    <header class="header">
+      <video src="./data/video/header.mp4" class="header-video" autoplay loop muted></video>
+      <div class="header-overlay"></div>
+      <div class="container">
         <div class="header-main row">
           <div class="col col-12 col-lg-8 col-xl-6">
             <h1>Оздоблення одягу на замовлення</h1>
@@ -319,6 +323,7 @@
   </script>
   <!-- Menu -->
   <script src="./js/mobile-menu.js"></script>
+  <script src="./js/nav-scroll.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,23 @@
 @import "./global.scss";
 
 .nav {
+  width: 100%;
   color: #fff;
   z-index: 2;
   padding: 50px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all .2s ease;
+
+  &-logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 244px;
+    }
+  }
 
   &-menu {
     display: flex;
@@ -57,6 +71,7 @@
 
     p {
       cursor: pointer;
+      padding-top: 8px;
     }
   }
 
@@ -174,4 +189,11 @@
       display: flex;
     }
   }
+}
+
+.nav-sticky {
+  padding: 15px 0;
+  background: #fff;
+  color: $textColor;
+  box-shadow: 0 5px 10px 0 rgba(61, 72, 83, 0.1);
 }
