@@ -1,3 +1,5 @@
+@import "../css/icons.css";
+@import "../css/icons.css";
 @font-face {
   font-family: "Museo";
   src: url("../../data/font/Museosanscyrl500.woff2") format("woff2"), url("../../data/font/Museosanscyrl500.woff") format("woff"), url("../../data/font/Museosanscyrl500.ttf") format("truetype");
@@ -307,15 +309,16 @@ p {
 .footer-card a {
   color: inherit;
 }
+.footer-icon {
+  font-family: icon;
+  font-size: 25px;
+}
 .footer-icon:not(:last-child) {
   margin-right: 20px;
 }
-.footer-icon .fab {
-  font-size: 25px;
-}
 .footer-icon:hover {
   text-decoration: none;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .container-fluid {
