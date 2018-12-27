@@ -1,0 +1,79 @@
+// sass --watch services/style/scss/index.scss services/style/css/index.css
+
+@import "../../../style/scss/global.scss";
+@import "../../../style/scss/nav.scss";
+@import "../../../style/scss/footer.scss";
+
+.nav {
+  color: $textColor;
+
+}
+
+.header {
+  height: 100vh;
+  min-height: 680px;
+  position: relative;
+  overflow: hidden;
+  background-color: #f1f4f8;
+
+  .container {
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+  }
+
+  &-main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    h1 {
+      font-size: 36px;
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.56;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-image {
+    position: relative;
+
+    &-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: $secondaryColor;
+      border-radius: 50%;
+      width: 135px;
+      height: 135px;
+      font-weight: bold;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      p {
+        margin-bottom: 0;
+        line-height: 1.56;
+      }
+
+      &-value {
+        font-size: 46px;
+        line-height: 0.98;
+      }
+    }
+  }
+}

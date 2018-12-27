@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Print Embroidery</title>
+  <link rel="icon" type="image/png" href="/data/img/favicon.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./../style/css/index.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="nav" id="nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 col-xl-3 nav-logo">
+            <a href="/">
+              <img src="/data/img/logo-dark.svg" alt="Logo" />
+            </a>
+          </div>
+          <div class="nav-menu col-xl-9">
+            <ul class="col-xl-9">
+              <li><a href="/" class="nav-menu--active">Головна</a></li>
+              <li><a href="services.html">Послуги</a></li>
+              <li><a href="methods.html">Оплата і доставка</a></li>
+              <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+            <ul class="col-xl-3 nav-mene">
+              <li><a href="#" class="nav-menu--active">UA</a></li>
+              <li><a href="#">EN</a></li>
+              <li><a href="#">RU</a></li>
+            </ul>
+          </div>
+          <div class="col-2 mobile-menu-icon">
+            <p>g</p>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="mobile-menu mobile-menu--closed">
+        <div class="mobile-menu-top">
+          <a href="/">
+            <img src="/data/img/logo-dark.svg" alt="Home" /></a>
+          <img src="/data/img/menu-close.svg" alt="Close" class="mobile-menu-close" />
+        </div>
+        <ul>
+          <li>
+            <a href="index.html" class="mobile-menu-item mobile-menu--active">Головна</a>
+          </li>
+          <li>
+            <a href="direct-print.html" class="mobile-menu-item">Прямий цифровий друк</a>
+          </li>
+          <li>
+            <a href="thermo-print.html" class="mobile-menu-item">Термотрансферний друк</a>
+          </li>
+          <li>
+            <a href="embroidery.html" class="mobile-menu-item">Машинна вишивка нитками</a>
+          </li>
+          <li>
+            <a href="sequin.html" class="mobile-menu-item">Машинна вишивка паєтками</a>
+          </li>
+          <li>
+            <a href="rhinestone.html" class="mobile-menu-item">Нанесення стразів</a>
+          </li>
+          <li>
+            <a href="methods.html" class="mobile-menu-item">Оплата і доставка</a>
+          </li>
+          <li>
+            <a href="contacts.html" class="mobile-menu-item">Контакти</a>
+          </li>
+          <li class="mobile-menu-lang">
+            <a href="#" class="mobile-menu--active">UA</a>
+            <a href="#">EN</a> <a href="#">RU</a>
+          </li>
+        </ul>
+      </div>
+      <!-- mobile menu end -->
+    </nav>
+    <header class="header">
+      <div class="container">
+        <div class="header-main row">
+          <div class="col-12 col-md-7 header-text">
+            <h1>Прямий друк на одязі</h1>
+            <p>Прямий друк на футболках, майках, кофтах та іншому одязі від 1 штуки з доставкою по Україні</p>
+            <a href="#" class="btn-main"> Замовити </a>
+          </div>
+          <div class="col-12 col-md-5 header-image">
+            <img srcset="
+                    ./img/direct-print.png    1x,
+                    ./img/direct-print@2x.png 2x,
+                    ./img/direct-print@3x.png 3x
+                  "
+              alt="Прямий друк" />
+            <div class="header-image-label">
+              <p>від</p>
+              <p><span class="header-image-label-value">85</span></p>
+              <p>грн</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer class="footer" id="footer"></footer>
+  </div>
+
+  <!-- Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!-- Scripts -->
+  <script src="/js/mobile-menu.js"></script>
+  <script src="/js/nav-scroll.js"></script>
+  <!-- Import HTML -->
+  <script>
+    $(function () {
+      $("#footer").load("/reusable/footer.html");
+    });
+  </script>
+</body>
+
+</html>
