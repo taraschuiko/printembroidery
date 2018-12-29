@@ -22,17 +22,51 @@
               <img src="/data/img/logo-light.svg" alt="Logo" />
             </a>
           </div>
-          <div class="nav-menu col-xl-9">
-            <ul class="col-xl-9">
+          <div class="nav-menu offset-1 col-xl-8">
+            <ul>
               <li><a href="/" class="nav-menu--active">Головна</a></li>
-              <li><a href="services.html">Послуги</a></li>
-              <li><a href="methods.html">Оплата і доставка</a></li>
-              <li><a href="contacts.html">Контакти</a></li>
-            </ul>
-            <ul class="col-xl-3 nav-mene">
-              <li><a href="#" class="nav-menu--active">UA</a></li>
-              <li><a href="#">EN</a></li>
-              <li><a href="#">RU</a></li>
+              <li class="nav-menu-dropdown">
+                <a href="services.html">Послуги <img src="/data/img/chevron-down.svg" alt="Dropdown"></a>
+                <div class="nav-menu-dropdown-items" style="width: 320px">
+                  <a href="/services/direct-printing/">
+                    <img src="/data/img/direct-print.png" alt="Прямий друк">
+                    <p>Прямий цифровий друк</p>
+                  </a>
+                  <a href="/services/thermo-printing/">
+                    <img src="/data/img/thermo-print.png" alt="Термотрансферний друк">
+                    <p>Термотрансферний друк</p>
+                  </a>
+                  <a href="/services/embroidery/">
+                    <img src="/data/img/embroidery.png" alt="Машинна вишивка нитками">
+                    <p>Машинна вишивка нитками</p>
+                  </a>
+                  <a href="/services/sequin/">
+                    <img src="/data/img/sequin.png" alt="Машинна вишивка паєтками">
+                    <p>Машинна вишивка паєтками</p>
+                  </a>
+                  <a href="/services/rhinestone/">
+                    <img src="/data/img/rhinestone.png" alt="Нанесення стразів">
+                    <p>Нанесення стразів</p>
+                  </a>
+                </div>
+              </li>
+              <li><a href="/methods/">Оплата і доставка</a></li>
+              <li><a href="/contacts/">Контакти</a></li>
+              <li><a href="#" class="btn-main"> Замовити </a></li>
+              <li class="nav-menu-dropdown">
+                <a href="#">UA <img src="/data/img/chevron-down.svg" alt="Dropdown"></a>
+                <div class="nav-menu-dropdown-items">
+                  <a href="#" class="nav-menu--active">
+                    <p>UA</p>
+                  </a>
+                  <a href="#">
+                    <p>EN</p>
+                  </a>
+                  <a href="#">
+                    <p>RU</p>
+                  </a>
+                </div>
+              </li>
             </ul>
           </div>
           <div class="col-2 mobile-menu-icon">
@@ -49,28 +83,28 @@
         </div>
         <ul>
           <li>
-            <a href="index.html" class="mobile-menu-item mobile-menu--active">Головна</a>
+            <a href="/" class="mobile-menu-item mobile-menu--active">Головна</a>
           </li>
           <li>
-            <a href="direct-print.html" class="mobile-menu-item">Прямий цифровий друк</a>
+            <a href="/services/direct-printing/" class="mobile-menu-item">Прямий цифровий друк</a>
           </li>
           <li>
-            <a href="thermo-print.html" class="mobile-menu-item">Термотрансферний друк</a>
+            <a href="/services/thermo-printing/" class="mobile-menu-item">Термотрансферний друк</a>
           </li>
           <li>
-            <a href="embroidery.html" class="mobile-menu-item">Машинна вишивка нитками</a>
+            <a href="/services/embroidery/" class="mobile-menu-item">Машинна вишивка нитками</a>
           </li>
           <li>
-            <a href="sequin.html" class="mobile-menu-item">Машинна вишивка паєтками</a>
+            <a href="/services/sequin/" class="mobile-menu-item">Машинна вишивка паєтками</a>
           </li>
           <li>
-            <a href="rhinestone.html" class="mobile-menu-item">Нанесення стразів</a>
+            <a href="/services/rhinestone/" class="mobile-menu-item">Нанесення стразів</a>
           </li>
           <li>
-            <a href="methods.html" class="mobile-menu-item">Оплата і доставка</a>
+            <a href="/methods/" class="mobile-menu-item">Оплата і доставка</a>
           </li>
           <li>
-            <a href="contacts.html" class="mobile-menu-item">Контакти</a>
+            <a href="/contacts/" class="mobile-menu-item">Контакти</a>
           </li>
           <li class="mobile-menu-lang">
             <a href="#" class="mobile-menu--active">UA</a>
@@ -106,9 +140,9 @@
           <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
             <div>
               <img srcset="
-                    /data/img/direct-print.jpg    1x,
-                    /data/img/direct-print@2x.jpg 2x,
-                    /data/img/direct-print@3x.jpg 3x
+                    /data/img/direct-print.png    1x,
+                    /data/img/direct-print@2x.png 2x,
+                    /data/img/direct-print@3x.png 3x
                   "
                 alt="Прямий друк" />
             </div>
@@ -123,9 +157,9 @@
           <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
             <div>
               <img srcset="
-                    /data/img/thermo-print.jpg    1x,
-                    /data/img/thermo-print@2x.jpg 2x,
-                    /data/img/thermo-print@3x.jpg 3x
+                    /data/img/thermo-print.png    1x,
+                    /data/img/thermo-print@2x.png 2x,
+                    /data/img/thermo-print@3x.png 3x
                   "
                 alt="Термотрансферний друк" />
             </div>
@@ -138,9 +172,9 @@
           <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
             <div>
               <img srcset="
-                    /data/img/embroidery.jpg    1x,
-                    /data/img/embroidery@2x.jpg 2x,
-                    /data/img/embroidery@3x.jpg 3x
+                    /data/img/embroidery.png    1x,
+                    /data/img/embroidery@2x.png 2x,
+                    /data/img/embroidery@3x.png 3x
                   "
                 alt="Вишивка" />
             </div>
@@ -153,9 +187,9 @@
           <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
             <div>
               <img srcset="
-                    /data/img/sequin.jpg    1x,
-                    /data/img/sequin@2x.jpg 2x,
-                    /data/img/sequin@3x.jpg 3x
+                    /data/img/sequin.png    1x,
+                    /data/img/sequin@2x.png 2x,
+                    /data/img/sequin@3x.png 3x
                   "
                 alt="Паєтки" />
             </div>
@@ -168,9 +202,9 @@
           <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
             <div>
               <img srcset="
-                    /data/img/rhinestone.jpg    1x,
-                    /data/img/rhinestone@2x.jpg 2x,
-                    /data/img/rhinestone@3x.jpg 3x
+                    /data/img/rhinestone.png    1x,
+                    /data/img/rhinestone@2x.png 2x,
+                    /data/img/rhinestone@3x.png 3x
                   "
                 alt="стрази" />
             </div>
@@ -322,8 +356,7 @@
     });
   </script>
   <!-- Menu -->
-  <script src="./js/mobile-menu.js"></script>
-  <script src="./js/nav-scroll.js"></script>
+  <script src="./js/nav.js"></script>
   <script src="./js/index.js"></script>
 </body>
 
