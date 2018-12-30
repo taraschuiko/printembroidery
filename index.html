@@ -1,363 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Print Embroidery</title>
+    <link rel="icon" type="image/png" href="/data/img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/css/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Print Embroidery</title>
-  <link rel="icon" type="image/png" href="/data/img/favicon.png" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="style/css/index.css" />
-</head>
-
-<body>
-  <div class="container-fluid">
-    <nav class="nav" id="nav">
-      <div class="container">
-        <div class="row">
-          <div class="col-10 col-xl-3 nav-logo">
-            <a href="/">
-              <img src="/data/img/logo-light.svg" alt="Logo" />
-            </a>
-          </div>
-          <div class="nav-menu offset-1 col-xl-8">
-            <ul>
-              <li><a href="/" class="nav-menu--active">Головна</a></li>
-              <li class="nav-menu-dropdown">
-                <a href="services.html">Послуги <span class="icon">q</span></a>
-                <div class="nav-menu-dropdown-items" style="width: 320px">
-                  <a href="/services/direct-printing/">
-                    <img src="/data/img/direct-print.png" alt="Прямий друк">
-                    <p>Прямий цифровий друк</p>
-                  </a>
-                  <a href="/services/thermo-printing/">
-                    <img src="/data/img/thermo-print.png" alt="Термотрансферний друк">
-                    <p>Термотрансферний друк</p>
-                  </a>
-                  <a href="/services/embroidery/">
-                    <img src="/data/img/embroidery.png" alt="Машинна вишивка нитками">
-                    <p>Машинна вишивка нитками</p>
-                  </a>
-                  <a href="/services/sequin/">
-                    <img src="/data/img/sequin.png" alt="Машинна вишивка паєтками">
-                    <p>Машинна вишивка паєтками</p>
-                  </a>
-                  <a href="/services/rhinestone/">
-                    <img src="/data/img/rhinestone.png" alt="Нанесення стразів">
-                    <p>Нанесення стразів</p>
-                  </a>
-                </div>
-              </li>
-              <li><a href="/methods/">Оплата і доставка</a></li>
-              <li><a href="/contacts/">Контакти</a></li>
-              <li><a href="#" class="btn-main"> Замовити </a></li>
-              <li class="nav-menu-dropdown">
-                <a href="#">UA <span class="icon">q</span></a>
-                <div class="nav-menu-dropdown-items">
-                  <a href="#" class="nav-menu--active">
-                    <p>UA</p>
-                  </a>
-                  <a href="#">
-                    <p>EN</p>
-                  </a>
-                  <a href="#">
-                    <p>RU</p>
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-2 mobile-menu-icon">
-            <p>g</p>
+  <body>
+    <div class="container-fluid">
+      <nav class="nav" id="nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-10 col-xl-3 nav-logo">
+              <a href="/">
+                <img src="/data/img/logo-light.svg" alt="Logo" />
+              </a>
+            </div>
+            <div class="nav-menu offset-1 col-xl-8">
+              <ul>
+                <li><a href="/" class="nav-menu--active">Головна</a></li>
+                <li class="nav-menu-dropdown">
+                  <a href="services.html">Послуги</a>
+                  <div class="nav-menu-dropdown-items" style="width: 320px">
+                    <a href="/services/direct-printing/">
+                      <img src="/data/img/direct-print.png" alt="Прямий друк" />
+                      <p>Прямий цифровий друк</p>
+                    </a>
+                    <a href="/services/thermo-printing/">
+                      <img
+                        src="/data/img/thermo-print.png"
+                        alt="Термотрансферний друк"
+                      />
+                      <p>Термотрансферний друк</p>
+                    </a>
+                    <a href="/services/embroidery/">
+                      <img
+                        src="/data/img/embroidery.png"
+                        alt="Машинна вишивка нитками"
+                      />
+                      <p>Машинна вишивка нитками</p>
+                    </a>
+                    <a href="/services/sequin/">
+                      <img
+                        src="/data/img/sequin.png"
+                        alt="Машинна вишивка паєтками"
+                      />
+                      <p>Машинна вишивка паєтками</p>
+                    </a>
+                    <a href="/services/rhinestone/">
+                      <img
+                        src="/data/img/rhinestone.png"
+                        alt="Нанесення стразів"
+                      />
+                      <p>Нанесення стразів</p>
+                    </a>
+                  </div>
+                </li>
+                <li><a href="/methods/">Оплата і доставка</a></li>
+                <li><a href="/contacts/">Контакти</a></li>
+                <li><a href="#" class="btn-main"> Замовити </a></li>
+                <li class="nav-menu-dropdown">
+                  <a href="#">UA</a>
+                  <div class="nav-menu-dropdown-items">
+                    <a href="#" class="nav-menu--active"> <p>UA</p> </a>
+                    <a href="#"> <p>EN</p> </a> <a href="#"> <p>RU</p> </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-2 mobile-menu-icon"><p>g</p></div>
           </div>
         </div>
-      </div>
-      <!-- mobile menu -->
-      <div class="mobile-menu mobile-menu--closed">
-        <div class="mobile-menu-top">
-          <a href="/">
-            <img src="/data/img/logo-dark.svg" alt="Home" /></a>
-          <img src="/data/img/menu-close.svg" alt="Close" class="mobile-menu-close" />
+        <!-- mobile menu -->
+        <div class="mobile-menu mobile-menu--closed">
+          <div class="mobile-menu-top">
+            <a href="/"> <img src="/data/img/logo-dark.svg" alt="Home"/></a>
+            <img
+              src="/data/img/menu-close.svg"
+              alt="Close"
+              class="mobile-menu-close"
+            />
+          </div>
+          <ul>
+            <li>
+              <a href="/" class="mobile-menu-item mobile-menu--active"
+                >Головна</a
+              >
+            </li>
+            <li>
+              <a href="/services/direct-printing/" class="mobile-menu-item"
+                >Прямий цифровий друк</a
+              >
+            </li>
+            <li>
+              <a href="/services/thermo-printing/" class="mobile-menu-item"
+                >Термотрансферний друк</a
+              >
+            </li>
+            <li>
+              <a href="/services/embroidery/" class="mobile-menu-item"
+                >Машинна вишивка нитками</a
+              >
+            </li>
+            <li>
+              <a href="/services/sequin/" class="mobile-menu-item"
+                >Машинна вишивка паєтками</a
+              >
+            </li>
+            <li>
+              <a href="/services/rhinestone/" class="mobile-menu-item"
+                >Нанесення стразів</a
+              >
+            </li>
+            <li>
+              <a href="/methods/" class="mobile-menu-item">Оплата і доставка</a>
+            </li>
+            <li><a href="/contacts/" class="mobile-menu-item">Контакти</a></li>
+            <li class="mobile-menu-lang">
+              <a href="#" class="mobile-menu--active">UA</a> <a href="#">EN</a>
+              <a href="#">RU</a>
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <a href="/" class="mobile-menu-item mobile-menu--active">Головна</a>
-          </li>
-          <li>
-            <a href="/services/direct-printing/" class="mobile-menu-item">Прямий цифровий друк</a>
-          </li>
-          <li>
-            <a href="/services/thermo-printing/" class="mobile-menu-item">Термотрансферний друк</a>
-          </li>
-          <li>
-            <a href="/services/embroidery/" class="mobile-menu-item">Машинна вишивка нитками</a>
-          </li>
-          <li>
-            <a href="/services/sequin/" class="mobile-menu-item">Машинна вишивка паєтками</a>
-          </li>
-          <li>
-            <a href="/services/rhinestone/" class="mobile-menu-item">Нанесення стразів</a>
-          </li>
-          <li>
-            <a href="/methods/" class="mobile-menu-item">Оплата і доставка</a>
-          </li>
-          <li>
-            <a href="/contacts/" class="mobile-menu-item">Контакти</a>
-          </li>
-          <li class="mobile-menu-lang">
-            <a href="#" class="mobile-menu--active">UA</a>
-            <a href="#">EN</a> <a href="#">RU</a>
-          </li>
-        </ul>
-      </div>
-      <!-- mobile menu end -->
-    </nav>
-    <header class="header">
-      <video class="header-video" autoplay loop muted>
-        <source data-src="/data/video/header.mp4">
-      </video>
-      <div class="header-overlay"></div>
-      <div class="container">
-        <div class="header-main row">
-          <div class="col col-12 col-lg-8 col-xl-6">
-            <h1>Оздоблення одягу на замовлення</h1>
-            <p>
-              Прямий і термотрансферний друк, машинна вишивка нитками і
-              паєтками, нанесення страз на одяг з доставкою в Україні
-            </p>
-            <a href="#" class="btn-main"> Замовити </a>
+        <!-- mobile menu end -->
+      </nav>
+      <header class="header">
+        <video class="header-video" autoplay loop muted>
+          <source data-src="/data/video/header.mp4" />
+        </video>
+        <div class="header-overlay"></div>
+        <div class="container">
+          <div class="header-main row">
+            <div class="col col-12 col-lg-8 col-xl-6">
+              <h1>Оздоблення одягу на замовлення</h1>
+              <p>
+                Прямий і термотрансферний друк, машинна вишивка нитками і
+                паєтками, нанесення страз на одяг з доставкою в Україні
+              </p>
+              <a href="#" class="btn-main"> Замовити </a>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <section class="whatwedo">
-      <div class="container">
-        <h2>Чим ми займаємося?</h2>
-        <div class="row whatwedo-items">
-          <!-- Item -->
-          <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
-            <div>
-              <img srcset="
+      </header>
+      <section class="whatwedo">
+        <div class="container">
+          <h2>Чим ми займаємося?</h2>
+          <div class="row whatwedo-items">
+            <!-- Item -->
+            <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
+              <div>
+                <img
+                  srcset="
                     /data/img/direct-print.png    1x,
                     /data/img/direct-print@2x.png 2x,
                     /data/img/direct-print@3x.png 3x
                   "
-                alt="Прямий друк" />
+                  alt="Прямий друк"
+                />
+              </div>
+              <h3>Прямий цифровий друк</h3>
+              <p>
+                Безпосередній друк фарбами на одязі тільки з натуральних тканин.
+              </p>
+              <a href="/services/direct-printing/" class="btn-secondary"
+                >Дізнатись більше</a
+              >
             </div>
-            <h3>Прямий цифровий друк</h3>
-            <p>
-              Безпосередній друк фарбами на одязі тільки з натуральних тканин.
-            </p>
-            <a href="/services/direct-printing/" class="btn-secondary">Дізнатись більше</a>
-          </div>
 
-          <!-- Item -->
-          <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
-            <div>
-              <img srcset="
+            <!-- Item -->
+            <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
+              <div>
+                <img
+                  srcset="
                     /data/img/thermo-print.png    1x,
                     /data/img/thermo-print@2x.png 2x,
                     /data/img/thermo-print@3x.png 3x
                   "
-                alt="Термотрансферний друк" />
+                  alt="Термотрансферний друк"
+                />
+              </div>
+              <h3>Термотрансферний друк</h3>
+              <p>Друк плівкою на натуральному і синтетичному одязі.</p>
+              <a href="#" class="btn-secondary">Дізнатись більше</a>
             </div>
-            <h3>Термотрансферний друк</h3>
-            <p>Друк плівкою на натуральному і синтетичному одязі.</p>
-            <a href="#" class="btn-secondary">Дізнатись більше</a>
-          </div>
 
-          <!-- Item -->
-          <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
-            <div>
-              <img srcset="
+            <!-- Item -->
+            <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
+              <div>
+                <img
+                  srcset="
                     /data/img/embroidery.png    1x,
                     /data/img/embroidery@2x.png 2x,
                     /data/img/embroidery@3x.png 3x
                   "
-                alt="Вишивка" />
+                  alt="Вишивка"
+                />
+              </div>
+              <h3>Машинна вишивка нитками</h3>
+              <p>Нанесення малюнку нитками за допомогою вишивальної машини.</p>
+              <a href="#" class="btn-secondary">Дізнатись більше</a>
             </div>
-            <h3>Машинна вишивка нитками</h3>
-            <p>Нанесення малюнку нитками за допомогою вишивальної машини.</p>
-            <a href="#" class="btn-secondary">Дізнатись більше</a>
-          </div>
 
-          <!-- Item -->
-          <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
-            <div>
-              <img srcset="
+            <!-- Item -->
+            <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
+              <div>
+                <img
+                  srcset="
                     /data/img/sequin.png    1x,
                     /data/img/sequin@2x.png 2x,
                     /data/img/sequin@3x.png 3x
                   "
-                alt="Паєтки" />
+                  alt="Паєтки"
+                />
+              </div>
+              <h3>Машинна вишивка паєтками</h3>
+              <p>Оздоблення одягу блискучими плоскими кружечками.</p>
+              <a href="#" class="btn-secondary">Дізнатись більше</a>
             </div>
-            <h3>Машинна вишивка паєтками</h3>
-            <p>Оздоблення одягу блискучими плоскими кружечками.</p>
-            <a href="#" class="btn-secondary">Дізнатись більше</a>
-          </div>
 
-          <!-- Item -->
-          <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
-            <div>
-              <img srcset="
+            <!-- Item -->
+            <div class="col-xs-12 col-sm-6 col-xl-4 whatwedo-item">
+              <div>
+                <img
+                  srcset="
                     /data/img/rhinestone.png    1x,
                     /data/img/rhinestone@2x.png 2x,
                     /data/img/rhinestone@3x.png 3x
                   "
-                alt="стрази" />
-            </div>
-            <h3>Нанесення стразів</h3>
-            <p>Імітація коштовних каменів за допомогою свинцевого скла.</p>
-            <a href="#" class="btn-secondary">Дізнатись більше</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="trust">
-      <div class="container">
-        <h2>Довіряють тисячі компаній та людей</h2>
-        <div class="row">
-          <!-- Item -->
-          <div class="col-xs-12 col-sm-6 col-xl-3">
-            <div class="trust-item">
-              <div class="trust-item-icon">
-                <p class="trust-icon">l</p>
+                  alt="стрази"
+                />
               </div>
-              <h3>Швидкість</h3>
-              <p>Реалізація замовлення від 24 годин</p>
-            </div>
-          </div>
-
-          <!-- Item -->
-          <div class="col-xs-12 col-sm-6 col-xl-3">
-            <div class="trust-item">
-              <div class="trust-item-icon">
-                <p class="trust-icon">i</p>
-              </div>
-              <h3>Якість</h3>
-              <p>Використання матеріалів провідних марок</p>
-            </div>
-          </div>
-
-          <!-- Item -->
-          <div class="col-xs-12 col-sm-6 col-xl-3">
-            <div class="trust-item">
-              <div class="trust-item-icon">
-                <p class="trust-icon">k</p>
-              </div>
-              <h3>Підтримка</h3>
-              <p>Допомога при оформленні замовлення</p>
-            </div>
-          </div>
-
-          <!-- Item -->
-          <div class="col-xs-12 col-sm-6 col-xl-3">
-            <div class="trust-item">
-              <div class="trust-item-icon">
-                <p class="trust-icon">c</p>
-              </div>
-              <h3>Доставка</h3>
-              <p>Відправка готової продукції по Україні</p>
+              <h3>Нанесення стразів</h3>
+              <p>Імітація коштовних каменів за допомогою свинцевого скла.</p>
+              <a href="#" class="btn-secondary">Дізнатись більше</a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="testimonial">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-8 offset-xl-2 quote">
-            <img src="/data/img/quote.svg" alt="цитата" class="quote-symbol" />
-            <div>
-              <p class="quote-text">
-                Bonfire went above and beyond to help us create a killer shirt
-                design and make our fundraiser a total success!
+      </section>
+      <section class="trust">
+        <div class="container">
+          <h2>Довіряють тисячі компаній та людей</h2>
+          <div class="row">
+            <!-- Item -->
+            <div class="col-xs-12 col-sm-6 col-xl-3">
+              <div class="trust-item">
+                <div class="trust-item-icon"><p class="trust-icon">l</p></div>
+                <h3>Швидкість</h3>
+                <p>Реалізація замовлення від 24 годин</p>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="col-xs-12 col-sm-6 col-xl-3">
+              <div class="trust-item">
+                <div class="trust-item-icon"><p class="trust-icon">i</p></div>
+                <h3>Якість</h3>
+                <p>Використання матеріалів провідних марок</p>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="col-xs-12 col-sm-6 col-xl-3">
+              <div class="trust-item">
+                <div class="trust-item-icon"><p class="trust-icon">k</p></div>
+                <h3>Підтримка</h3>
+                <p>Допомога при оформленні замовлення</p>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="col-xs-12 col-sm-6 col-xl-3">
+              <div class="trust-item">
+                <div class="trust-item-icon"><p class="trust-icon">c</p></div>
+                <h3>Доставка</h3>
+                <p>Відправка готової продукції по Україні</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8 offset-xl-2 quote">
+              <img
+                src="/data/img/quote.svg"
+                alt="цитата"
+                class="quote-symbol"
+              />
+              <div>
+                <p class="quote-text">
+                  Bonfire went above and beyond to help us create a killer shirt
+                  design and make our fundraiser a total success!
+                </p>
+                <div class="quote-author">
+                  <img src="/data/img/author.jpg" alt="Автор" />
+                  <p>Наталя Ярмоленко</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sewing">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xs-12 col-md-7 col-xl-6 sewing-content">
+              <h2>Пошиття одягу на замовлення</h2>
+              <p class="sewing-description">
+                Потребуєте футболки, кофти чи іншого одягу? Замовте пошиття
+                одягу під ваші потреби з якісної тканини для подального друку чи
+                вишивки на ньому.
               </p>
-              <div class="quote-author">
-                <img src="/data/img/author.jpg" alt="Автор" />
-                <p>Наталя Ярмоленко</p>
+              <div class="sewing-gift">
+                <span class="gift">e</span>
+                <p>Безкоштовна доставка по Україні від 5 штук</p>
               </div>
+              <a href="#" class="sewing-btn">Переглянути каталог</a>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="sewing">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xs-12 col-md-7 col-xl-6 sewing-content">
-            <h2>Пошиття одягу на замовлення</h2>
-            <p class="sewing-description">
-              Потребуєте футболки, кофти чи іншого одягу? Замовте пошиття
-              одягу під ваші потреби з якісної тканини для подального друку чи
-              вишивки на ньому.
-            </p>
-            <div class="sewing-gift">
-              <span class="gift">e</span>
-              <p>Безкоштовна доставка по Україні від 5 штук</p>
-            </div>
-            <a href="#" class="sewing-btn">Переглянути каталог</a>
-          </div>
-          <div class="col-6 offset-3 offset-md-0 col-md-5 offset-xl-1 sewing-right">
-            <img srcset="
+            <div
+              class="col-6 offset-3 offset-md-0 col-md-5 offset-xl-1 sewing-right"
+            >
+              <img
+                srcset="
                   /data/img/sewing.png    1x,
                   /data/img/sewing@2x.png 2x,
                   /data/img/sewing@3x.png 3x
                 "
-              alt="Пошиття" />
+                alt="Пошиття"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="testimonial">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-8 offset-xl-2 quote">
-            <img src="/data/img/quote.svg" alt="цитата" class="quote-symbol" />
-            <div>
-              <p class="quote-text">
-                Bonfire went above and beyond to help us create a killer shirt
-                design and make our fundraiser a total success!
-              </p>
-              <div class="quote-author">
-                <img src="/data/img/author.jpg" alt="Автор" />
-                <p>Наталя Ярмоленко</p>
+      </section>
+      <section class="testimonial">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8 offset-xl-2 quote">
+              <img
+                src="/data/img/quote.svg"
+                alt="цитата"
+                class="quote-symbol"
+              />
+              <div>
+                <p class="quote-text">
+                  Bonfire went above and beyond to help us create a killer shirt
+                  design and make our fundraiser a total success!
+                </p>
+                <div class="quote-author">
+                  <img src="/data/img/author.jpg" alt="Автор" />
+                  <p>Наталя Ярмоленко</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="readytoorder">
-      <div class="container">
-        <h2>Готові замовити?</h2>
-        <p>
-          Ви лише один крок від замовлення вашого наступного унікального
-          дизайну.
-        </p>
-        <a href="#" class="readytoorder-button"> Замовити </a>
-      </div>
-    </section>
-    <footer class="footer" id="footer"></footer>
-  </div>
+      </section>
+      <section class="readytoorder">
+        <div class="container">
+          <h2>Готові замовити?</h2>
+          <p>
+            Ви лише один крок від замовлення вашого наступного унікального
+            дизайну.
+          </p>
+          <a href="#" class="readytoorder-button"> Замовити </a>
+        </div>
+      </section>
+      <footer class="footer" id="footer"></footer>
+    </div>
 
-  <!-- Bootstrap -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <!-- Import HTML -->
-  <script>
-    $(function () {
-      $("#footer").load("./reusable/footer.html");
-    });
-  </script>
-  <!-- Menu -->
-  <script src="./js/nav.js"></script>
-  <script src="./js/index.js"></script>
-</body>
-
+    <!-- Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Import HTML -->
+    <script>
+      $(function() {
+        $("#footer").load("./reusable/footer.html");
+      });
+    </script>
+    <!-- Menu -->
+    <script src="./js/nav.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
