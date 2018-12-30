@@ -52,6 +52,15 @@
 
     &-dropdown {
       position: relative;
+      padding-right: 20px;
+
+      .icon {
+        font-size: 20px;
+        display: inline-block;
+        position: absolute;
+        left: calc(100% + 3px);
+        top: -3px;
+      }
 
       &-items {
         display: none;
@@ -59,7 +68,7 @@
         color: $textColor;
         position: absolute;
         padding-left: 0;
-        top: 35px;
+        top: 36px;
         left: -20px;
         border-radius: 8px;
         box-shadow: 0 0 10px 0 rgba(61, 72, 83, 0.1);

@@ -53,6 +53,10 @@ p {
   margin-bottom: 0;
 }
 
+.icon {
+  font-family: icon;
+}
+
 .btn, .btn-secondary, .btn-main, .readytoorder-button, .sewing-btn {
   display: inline-block;
   padding: 8px 20px;
@@ -137,6 +141,10 @@ p {
   margin-bottom: 0;
 }
 
+.icon {
+  font-family: icon;
+}
+
 .btn, .btn-main, .readytoorder-button, .sewing-btn, .btn-secondary {
   display: inline-block;
   padding: 8px 20px;
@@ -213,6 +221,14 @@ p {
 }
 .nav-menu-dropdown {
   position: relative;
+  padding-right: 20px;
+}
+.nav-menu-dropdown .icon {
+  font-size: 20px;
+  display: inline-block;
+  position: absolute;
+  left: calc(100% + 3px);
+  top: -3px;
 }
 .nav-menu-dropdown-items {
   display: none;
@@ -220,7 +236,7 @@ p {
   color: #3d4853;
   position: absolute;
   padding-left: 0;
-  top: 35px;
+  top: 36px;
   left: -20px;
   border-radius: 8px;
   box-shadow: 0 0 10px 0 rgba(61, 72, 83, 0.1);

@@ -53,6 +53,10 @@ p {
   margin-bottom: 0;
 }
 
+.icon {
+  font-family: icon;
+}
+
 .btn, .btn-secondary, .btn-main {
   display: inline-block;
   padding: 8px 20px;
@@ -137,6 +141,10 @@ p {
   margin-bottom: 0;
 }
 
+.icon {
+  font-family: icon;
+}
+
 .btn, .btn-main, .btn-secondary {
   display: inline-block;
   padding: 8px 20px;
@@ -172,11 +180,11 @@ p {
   width: 100%;
   color: #fff;
   z-index: 2;
-  padding: 50px 0;
+  padding: 15px 0;
   position: fixed;
   top: 0;
   left: 0;
-  transition: all 0.2s ease;
+  transition: background 0.2s ease;
 }
 .nav-logo {
   display: flex;
@@ -189,31 +197,76 @@ p {
   display: flex;
 }
 .nav-menu .nav-menu--active {
-  color: #f49879;
+  color: #f49879 !important;
 }
 .nav-menu ul {
   display: flex;
+  width: 100%;
   margin-bottom: 0;
   align-items: center;
+  justify-content: space-between;
 }
 .nav-menu li {
   list-style: none;
+  padding: 6px 0;
 }
-.nav-menu li a {
+.nav-menu li a:not(.btn-main) {
   color: inherit;
   font-size: 16px;
   transition: all 0.1s ease;
 }
-.nav-menu li a:hover {
+.nav-menu li a:not(.btn-main):hover {
   opacity: 0.5;
   text-decoration: none;
 }
-.nav-menu li:not(:last-child) {
-  margin-right: 50px;
+.nav-menu-dropdown {
+  position: relative;
+  padding-right: 20px;
 }
-.nav-menu li.not-active a {
-  opacity: 0.2;
-  transition: all 0.1s ease;
+.nav-menu-dropdown .icon {
+  font-size: 20px;
+  display: inline-block;
+  position: absolute;
+  left: calc(100% + 3px);
+  top: -3px;
+}
+.nav-menu-dropdown-items {
+  display: none;
+  background: #fff;
+  color: #3d4853;
+  position: absolute;
+  padding-left: 0;
+  top: 36px;
+  left: -20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 rgba(61, 72, 83, 0.1);
+}
+.nav-menu-dropdown-items a {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  width: 100%;
+}
+.nav-menu-dropdown-items a:hover {
+  background: #f1f4f8;
+  opacity: 1 !important;
+}
+.nav-menu-dropdown-items a:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.nav-menu-dropdown-items a:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.nav-menu-dropdown-items a img {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+.nav-menu-dropdown--active {
+  color: #f49879;
 }
 .nav-menu-icon {
   display: none;
