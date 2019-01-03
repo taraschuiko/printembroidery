@@ -77,3 +77,14 @@ p {
     background: #3d4853;
   }
 }
+
+.btn-white {
+  @extend .btn;
+  background-color: #fff;
+  color: $textColor;
+
+  &:hover {
+    background: darken(#fff, 15%);
+    color: $textColor;
+  }
+}
