@@ -440,10 +440,15 @@ p {
       color: inherit;
       padding: 30px 10px 10px 10px;
       display: block;
-      border-radius: 8px; }
+      border-radius: 8px;
+      transition: all .1s ease; }
       .whatwedo-item a:hover {
         text-decoration: none;
         background: #f1f4f8; }
+        .whatwedo-item a:hover .btn-secondary {
+          color: #fff;
+          border-color: #3d4853;
+          background: #3d4853; }
     .whatwedo-item h3 {
       font-size: 22px;
       margin: 30px 0 10px 0; }

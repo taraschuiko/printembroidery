@@ -106,10 +106,17 @@
       padding: 30px 10px 10px 10px;
       display: block;
       border-radius: 8px;
+      transition: all .1s ease;
 
       &:hover {
         text-decoration: none;
         background: $bgLight;
+
+        .btn-secondary {
+          color: #fff;
+          border-color: #3d4853;
+          background: #3d4853;
+        }
       }
     }
 
