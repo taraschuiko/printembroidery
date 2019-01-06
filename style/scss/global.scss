@@ -1,5 +1,7 @@
 @import "./font.scss";
 @import "./colors.scss";
+@import "./footer.scss";
+@import "./order.scss";
 
 * {
   margin: 0;
@@ -47,6 +49,7 @@ img {
 
 .icon {
   font-family: icon;
+  font-size: 36px;
 }
 
 // Buttons

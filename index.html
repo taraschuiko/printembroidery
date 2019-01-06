@@ -52,7 +52,7 @@
               </li>
               <li><a href="/methods/">Оплата і доставка</a></li>
               <li><a href="/contacts/">Контакти</a></li>
-              <li><a href="#" class="btn-main"> Замовити </a></li>
+              <li><a href="#" class="btn-main js-btn-order"> Замовити </a></li>
               <li class="nav-menu-dropdown">
                 <a href="#">UA</a>
                 <div class="nav-menu-dropdown-items">
@@ -77,7 +77,7 @@
       <div class="mobile-menu mobile-menu--closed">
         <div class="mobile-menu-top">
           <a href="/"> <img src="/data/img/logo-dark.svg" alt="Home" /></a>
-          <img src="/data/img/menu-close.svg" alt="Close" class="mobile-menu-close" />
+          <span class="icon mobile-menu-close">p</span>
         </div>
         <div class="mobile-menu-main">
           <ul>
@@ -345,10 +345,11 @@
           Ви лише один крок від замовлення вашого наступного унікального
           дизайну.
         </p>
-        <a href="#" class="readytoorder-button"> Замовити </a>
+        <a href="#" class="btn-main js-btn-order"> Замовити </a>
       </div>
     </section>
     <footer class="footer" id="footer"></footer>
+    <div id="order"></div>
   </div>
 
   <!-- Bootstrap -->
@@ -367,6 +368,7 @@
   <script src="/js/nav.js"></script>
   <script src="/js/index.js"></script>
   <script src="/js/smoothScroll.js"></script>
+  <script src="/js/order.js"></script>
 </body>
 
 </html>

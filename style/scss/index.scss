@@ -2,7 +2,6 @@
 
 @import "./global.scss";
 @import "./nav.scss";
-@import "./footer.scss";
 
 .header {
   height: 100vh;
@@ -288,9 +287,5 @@
   h2,
   p {
     margin-bottom: 20px;
-  }
-
-  &-button {
-    @extend .btn-main;
   }
 }
