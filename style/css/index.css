@@ -549,7 +549,7 @@ p {
     @media (max-width: 576px) {
       .sewing-gift {
         flex-direction: column; }
-        .sewing-gift svg {
+        .sewing-gift .gift {
           margin-right: 0;
           margin-bottom: 10px; } }
   .sewing-right img {
