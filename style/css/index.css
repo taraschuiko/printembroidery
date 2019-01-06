@@ -47,6 +47,10 @@ h2 {
 p {
   margin-bottom: 0; }
 
+.dotted-link:hover {
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor; }
+
 .icon {
   font-family: icon; }
 
@@ -128,6 +132,10 @@ h2 {
 
 p {
   margin-bottom: 0; }
+
+.dotted-link:hover {
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor; }
 
 .icon {
   font-family: icon; }
