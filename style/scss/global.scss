@@ -1,6 +1,5 @@
 @import "./font.scss";
 @import "./colors.scss";
-@import "../css/icons.css";
 
 * {
   margin: 0;
@@ -34,6 +33,11 @@ h2 {
 
 p {
   margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .dotted-link:hover {

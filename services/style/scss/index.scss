@@ -75,4 +75,31 @@
       }
     }
   }
+
+  @media (max-width: 767.98px) {
+    .header-main {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .header-text {
+        margin-bottom: 50px;
+      }
+
+      .header-image {
+        height: 135px;
+
+        img {
+          display: none;
+        }
+
+        &-label {
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
 }
