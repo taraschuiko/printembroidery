@@ -3,5 +3,10 @@ jQuery(document).ready(function ($) {
     event.preventDefault();
     $("#order").load("/reusable/order.html");
     $("#order").addClass("order");
+    $(".fade").addClass("show");
   })
+
+  // $("#order").load("/reusable/order.html");
+  // $("#order").addClass("order");
+  // $(".fade").addClass("show");
 })
