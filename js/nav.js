@@ -22,6 +22,8 @@ jQuery(document).ready(function ($) {
     $(".mobile-menu").toggleClass("mobile-menu--closed");
   })
 
+  $(".mobile-menu-main").height($(".mobile-menu").outerHeight() - $(".mobile-menu-top").outerHeight() * 2);
+
   // Dropdown
 
   $(".nav-menu-dropdown").on("mouseover", function () {
