@@ -22,4 +22,76 @@
       cursor: pointer;
     }
   }
+
+  &-form {
+    &-checkbox {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      label {
+        padding-left: 20px;
+      }
+    }
+
+    input[type=text] {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #c8d3de;
+      padding: 9px 20px;
+      color: $textColor;
+    }
+
+    &-section {
+      &-name {
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 20px;
+
+        &.necessary:after {
+          content: " *";
+          color: $secondaryColor
+        }
+      }
+
+      // Hiding and customizing the input
+      input[type=file] {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
+
+      input[type=file]+label {
+        margin-top: 20px;
+        float: right;
+        cursor: pointer;
+
+        @media (max-width: 991.98px) {
+          float: left;
+        }
+      }
+
+      input[type=file]:focus+label {
+        outline: 1px dotted #000;
+        outline: -webkit-focus-ring-color auto 5px;
+      }
+
+      &-file {
+        display: flex;
+        align-items: center;
+
+        .order-form-section-name {
+          margin-bottom: 4px;
+        }
+      }
+
+      input[type=submit] {
+        margin-top: 20px;
+        cursor: pointer;
+      }
+    }
+  }
 }
