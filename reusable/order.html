@@ -6,42 +6,42 @@
         <span class="icon js-btn-order-close">p</span>
       </div>
       <p>Заповніть форму і ми сконтактуємось з вами щодо уточнення деталей.</p>
-      <form action="/order.php" class="order-form" method="POST">
+      <form action="/order.php" class="order-form" method="POST" enctype="multipart/form-data">
         <div class="order-form-section row">
-          <p class="order-form-section-name necessary col-12">Виберіть послуги</p>
+          <p class="order-form-section-name required col-12">Виберіть послуги</p>
           <div class="col-12 col-md-6">
             <div class="order-form-checkbox">
-              <input type="checkbox" id="checkbox-direct-printing" name="service" value="checkbox-direct-printing">
+              <input type="checkbox" id="checkbox-direct-printing" name="services[]" value="Прямий цифровий друк">
               <label for="checkbox-direct-printing">Прямий цифровий друк</label>
             </div>
             <div class="order-form-checkbox">
-              <input type="checkbox" id="checkbox-embroidery" name="service" value="checkbox-embroidery">
+              <input type="checkbox" id="checkbox-embroidery" name="services[]" value="Машинна вишивка нитками">
               <label for="checkbox-embroidery">Машинна вишивка нитками</label>
             </div>
             <div class="order-form-checkbox">
-              <input type="checkbox" id="checkbox-rhinestone" name="service" value="checkbox-rhinestone">
+              <input type="checkbox" id="checkbox-rhinestone" name="services[]" value="Нанесення стразів">
               <label for="checkbox-rhinestone">Нанесення стразів</label>
             </div>
           </div>
           <div class="col-12 col-md-6">
             <div class="order-form-checkbox">
-              <input type="checkbox" id="checkbox-thermo-printing" name="service" value="checkbox-thermo-printing">
+              <input type="checkbox" id="checkbox-thermo-printing" name="services[]" value="Термотрансферний друк">
               <label for="checkbox-thermo-printing">Термотрансферний друк</label>
             </div>
             <div class="order-form-checkbox">
-              <input type="checkbox" id="checkbox-sequin" name="service" value="checkbox-sequin">
+              <input type="checkbox" id="checkbox-sequin" name="services[]" value="Машинна вишивка паєтками">
               <label for="checkbox-sequin">Машинна вишивка паєтками</label>
             </div>
           </div>
         </div>
         <div class="order-form-section row">
           <div class="col-12 col-md-6">
-            <p class="order-form-section-name necessary">Ім’я</p>
-            <input type="text" name="name" autocomplete="name">
+            <p class="order-form-section-name required">Ім’я</p>
+            <input type="text" name="name" autocomplete="name" required>
           </div>
           <div class="col-12 col-md-6">
-            <p class="order-form-section-name necessary">Телефон</p>
-            <input type="text" name="tel" autocomplete="tel">
+            <p class="order-form-section-name required">Телефон</p>
+            <input type="text" name="tel" autocomplete="tel" required>
           </div>
         </div>
         <div class="order-form-section row">
@@ -63,7 +63,7 @@
         </div>
         <div class="order-form-section row">
           <div class="col-12">
-            <input type="submit" class="btn-main" value="Замовити">
+            <input type="submit" class="btn-main" value="Замовити" name="submit">
           </div>
         </div>
       </form>
