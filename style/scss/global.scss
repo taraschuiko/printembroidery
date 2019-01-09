@@ -117,3 +117,45 @@ img {
     color: $textColor;
   }
 }
+
+// Card
+
+.card {
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  text-align: center;
+  margin-bottom: 30px;
+
+  &-icon-container {
+    background: rgba(244, 152, 121, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 155px;
+
+    .card-icon {
+      padding-top: 18px;
+      font-family: icon;
+      color: #f49879;
+      line-height: 0;
+      font-size: 90px;
+    }
+  }
+
+  h3 {
+    font-size: 22px;
+    margin: 10px 0 10px 0;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}

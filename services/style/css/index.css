@@ -193,6 +193,37 @@ img {
     background: #d9d9d9;
     color: #3d4853; }
 
+.card {
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  text-align: center;
+  margin-bottom: 30px; }
+  .card-icon-container {
+    background: rgba(244, 152, 121, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 155px; }
+    .card-icon-container .card-icon {
+      padding-top: 18px;
+      font-family: icon;
+      color: #f49879;
+      line-height: 0;
+      font-size: 90px; }
+  .card h3 {
+    font-size: 22px;
+    margin: 10px 0 10px 0; }
+  .card p {
+    font-size: 16px; }
+
 @font-face {
   font-family: "Museo";
   src: url("/data/font/Museosanscyrl500.woff2") format("woff2"), url("/data/font/Museosanscyrl500.woff") format("woff"), url("/data/font/Museosanscyrl500.ttf") format("truetype");
@@ -387,6 +418,37 @@ img {
   .btn-white:hover {
     background: #d9d9d9;
     color: #3d4853; }
+
+.card {
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  text-align: center;
+  margin-bottom: 30px; }
+  .card-icon-container {
+    background: rgba(244, 152, 121, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 155px; }
+    .card-icon-container .card-icon {
+      padding-top: 18px;
+      font-family: icon;
+      color: #f49879;
+      line-height: 0;
+      font-size: 90px; }
+  .card h3 {
+    font-size: 22px;
+    margin: 10px 0 10px 0; }
+  .card p {
+    font-size: 16px; }
 
 .nav {
   width: 100%;
@@ -594,6 +656,19 @@ img {
 .nav {
   color: #3d4853; }
 
+h2 {
+  position: relative;
+  margin-left: 48px;
+  margin-bottom: 50px; }
+  h2::before {
+    content: '+';
+    font-size: 46px;
+    font-weight: 700;
+    color: #f49879;
+    position: absolute;
+    top: -8px;
+    left: -48px; }
+
 .header {
   height: 100vh;
   min-height: 680px;
@@ -665,15 +740,16 @@ img {
 .about {
   background: #fff;
   padding: 200px 0; }
-  .about h2 {
-    position: relative;
-    margin-left: 48px;
-    margin-bottom: 50px; }
-    .about h2::before {
-      content: '+';
-      font-size: 46px;
-      font-weight: 700;
-      color: #f49879;
-      position: absolute;
-      top: -8px;
-      left: -48px; }
+
+.features {
+  background: #f1f4f8;
+  padding: 200px 0; }
+  .features .card {
+    height: 300px; }
+    .features .card-icon-container {
+      width: 120px;
+      height: 120px; }
+      .features .card-icon-container .card-icon {
+        font-size: 80px; }
+    .features .card h3 {
+      font-size: 16px; }

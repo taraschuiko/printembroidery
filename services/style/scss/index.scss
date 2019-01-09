@@ -8,6 +8,22 @@
   color: $textColor;
 }
 
+h2 {
+  position: relative;
+  margin-left: 48px;
+  margin-bottom: 50px;
+
+  &::before {
+    content: '+';
+    font-size: 46px;
+    font-weight: 700;
+    color: $secondaryColor;
+    position: absolute;
+    top: -8px;
+    left: -48px;
+  }
+}
+
 .header {
   height: 100vh;
   min-height: 680px;
@@ -107,20 +123,26 @@
 .about {
   background: #fff;
   padding: 200px 0;
+}
 
-  h2 {
-    position: relative;
-    margin-left: 48px;
-    margin-bottom: 50px;
+.features {
+  background: $bgLight;
+  padding: 200px 0;
 
-    &::before {
-      content: '+';
-      font-size: 46px;
-      font-weight: 700;
-      color: $secondaryColor;
-      position: absolute;
-      top: -8px;
-      left: -48px;
+  .card {
+    height: 300px;
+
+    &-icon-container {
+      width: 120px;
+      height: 120px;
+
+      .card-icon {
+        font-size: 80px;
+      }
+    }
+
+    h3 {
+      font-size: 16px;
     }
   }
 }
