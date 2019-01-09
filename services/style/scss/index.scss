@@ -103,3 +103,24 @@
     }
   }
 }
+
+.about {
+  background: #fff;
+  padding: 200px 0;
+
+  h2 {
+    position: relative;
+    margin-left: 48px;
+    margin-bottom: 50px;
+
+    &::before {
+      content: '+';
+      font-size: 46px;
+      font-weight: 700;
+      color: $secondaryColor;
+      position: absolute;
+      top: -8px;
+      left: -48px;
+    }
+  }
+}

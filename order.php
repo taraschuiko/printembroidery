@@ -57,7 +57,7 @@
             }
         } else {
             foreach ($errors as $error) {
-                echo $error . " Це помилки" . "\n";
+                echo $error . "\n";
             }
         }
   }

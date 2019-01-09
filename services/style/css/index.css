@@ -661,3 +661,19 @@ img {
           top: 0;
           left: 50%;
           transform: translateX(-50%); } }
+
+.about {
+  background: #fff;
+  padding: 200px 0; }
+  .about h2 {
+    position: relative;
+    margin-left: 48px;
+    margin-bottom: 50px; }
+    .about h2::before {
+      content: '+';
+      font-size: 46px;
+      font-weight: 700;
+      color: #f49879;
+      position: absolute;
+      top: -8px;
+      left: -48px; }
