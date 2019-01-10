@@ -67,7 +67,8 @@
     margin-bottom: 10px; }
     .order-modal .order-form-checkbox label {
       padding-left: 20px; }
-  .order-modal .order-form input[type=text] {
+  .order-modal .order-form input[type=text],
+  .order-modal .order-form input[type=tel] {
     width: 100%;
     border-radius: 8px;
     border: 1px solid #c8d3de;
@@ -305,7 +306,8 @@ img {
     margin-bottom: 10px; }
     .order-modal .order-form-checkbox label {
       padding-left: 20px; }
-  .order-modal .order-form input[type=text] {
+  .order-modal .order-form input[type=text],
+  .order-modal .order-form input[type=tel] {
     width: 100%;
     border-radius: 8px;
     border: 1px solid #c8d3de;
@@ -874,7 +876,8 @@ h2 {
     margin-bottom: 10px; }
     .order .order-form-checkbox label {
       padding-left: 20px; }
-  .order .order-form input[type=text] {
+  .order .order-form input[type=text],
+  .order .order-form input[type=tel] {
     width: 100%;
     border-radius: 8px;
     border: 1px solid #c8d3de;
