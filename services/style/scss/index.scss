@@ -1,5 +1,3 @@
-// sass --watch services/style/scss/index.scss services/style/css/index.css
-
 @import "../../../style/scss/global.scss";
 @import "../../../style/scss/nav.scss";
 @import "../../../style/scss/footer.scss";
@@ -118,10 +116,6 @@ h2 {
       }
     }
   }
-}
-
-section {
-  padding: 200px 0;
 }
 
 .about {

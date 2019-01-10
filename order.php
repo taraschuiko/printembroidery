@@ -1,11 +1,5 @@
 <?php
-  $currentDir = getcwd();
-  $uploadDirectory = "/uploads/";
-
-  $errors = []; // Store all foreseen and unforseen errors here
-
-  $fileExtensions = ['jpeg','jpg','png','gif','psd','ai','cdr']; // Get all the file extensions
-
+  if(isset($_POST['submit'])){
   // Get values
     $services = '';
     if(!empty($_POST['services'])) {    
@@ -21,44 +15,47 @@
     $tel = $_POST['tel'];
     $comment = $_POST['comment'];
 
-  $fileName = $_FILES['file']['name'];
-  $fileSize = $_FILES['file']['size'];
-  $fileTmpName  = $_FILES['file']['tmp_name'];
-  $fileType = $_FILES['file']['type'];
-  $fileExtension = strtolower(end(explode('.',$fileName)));
-
-  $uploadPath = $currentDir . $uploadDirectory . basename($fileName); 
-
-  if(isset($_POST['submit'])) {
-    // File check
-    if (! in_array($fileExtension,$fileExtensions)) {
-            $errors[] = "Файл повинен бути у форматі .png, .jpg, .gif, .psd, .ai або .cdr";
-        }
-
-        if ($fileSize > 5000000) {
-            $errors[] = "Розмір Вашого файлу більший, ніж 5МБ. Завантажте, будь ласка, менший файл.";
-        }
-
-        if (empty($errors)) {
-            $didUpload = move_uploaded_file($fileTmpName, $uploadPath);
-
-            if ($didUpload) {
-                // Send email
-                $message = '<h1>Нове замовлення від '.$name."!</h1><br>"
+    $message = '<h1>Нове замовлення від '.$name."!</h1><br>"
                 .'Номер телефону: '.$tel."<br>"
                 .'Коментар: '.$comment."<br>"
                 .'Послуги: '.$services."<br>"
-                .'Файл: <a href="http://new.printembroidery.com.ua/uploads/'.$fileName.'">'.$fileName.'</a>';
+                .'Файли:';
 
-                mail("info@printembroidery.com.ua", "Нове замовлення!", $message, "Content-Type: text/html; charset=UTF-8");
-                header("Location:/order-success/");
+    $fileExtensions = ['jpeg','jpg','png','gif','psd','ai','cdr'];
+
+      // Count total files
+      $countfiles = count($_FILES['file']['name']);
+      
+      // Looping all files
+      for($i=0; $i<$countfiles; $i++){
+        $fileName = $_FILES['file']['name'][$i];
+        $fileSize = $_FILES['file']['size'][$i];
+        $fileTmpName  = $_FILES['file']['tmp_name'][$i];
+        $fileType = $_FILES['file']['type'][$i];
+        $fileExtension = strtolower(end(explode('.',$fileName)));
+
+        if (in_array($fileExtension, $fileExtensions)) {
+            if ($fileSize < 5000000) {
+              $didUpload = move_uploaded_file($_FILES['file']['tmp_name'][$i],'uploads/'.$fileName);
+
+              if ($didUpload) {
+                  $message .= ' <a href="http://new.printembroidery.com.ua/uploads/'.$fileName.'">'.$fileName.'</a>';
+              } else {
+                  // Направити на сторінку помилки
+                  // header("Location:/order-error/");
+              }
             } else {
-                echo "Десь помилка, напиши нам про це.";
+              // Направити на сторінку помилки
+              // header("Location:/order-error/");
             }
         } else {
-            foreach ($errors as $error) {
-                echo $error . "\n";
-            }
+          // Направити на сторінку помилки
+          // header("Location:/order-error/");
         }
-  }
+      }
+      mail("info@printembroidery.com.ua", "Нове замовлення!", $message, "Content-Type: text/html; charset=UTF-8");
+      // Направити на сторінку успіху
+      // header("Location:/order-success/");
+    echo $message;
+    }
 ?>

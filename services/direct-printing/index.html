@@ -409,7 +409,7 @@
     <section class="order">
       <div class="container">
         <div class="row">
-          <div class="order-container col-8 offset-2">
+          <div class="order-container col-12 col-lg-8 offset-lg-2">
             <div class="order-top">
               <h1>Замовте прямий друк</h1>
             </div>
@@ -442,7 +442,7 @@
                   <p>Файл повинен бути у форматі .png, .jpg, .gif, .psd, .ai або .cdr</p>
                 </div>
                 <div class="col-12 col-md-4">
-                  <input type="file" name="file" class="input-file" id="input-file" data-multiple-caption="Вибрано {count} файлів"
+                  <input type="file" name="file[]" class="input-file" id="input-file" data-multiple-caption="Вибрано {count} файлів"
                     multiple>
                   <label for="input-file" class="btn-secondary">Вибрати файл</label>
                 </div>
@@ -483,6 +483,7 @@
   <script src="/js/nav.js"></script>
   <script src="/js/smoothScroll.js"></script>
   <script src="/js/order.js"></script>
+  <script src="/js/order-file-upload.js"></script>
 </body>
 
 </html>

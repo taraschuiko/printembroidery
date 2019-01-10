@@ -19,6 +19,18 @@ body {
   padding: 0;
 }
 
+section {
+  padding: 200px 0;
+
+  @media (max-width: 767.98px) {
+    padding: 150px 0;
+  }
+
+  @media (max-width: 575.98px) {
+    padding: 100px 0;
+  }
+}
+
 h1,
 h2,
 h3,

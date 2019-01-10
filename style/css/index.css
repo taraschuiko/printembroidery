@@ -119,6 +119,15 @@ body {
 .container-fluid {
   padding: 0; }
 
+section {
+  padding: 200px 0; }
+  @media (max-width: 767.98px) {
+    section {
+      padding: 150px 0; } }
+  @media (max-width: 575.98px) {
+    section {
+      padding: 100px 0; } }
+
 h1,
 h2,
 h3,
@@ -347,6 +356,15 @@ body {
 
 .container-fluid {
   padding: 0; }
+
+section {
+  padding: 200px 0; }
+  @media (max-width: 767.98px) {
+    section {
+      padding: 150px 0; } }
+  @media (max-width: 575.98px) {
+    section {
+      padding: 100px 0; } }
 
 h1,
 h2,
@@ -695,7 +713,6 @@ img {
 
 .whatwedo {
   background: #fff;
-  padding: 200px 0 100px 0;
   color: #3d4853; }
   .whatwedo h2 {
     font-size: 36px;
@@ -732,7 +749,6 @@ img {
 
 .trust {
   background: #f1f4f8;
-  padding: 200px 0 100px 0;
   color: #3d4853; }
   .trust h2 {
     font-size: 36px;
@@ -768,9 +784,10 @@ img {
 
 .sewing {
   background: #f7f6f4;
-  padding: 80px 0; }
+  padding: 0; }
   .sewing-content {
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    margin: 200px 0; }
     @media (max-width: 768px) {
       .sewing-content {
         text-align: center;
