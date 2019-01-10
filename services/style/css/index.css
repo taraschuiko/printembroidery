@@ -743,13 +743,14 @@ h2 {
           left: 50%;
           transform: translateX(-50%); } }
 
-.about {
-  background: #fff;
+section {
   padding: 200px 0; }
 
+.about {
+  background: #fff; }
+
 .features {
-  background: #f1f4f8;
-  padding: 200px 0; }
+  background: #f1f4f8; }
   .features .card {
     height: 300px;
     padding: 30px 12px; }
@@ -763,8 +764,7 @@ h2 {
       margin-top: 10px; }
 
 .prices {
-  background: #f7f6f4;
-  padding: 200px 0; }
+  background: #f7f6f4; }
   .prices-cards {
     margin-top: 50px; }
     .prices-cards .prices-card {
@@ -803,3 +803,41 @@ h2 {
         padding-left: 50px; }
         .prices-wholesale-image {
           display: none; } }
+
+.sewing {
+  background: #f1f4f8; }
+  .sewing-card {
+    border-radius: 8px;
+    background: #fff;
+    padding: 50px 0; }
+    .sewing-card .row {
+      align-items: center; }
+    .sewing-card-left > * {
+      margin-bottom: 25px; }
+    .sewing-card h3 {
+      font-size: 36px; }
+    .sewing-card-gift {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      font-weight: bold; }
+      .sewing-card-gift .gift {
+        font-family: icon;
+        font-size: 24px;
+        color: #f49879;
+        margin-right: 25px; }
+    @media (max-width: 991.98px) {
+      .sewing-card h3 {
+        font-size: 22px; } }
+    @media (max-width: 767.98px) {
+      .sewing-card {
+        padding-right: 50px;
+        padding-left: 50px; }
+        .sewing-card-image {
+          display: none; }
+        .sewing-card-image {
+          display: none; } }
+    @media (max-width: 575.98px) {
+      .sewing-card .btn-main {
+        width: 100%;
+        text-align: center; } }

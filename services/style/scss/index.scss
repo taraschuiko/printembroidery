@@ -120,14 +120,16 @@ h2 {
   }
 }
 
+section {
+  padding: 200px 0;
+}
+
 .about {
   background: #fff;
-  padding: 200px 0;
 }
 
 .features {
   background: $bgLight;
-  padding: 200px 0;
 
   .card {
     height: 300px;
@@ -151,7 +153,6 @@ h2 {
 
 .prices {
   background: $bgGray;
-  padding: 200px 0;
 
   &-cards {
     margin-top: 50px;
@@ -204,6 +205,68 @@ h2 {
 
       &-image {
         display: none;
+      }
+    }
+  }
+}
+
+.sewing {
+  background: $bgLight;
+
+  &-card {
+    border-radius: 8px;
+    background: #fff;
+    padding: 50px 0;
+
+    .row {
+      align-items: center;
+    }
+
+    &-left>* {
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      font-size: 36px;
+    }
+
+    &-gift {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      font-weight: bold;
+
+      .gift {
+        font-family: icon;
+        font-size: 24px;
+        color: #f49879;
+        margin-right: 25px;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      h3 {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      padding-right: 50px;
+      padding-left: 50px;
+
+      &-image {
+        display: none;
+      }
+
+      &-image {
+        display: none;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .btn-main {
+        width: 100%;
+        text-align: center;
       }
     }
   }
