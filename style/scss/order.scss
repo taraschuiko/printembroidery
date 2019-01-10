@@ -1,4 +1,4 @@
-.order {
+.order-modal {
   width: 100%;
   position: fixed;
   top: 50%;
@@ -8,14 +8,14 @@
   max-height: 100vh;
   overflow: scroll;
 
-  &-window {
+  .order-window {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px 0 rgba(61, 72, 83, 0.1);
     padding: 30px;
   }
 
-  &-top {
+  .order-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,7 @@
     }
   }
 
-  &-form {
+  .order-form {
     &-checkbox {
       display: flex;
       align-items: center;

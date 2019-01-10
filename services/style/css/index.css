@@ -41,7 +41,7 @@
       text-decoration: none;
       opacity: 0.5; }
 
-.order {
+.order-modal {
   width: 100%;
   position: fixed;
   top: 50%;
@@ -50,59 +50,59 @@
   z-index: 4;
   max-height: 100vh;
   overflow: scroll; }
-  .order-window {
+  .order-modal .order-window {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px 0 rgba(61, 72, 83, 0.1);
     padding: 30px; }
-  .order-top {
+  .order-modal .order-top {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .order-top .icon {
+    .order-modal .order-top .icon {
       cursor: pointer; }
-  .order-form-checkbox {
+  .order-modal .order-form-checkbox {
     display: flex;
     align-items: center;
     margin-bottom: 10px; }
-    .order-form-checkbox label {
+    .order-modal .order-form-checkbox label {
       padding-left: 20px; }
-  .order-form input[type=text] {
+  .order-modal .order-form input[type=text] {
     width: 100%;
     border-radius: 8px;
     border: 1px solid #c8d3de;
     padding: 9px 20px;
     color: #3d4853; }
-  .order-form-section-name {
+  .order-modal .order-form-section-name {
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 20px; }
-    .order-form-section-name.required:after {
+    .order-modal .order-form-section-name.required:after {
       content: " *";
       color: #f49879; }
-  .order-form-section input[type=file] {
+  .order-modal .order-form-section input[type=file] {
     width: 0.1px;
     height: 0.1px;
     opacity: 0;
     overflow: hidden;
     position: absolute;
     z-index: -1; }
-  .order-form-section input[type=file] + label {
+  .order-modal .order-form-section input[type=file] + label {
     margin-top: 20px;
     float: right;
     cursor: pointer; }
     @media (max-width: 991.98px) {
-      .order-form-section input[type=file] + label {
+      .order-modal .order-form-section input[type=file] + label {
         float: left; } }
-  .order-form-section input[type=file]:focus + label {
+  .order-modal .order-form-section input[type=file]:focus + label {
     outline: 1px dotted #000;
     outline: -webkit-focus-ring-color auto 5px; }
-  .order-form-section-file {
+  .order-modal .order-form-section-file {
     display: flex;
     align-items: center; }
-    .order-form-section-file .order-form-section-name {
+    .order-modal .order-form-section-file .order-form-section-name {
       margin-bottom: 4px; }
-  .order-form-section input[type=submit] {
+  .order-modal .order-form-section input[type=submit] {
     margin-top: 20px;
     cursor: pointer; }
 
@@ -270,7 +270,7 @@ img {
       text-decoration: none;
       opacity: 0.5; }
 
-.order {
+.order-modal {
   width: 100%;
   position: fixed;
   top: 50%;
@@ -279,59 +279,59 @@ img {
   z-index: 4;
   max-height: 100vh;
   overflow: scroll; }
-  .order-window {
+  .order-modal .order-window {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px 0 rgba(61, 72, 83, 0.1);
     padding: 30px; }
-  .order-top {
+  .order-modal .order-top {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .order-top .icon {
+    .order-modal .order-top .icon {
       cursor: pointer; }
-  .order-form-checkbox {
+  .order-modal .order-form-checkbox {
     display: flex;
     align-items: center;
     margin-bottom: 10px; }
-    .order-form-checkbox label {
+    .order-modal .order-form-checkbox label {
       padding-left: 20px; }
-  .order-form input[type=text] {
+  .order-modal .order-form input[type=text] {
     width: 100%;
     border-radius: 8px;
     border: 1px solid #c8d3de;
     padding: 9px 20px;
     color: #3d4853; }
-  .order-form-section-name {
+  .order-modal .order-form-section-name {
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 20px; }
-    .order-form-section-name.required:after {
+    .order-modal .order-form-section-name.required:after {
       content: " *";
       color: #f49879; }
-  .order-form-section input[type=file] {
+  .order-modal .order-form-section input[type=file] {
     width: 0.1px;
     height: 0.1px;
     opacity: 0;
     overflow: hidden;
     position: absolute;
     z-index: -1; }
-  .order-form-section input[type=file] + label {
+  .order-modal .order-form-section input[type=file] + label {
     margin-top: 20px;
     float: right;
     cursor: pointer; }
     @media (max-width: 991.98px) {
-      .order-form-section input[type=file] + label {
+      .order-modal .order-form-section input[type=file] + label {
         float: left; } }
-  .order-form-section input[type=file]:focus + label {
+  .order-modal .order-form-section input[type=file]:focus + label {
     outline: 1px dotted #000;
     outline: -webkit-focus-ring-color auto 5px; }
-  .order-form-section-file {
+  .order-modal .order-form-section-file {
     display: flex;
     align-items: center; }
-    .order-form-section-file .order-form-section-name {
+    .order-modal .order-form-section-file .order-form-section-name {
       margin-bottom: 4px; }
-  .order-form-section input[type=submit] {
+  .order-modal .order-form-section input[type=submit] {
     margin-top: 20px;
     cursor: pointer; }
 
@@ -844,3 +844,56 @@ section {
 
 .video {
   background: #3d4853; }
+
+.order {
+  background: #f1f4f8; }
+  .order .order-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .order .order-top .icon {
+      cursor: pointer; }
+  .order .order-form-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; }
+    .order .order-form-checkbox label {
+      padding-left: 20px; }
+  .order .order-form input[type=text] {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #c8d3de;
+    padding: 9px 20px;
+    color: #3d4853; }
+  .order .order-form-section-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px; }
+    .order .order-form-section-name.required:after {
+      content: " *";
+      color: #f49879; }
+  .order .order-form-section input[type=file] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1; }
+  .order .order-form-section input[type=file] + label {
+    margin-top: 20px;
+    float: right;
+    cursor: pointer; }
+    @media (max-width: 991.98px) {
+      .order .order-form-section input[type=file] + label {
+        float: left; } }
+  .order .order-form-section input[type=file]:focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px; }
+  .order .order-form-section-file {
+    display: flex;
+    align-items: center; }
+    .order .order-form-section-file .order-form-section-name {
+      margin-bottom: 4px; }
+  .order .order-form-section input[type=submit] {
+    margin-top: 20px;
+    cursor: pointer; }

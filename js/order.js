@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
   function openOrder() {
     event.preventDefault();
     order.load("/reusable/order.html");
-    order.addClass("order");
+    order.addClass("order-modal");
     fade.addClass("show");
   }
 
@@ -21,7 +21,7 @@ jQuery(document).ready(function ($) {
   });
 
   function closeOrder() {
-    order.removeClass("order");
+    order.removeClass("order-modal");
     order.html("");
     fade.removeClass("show");
   }
