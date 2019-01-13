@@ -6,8 +6,8 @@ jQuery(document).ready(function ($) {
   $(".js-order-open").click(function (event) {
     event.preventDefault();
     order.load("/reusable/order.html", function () {
-      if (order.outerHeight() == $(window).height()) {
-        order.css("overflow", "scroll");
+      if (order.outerHeight() < $(window).height()) {
+        order.css("overflow-y", "hidden");
       }
     });
     order.addClass("order-modal");

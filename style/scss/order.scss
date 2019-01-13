@@ -6,8 +6,8 @@
   transform: translate(0, -50%);
   z-index: 4;
   max-height: 100vh;
-  // When it has max height it has
-  // overflow: scroll;
+  // When it has height lower than max it has no
+  overflow-y: scroll;
 
   .order-window {
     background: #fff;
@@ -37,8 +37,8 @@
       }
     }
 
-    input[type=text],
-    input[type=tel] {
+    input[type="text"],
+    input[type="tel"] {
       width: 100%;
       border-radius: 8px;
       border: 1px solid #c8d3de;
@@ -54,12 +54,12 @@
 
         &.required:after {
           content: " *";
-          color: $secondaryColor
+          color: $secondaryColor;
         }
       }
 
       // Hiding and customizing the input
-      input[type=file] {
+      input[type="file"] {
         width: 0.1px;
         height: 0.1px;
         opacity: 0;
@@ -68,7 +68,7 @@
         z-index: -1;
       }
 
-      input[type=file]+label {
+      input[type="file"] + label {
         margin-top: 20px;
         float: right;
         cursor: pointer;
@@ -78,7 +78,7 @@
         }
       }
 
-      input[type=file]:focus+label {
+      input[type="file"]:focus + label {
         outline: 1px dotted #000;
         outline: -webkit-focus-ring-color auto 5px;
       }
@@ -92,7 +92,7 @@
         }
       }
 
-      input[type=submit] {
+      input[type="submit"] {
         margin-top: 20px;
         cursor: pointer;
       }

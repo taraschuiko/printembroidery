@@ -48,7 +48,8 @@
   left: 0;
   transform: translate(0, -50%);
   z-index: 4;
-  max-height: 100vh; }
+  max-height: 100vh;
+  overflow-y: scroll; }
   .order-modal .order-window {
     background: #fff;
     border-radius: 8px;
@@ -66,8 +67,8 @@
     margin-bottom: 10px; }
     .order-modal .order-form-checkbox label {
       padding-left: 20px; }
-  .order-modal .order-form input[type=text],
-  .order-modal .order-form input[type=tel] {
+  .order-modal .order-form input[type="text"],
+  .order-modal .order-form input[type="tel"] {
     width: 100%;
     border-radius: 8px;
     border: 1px solid #c8d3de;
@@ -80,21 +81,21 @@
     .order-modal .order-form-section-name.required:after {
       content: " *";
       color: #f49879; }
-  .order-modal .order-form-section input[type=file] {
+  .order-modal .order-form-section input[type="file"] {
     width: 0.1px;
     height: 0.1px;
     opacity: 0;
     overflow: hidden;
     position: absolute;
     z-index: -1; }
-  .order-modal .order-form-section input[type=file] + label {
+  .order-modal .order-form-section input[type="file"] + label {
     margin-top: 20px;
     float: right;
     cursor: pointer; }
     @media (max-width: 991.98px) {
-      .order-modal .order-form-section input[type=file] + label {
+      .order-modal .order-form-section input[type="file"] + label {
         float: left; } }
-  .order-modal .order-form-section input[type=file]:focus + label {
+  .order-modal .order-form-section input[type="file"]:focus + label {
     outline: 1px dotted #000;
     outline: -webkit-focus-ring-color auto 5px; }
   .order-modal .order-form-section-file {
@@ -102,7 +103,7 @@
     align-items: center; }
     .order-modal .order-form-section-file .order-form-section-name {
       margin-bottom: 4px; }
-  .order-modal .order-form-section input[type=submit] {
+  .order-modal .order-form-section input[type="submit"] {
     margin-top: 20px;
     cursor: pointer; }
 
@@ -286,7 +287,8 @@ img {
   left: 0;
   transform: translate(0, -50%);
   z-index: 4;
-  max-height: 100vh; }
+  max-height: 100vh;
+  overflow-y: scroll; }
   .order-modal .order-window {
     background: #fff;
     border-radius: 8px;
@@ -304,8 +306,8 @@ img {
     margin-bottom: 10px; }
     .order-modal .order-form-checkbox label {
       padding-left: 20px; }
-  .order-modal .order-form input[type=text],
-  .order-modal .order-form input[type=tel] {
+  .order-modal .order-form input[type="text"],
+  .order-modal .order-form input[type="tel"] {
     width: 100%;
     border-radius: 8px;
     border: 1px solid #c8d3de;
@@ -318,21 +320,21 @@ img {
     .order-modal .order-form-section-name.required:after {
       content: " *";
       color: #f49879; }
-  .order-modal .order-form-section input[type=file] {
+  .order-modal .order-form-section input[type="file"] {
     width: 0.1px;
     height: 0.1px;
     opacity: 0;
     overflow: hidden;
     position: absolute;
     z-index: -1; }
-  .order-modal .order-form-section input[type=file] + label {
+  .order-modal .order-form-section input[type="file"] + label {
     margin-top: 20px;
     float: right;
     cursor: pointer; }
     @media (max-width: 991.98px) {
-      .order-modal .order-form-section input[type=file] + label {
+      .order-modal .order-form-section input[type="file"] + label {
         float: left; } }
-  .order-modal .order-form-section input[type=file]:focus + label {
+  .order-modal .order-form-section input[type="file"]:focus + label {
     outline: 1px dotted #000;
     outline: -webkit-focus-ring-color auto 5px; }
   .order-modal .order-form-section-file {
@@ -340,7 +342,7 @@ img {
     align-items: center; }
     .order-modal .order-form-section-file .order-form-section-name {
       margin-bottom: 4px; }
-  .order-modal .order-form-section input[type=submit] {
+  .order-modal .order-form-section input[type="submit"] {
     margin-top: 20px;
     cursor: pointer; }
 
