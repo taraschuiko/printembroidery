@@ -120,6 +120,12 @@ h2 {
 
 .about {
   background: #fff;
+
+  @media (max-width: 1199.98px) {
+    p:first-child {
+      margin-bottom: 24px;
+    }
+  }
 }
 
 .features {

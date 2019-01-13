@@ -765,6 +765,9 @@ h2 {
 
 .about {
   background: #fff; }
+  @media (max-width: 1199.98px) {
+    .about p:first-child {
+      margin-bottom: 24px; } }
 
 .features {
   background: #f1f4f8; }
