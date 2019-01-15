@@ -57,7 +57,10 @@
           exit;
         }
       }
-      mail("info@printembroidery.com.ua", "Нове замовлення!", $message, "Content-Type: text/html; charset=UTF-8");
+      if(!(mail("info@printembroidery.com.ua", "Нове замовлення!", $message, "Content-Type: text/html; charset=UTF-8"))) {
+        header("Location:/order/fail.html");
+        exit;
+      }
       // Направити на сторінку успіху
       header("Location:/order/success.html");
       exit;
