@@ -1,4 +1,5 @@
 <?php
+  $baseURL = "http://new.printembroidery.com.ua";
   if(isset($_POST['submit'])){
   // Get values
     $services = '';
@@ -21,7 +22,7 @@
                 .'Послуги: '.$services."<br>"
                 .'Файли:';
 
-    $fileExtensions = ['jpeg','jpg','png','gif','psd','ai','cdr'];
+    $fileExtensions = ['jpeg','jpg','png','gif','psd','ai','cdr',''];
 
       // Count total files
       $countfiles = count($_FILES['file']['name']);
@@ -35,27 +36,31 @@
         $fileExtension = strtolower(end(explode('.',$fileName)));
 
         if (in_array($fileExtension, $fileExtensions)) {
-            if ($fileSize < 5000000) {
+            if ($fileSize < 25000000) {
               $didUpload = move_uploaded_file($_FILES['file']['tmp_name'][$i],'uploads/'.$fileName);
 
               if ($didUpload) {
-                  $message .= ' <a href="http://new.printembroidery.com.ua/uploads/'.$fileName.'">'.$fileName.'</a>';
+                  $message .= ' <a href="'.$baseURL.'/uploads/'.$fileName.'">'.$fileName.'</a>';
               } else {
                   // Направити на сторінку помилки
-                  // header("Location:/order-error/");
+                  // header("Location:/order/fail.html");
+                  // exit;
               }
             } else {
               // Направити на сторінку помилки
-              // header("Location:/order-error/");
+              header("Location:/order/fail.html?size=".$fileSize);
+              exit;
             }
         } else {
           // Направити на сторінку помилки
-          // header("Location:/order-error/");
+          header("Location:/order/fail.html?extension=".$fileExtension);
+          exit;
         }
       }
       mail("info@printembroidery.com.ua", "Нове замовлення!", $message, "Content-Type: text/html; charset=UTF-8");
       // Направити на сторінку успіху
-      // header("Location:/order-success/");
+      header("Location:/order/success.html");
+      exit;
     echo $message;
     }
 ?>

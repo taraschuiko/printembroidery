@@ -27,4 +27,17 @@ jQuery(document).ready(function ($) {
     order.html("");
     fade.removeClass("show");
   }
+
+  // Change button text on submit
+
+  $(document).on("submit", ".order-form", function (e) {
+    var button = $(e.target).find("input[type=submit]")
+    var val = button.val();
+    if (val === "Замовити") {
+      val = "Замовлення надсилається";
+    } else if (val === "Надіслати") {
+      val = "Повідомлення надсилається"
+    }
+    button.val(val);
+  })
 })
