@@ -3,9 +3,9 @@ jQuery(document).ready(function ($) {
   var fade = $(".fade");
 
   // Open order window
-  $(".js-order-open").click(function (event) {
+  $(".js-message-open").click(function (event) {
     event.preventDefault();
-    modal.load("/reusable/order.html", function () {
+    modal.load("/reusable/message.html", function () {
       if (modal.outerHeight() < $(window).height()) {
         modal.css("overflow-y", "hidden");
       }
@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
   });
 
   // Close order window
-  modal.on('click', '.js-order-close', closeOrder);
+  modal.on('click', '.js-message-close', closeOrder);
   fade.on('click', closeOrder);
   modal.on('click', function (e) {
     if (e.target == this)

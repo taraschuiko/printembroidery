@@ -38,7 +38,9 @@
     }
 
     input[type="text"],
-    input[type="tel"] {
+    input[type="tel"],
+    input[type="email"],
+    textarea {
       width: 100%;
       border-radius: 8px;
       border: 1px solid #c8d3de;
@@ -68,7 +70,7 @@
         z-index: -1;
       }
 
-      input[type="file"] + label {
+      input[type="file"]+label {
         margin-top: 20px;
         float: right;
         cursor: pointer;
@@ -78,7 +80,7 @@
         }
       }
 
-      input[type="file"]:focus + label {
+      input[type="file"]:focus+label {
         outline: 1px dotted #000;
         outline: -webkit-focus-ring-color auto 5px;
       }

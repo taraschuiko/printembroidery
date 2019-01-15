@@ -61,6 +61,5 @@
       // Направити на сторінку успіху
       header("Location:/order/success.html");
       exit;
-    echo $message;
     }
 ?>

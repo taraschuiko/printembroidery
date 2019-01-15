@@ -68,7 +68,9 @@
     .order-modal .order-form-checkbox label {
       padding-left: 20px; }
   .order-modal .order-form input[type="text"],
-  .order-modal .order-form input[type="tel"] {
+  .order-modal .order-form input[type="tel"],
+  .order-modal .order-form input[type="email"],
+  .order-modal .order-form textarea {
     width: 100%;
     border-radius: 8px;
     border: 1px solid #c8d3de;
@@ -307,7 +309,9 @@ img {
     .order-modal .order-form-checkbox label {
       padding-left: 20px; }
   .order-modal .order-form input[type="text"],
-  .order-modal .order-form input[type="tel"] {
+  .order-modal .order-form input[type="tel"],
+  .order-modal .order-form input[type="email"],
+  .order-modal .order-form textarea {
     width: 100%;
     border-radius: 8px;
     border: 1px solid #c8d3de;
