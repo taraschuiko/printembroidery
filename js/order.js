@@ -39,5 +39,6 @@ jQuery(document).ready(function ($) {
       val = "Повідомлення надсилається"
     }
     button.val(val);
+    button.attr("disabled", "disabled");
   })
 })
