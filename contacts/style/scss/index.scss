@@ -1,0 +1,65 @@
+@import "./../../../style/scss/global.scss";
+@import "./../../../style/scss/nav.scss";
+@import "./../../../style/scss/footer.scss";
+
+.nav {
+  color: $textColor;
+}
+
+.contacts {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+
+  .container {
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+  }
+
+  @media (min-width: 768px) {
+    height: 100vh;
+    min-height: 680px;
+    padding: 0;
+
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &-main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    margin: 0;
+  }
+
+  &-methods {
+    &-item {
+      display: flex;
+      line-height: 1.5;
+      margin-bottom: 16px;
+
+      .icon {
+        margin-right: 16px;
+        font-size: 18px;
+      }
+
+      a {
+        color: $secondaryColor;
+      }
+
+      .phone-operator {
+        color: #c8d3de;
+        margin-left: 16px;
+      }
+    }
+  }
+
+  #map {
+    height: 560px;
+    width: 100%;
+  }
+}
