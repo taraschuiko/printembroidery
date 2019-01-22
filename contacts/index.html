@@ -1,201 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Машинна вишивка нитками на одязі - Print Embroidery</title>
+    <link rel="icon" type="image/png" href="/data/img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/css/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Машинна вишивка нитками на одязі - Print Embroidery</title>
-  <link rel="icon" type="image/png" href="/data/img/favicon.png" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="./style/css/index.css" />
-</head>
-
-<body>
-  <div class="container-fluid">
-    <nav class="nav" id="nav">
-      <div class="container">
-        <div class="row">
-          <div class="col-10 col-xl-3 nav-logo">
-            <a href="/"> <img src="/data/img/logo-dark.svg" alt="Logo" /> </a>
+  <body>
+    <div class="container-fluid">
+      <nav class="nav" id="nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-10 col-xl-3 nav-logo">
+              <a href="/"> <img src="/data/img/logo-dark.svg" alt="Logo" /> </a>
+            </div>
+            <div class="nav-menu offset-1 col-xl-8">
+              <ul>
+                <li><a href="/">Головна</a></li>
+                <li class="nav-menu-dropdown">
+                  <a href="/#whatwedo">Послуги</a>
+                  <div class="nav-menu-dropdown-items" style="width: 320px">
+                    <a href="/services/direct-printing/">
+                      <img src="/data/img/direct-print.png" alt="Прямий друк" />
+                      <p>Прямий цифровий друк</p>
+                    </a>
+                    <a href="/services/thermo-printing/">
+                      <img
+                        src="/data/img/thermo-print.png"
+                        alt="Термотрансферний друк"
+                      />
+                      <p>Термотрансферний друк</p>
+                    </a>
+                    <a href="/services/embroidery/">
+                      <img
+                        src="/data/img/embroidery.png"
+                        alt="Машинна вишивка нитками"
+                      />
+                      <p>Машинна вишивка нитками</p>
+                    </a>
+                    <a href="/services/sequin/">
+                      <img
+                        src="/data/img/sequin.png"
+                        alt="Машинна вишивка паєтками"
+                      />
+                      <p>Машинна вишивка паєтками</p>
+                    </a>
+                    <a href="/services/rhinestone/">
+                      <img
+                        src="/data/img/rhinestone.png"
+                        alt="Нанесення стразів"
+                      />
+                      <p>Нанесення стразів</p>
+                    </a>
+                  </div>
+                </li>
+                <li><a href="/methods/">Оплата і доставка</a></li>
+                <li>
+                  <a href="/contacts/" class="nav-menu--active">Контакти</a>
+                </li>
+                <li>
+                  <a href="#" class="btn-main js-order-open"> Замовити </a>
+                </li>
+                <li class="nav-menu-dropdown">
+                  <a href="#">UA</a>
+                  <div class="nav-menu-dropdown-items">
+                    <a href="#" class="nav-menu--active"> <p>UA</p> </a>
+                    <a href="#"> <p>EN</p> </a> <a href="#"> <p>RU</p> </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-2 mobile-menu-icon"><p>g</p></div>
           </div>
-          <div class="nav-menu offset-1 col-xl-8">
+        </div>
+        <!-- mobile menu -->
+        <div class="mobile-menu mobile-menu--closed">
+          <div class="mobile-menu-top">
+            <a href="/"> <img src="/data/img/logo-dark.svg" alt="Home"/></a>
+            <span class="icon mobile-menu-close">p</span>
+          </div>
+          <div class="mobile-menu-main">
             <ul>
-              <li><a href="/">Головна</a></li>
-              <li class="nav-menu-dropdown">
-                <a href="/#whatwedo">Послуги</a>
-                <div class="nav-menu-dropdown-items" style="width: 320px">
-                  <a href="/services/direct-printing/">
-                    <img src="/data/img/direct-print.png" alt="Прямий друк" />
-                    <p>Прямий цифровий друк</p>
-                  </a>
-                  <a href="/services/thermo-printing/">
-                    <img src="/data/img/thermo-print.png" alt="Термотрансферний друк" />
-                    <p>Термотрансферний друк</p>
-                  </a>
-                  <a href="/services/embroidery/">
-                    <img src="/data/img/embroidery.png" alt="Машинна вишивка нитками" />
-                    <p>Машинна вишивка нитками</p>
-                  </a>
-                  <a href="/services/sequin/">
-                    <img src="/data/img/sequin.png" alt="Машинна вишивка паєтками" />
-                    <p>Машинна вишивка паєтками</p>
-                  </a>
-                  <a href="/services/rhinestone/">
-                    <img src="/data/img/rhinestone.png" alt="Нанесення стразів" />
-                    <p>Нанесення стразів</p>
-                  </a>
-                </div>
-              </li>
-              <li><a href="/methods/">Оплата і доставка</a></li>
-              <li><a href="/contacts/" class="nav-menu--active">Контакти</a></li>
+              <li><a href="/" class="mobile-menu-item">Головна</a></li>
               <li>
-                <a href="#" class="btn-main js-order-open"> Замовити </a>
+                <a href="/services/direct-printing/" class="mobile-menu-item"
+                  >Прямий цифровий друк</a
+                >
               </li>
-              <li class="nav-menu-dropdown">
-                <a href="#">UA</a>
-                <div class="nav-menu-dropdown-items">
-                  <a href="#" class="nav-menu--active">
-                    <p>UA</p>
-                  </a>
-                  <a href="#">
-                    <p>EN</p>
-                  </a> <a href="#">
-                    <p>RU</p>
-                  </a>
-                </div>
+              <li>
+                <a href="/services/thermo-printing/" class="mobile-menu-item"
+                  >Термотрансферний друк</a
+                >
+              </li>
+              <li>
+                <a href="/services/embroidery/" class="mobile-menu-item"
+                  >Машинна вишивка нитками</a
+                >
+              </li>
+              <li>
+                <a href="/services/sequin/" class="mobile-menu-item"
+                  >Машинна вишивка паєтками</a
+                >
+              </li>
+              <li>
+                <a href="/services/rhinestone/" class="mobile-menu-item"
+                  >Нанесення стразів</a
+                >
+              </li>
+              <li>
+                <a href="/methods/" class="mobile-menu-item"
+                  >Оплата і доставка</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/contacts/"
+                  class="mobile-menu-item mobile-menu--active"
+                  >Контакти</a
+                >
+              </li>
+              <li class="mobile-menu-lang">
+                <a href="#" class="mobile-menu--active">UA</a>
+                <a href="#">EN</a> <a href="#">RU</a>
               </li>
             </ul>
           </div>
-          <div class="col-2 mobile-menu-icon">
-            <p>g</p>
+        </div>
+        <!-- mobile menu end -->
+      </nav>
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts-main row">
+            <div class="col-12 col-md-6 contacts-methods">
+              <div class="contacts-methods-item">
+                <div class="icon">v</div>
+                <a href="https://goo.gl/maps/7Y9GXy1cP292" target="_blank">
+                  Магазин "Young Reporter", 0 поверх, <br />
+                  площа Ринок, 1, Івано-Франківськ, Україна
+                </a>
+              </div>
+
+              <div class="contacts-methods-item">
+                <div class="icon">u</div>
+                <div>
+                  <p>
+                    +380 (67) 710 59 69
+                    <span class="phone-operator">Kyivstar</span>
+                  </p>
+                  <p>
+                    +380 (99) 966 04 24
+                    <span class="phone-operator">Vodafone</span>
+                  </p>
+                  <p>
+                    +380 (73) 471 22 42
+                    <span class="phone-operator">Lifecell</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contacts-methods-item">
+                <div class="icon">e</div>
+                <a href="mailto:info@printembroidery.com.ua">
+                  info@printembroidery.com.ua
+                </a>
+              </div>
+
+              <div class="contacts-methods-item">
+                <div class="icon">o</div>
+                <a
+                  href="https://www.facebook.com/printembroidery.com.ua/"
+                  target="_blank"
+                >
+                  Ми в Facebook
+                </a>
+              </div>
+
+              <div class="contacts-methods-item">
+                <div class="icon">n</div>
+                <a
+                  href="https://www.instagram.com/printembroidery.com.ua/"
+                  target="_blank"
+                >
+                  Ми в Instagram
+                </a>
+              </div>
+
+              <div class="contacts-methods-item">
+                <div class="icon">r</div>
+                <a
+                  href="https://www.youtube.com/channel/UCJZbKGa_EhoqJ6yht9n8rOg"
+                  target="_blank"
+                >
+                  Ми в YouTube
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6"><div id="map"></div></div>
           </div>
         </div>
-      </div>
-      <!-- mobile menu -->
-      <div class="mobile-menu mobile-menu--closed">
-        <div class="mobile-menu-top">
-          <a href="/"> <img src="/data/img/logo-dark.svg" alt="Home" /></a>
-          <span class="icon mobile-menu-close">p</span>
-        </div>
-        <div class="mobile-menu-main">
-          <ul>
-            <li>
-              <a href="/" class="mobile-menu-item">Головна</a>
-            </li>
-            <li>
-              <a href="/services/direct-printing/" class="mobile-menu-item">Прямий цифровий друк</a>
-            </li>
-            <li>
-              <a href="/services/thermo-printing/" class="mobile-menu-item">Термотрансферний друк</a>
-            </li>
-            <li>
-              <a href="/services/embroidery/" class="mobile-menu-item">Машинна вишивка нитками</a>
-            </li>
-            <li>
-              <a href="/services/sequin/" class="mobile-menu-item">Машинна вишивка паєтками</a>
-            </li>
-            <li>
-              <a href="/services/rhinestone/" class="mobile-menu-item">Нанесення стразів</a>
-            </li>
-            <li>
-              <a href="/methods/" class="mobile-menu-item">Оплата і доставка</a>
-            </li>
-            <li>
-              <a href="/contacts/" class="mobile-menu-item mobile-menu--active">Контакти</a>
-            </li>
-            <li class="mobile-menu-lang">
-              <a href="#" class="mobile-menu--active">UA</a>
-              <a href="#">EN</a> <a href="#">RU</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- mobile menu end -->
-    </nav>
-    <section class="contacts">
+      </section>
+      <!-- Modal window -->
       <div class="container">
-        <div class="contacts-main row">
-          <div class="col-12 col-md-6 contacts-methods">
-            <div class="contacts-methods-item">
-              <div class="icon">f</div>
-              <a href="https://goo.gl/maps/7Y9GXy1cP292" target="_blank">
-                Магазин "Young Reporter", 0 поверх, <br>
-                площа Ринок, 1, Івано-Франківськ, Україна
-              </a>
-            </div>
-
-            <div class="contacts-methods-item">
-              <div class="icon">d</div>
-              <div>
-                <p>+380 (67) 710 59 69</p>
-                <p>+380 (99) 966 04 24</p>
-                <p>+380 (73) 471 22 42</p>
-              </div>
-              <div class="phone-operator">
-                <p>Kyivstar</p>
-                <p>Vodafone</p>
-                <p>Lifecell</p>
-              </div>
-            </div>
-
-            <div class="contacts-methods-item">
-              <div class="icon">e</div>
-              <a href="mailto:info@printembroidery.com.ua">
-                info@printembroidery.com.ua
-              </a>
-            </div>
-
-            <div class="contacts-methods-item">
-              <div class="icon">b</div>
-              <a href="https://www.facebook.com/printembroidery.com.ua/" target="_blank">
-                Ми в Facebook
-              </a>
-            </div>
-
-            <div class="contacts-methods-item">
-              <div class="icon">c</div>
-              <a href="https://www.instagram.com/printembroidery.com.ua/" target="_blank">
-                Ми в Instagram
-              </a>
-            </div>
-
-            <div class="contacts-methods-item">
-              <div class="icon">d</div>
-              <a href="https://www.youtube.com/channel/UCJZbKGa_EhoqJ6yht9n8rOg" target="_blank">
-                Ми в YouTube
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div id="map"></div>
-          </div>
-        </div>
+        <div class="row"><div id="modal"></div></div>
       </div>
-    </section>
-    <!-- Modal window -->
-    <div class="container">
-      <div class="row">
-        <div id="modal"></div>
-      </div>
+      <div class="fade"></div>
     </div>
-    <div class="fade"></div>
-  </div>
 
-  <!-- Libraries -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY3K0-IKOjYkEQ3XZWbDjb8LcVXZN0xas&callback=initMap&libraries=places"
-    async defer></script>
-  <!-- Scripts -->
-  <script src="/js/nav.js"></script>
-  <script src="/js/smoothScroll.js"></script>
-  <script src="/js/order.js"></script>
-  <script src="./js/map.js"></script>
-</body>
-
+    <!-- Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY3K0-IKOjYkEQ3XZWbDjb8LcVXZN0xas&callback=initMap&libraries=places"
+      async
+      defer
+    ></script>
+    <!-- Scripts -->
+    <script src="/js/nav.js"></script>
+    <script src="/js/smoothScroll.js"></script>
+    <script src="/js/order.js"></script>
+    <script src="./js/map.js"></script>
+  </body>
 </html>
