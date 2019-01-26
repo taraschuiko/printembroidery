@@ -770,6 +770,17 @@ h2 {
   @media (max-width: 1199.98px) {
     .about p:first-child {
       margin-bottom: 24px; } }
+  .about-info {
+    display: flex;
+    align-items: center; }
+    .about-info:not(:last-child) {
+      margin-bottom: 44px; }
+    @media (min-width: 991.98px) {
+      .about-info-reverse {
+        flex-direction: row-reverse; } }
+    .about-info-image {
+      display: flex;
+      justify-content: center; }
 
 .features {
   background: #f1f4f8; }

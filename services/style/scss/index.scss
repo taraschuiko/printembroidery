@@ -126,6 +126,26 @@ h2 {
       margin-bottom: 24px;
     }
   }
+
+  &-info {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 44px;
+    }
+
+    &-reverse {
+      @media (min-width: 991.98px) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    &-image {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 .features {
