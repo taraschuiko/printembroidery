@@ -781,6 +781,9 @@ h2 {
     .about-info-image {
       display: flex;
       justify-content: center; }
+      @media (max-width: 991.98px) {
+        .about-info-image.mt {
+          margin-top: 44px; } }
 
 .features {
   background: #f1f4f8; }

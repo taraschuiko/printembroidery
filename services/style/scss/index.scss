@@ -144,6 +144,12 @@ h2 {
     &-image {
       display: flex;
       justify-content: center;
+
+      &.mt {
+        @media (max-width: 991.98px) {
+          margin-top: 44px;
+        }
+      }
     }
   }
 }
