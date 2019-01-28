@@ -865,6 +865,10 @@ h2 {
     .prices-info .icon {
       color: #c8d3de;
       margin-right: 24px; }
+  .prices-order {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center; }
 
 .sewing {
   background: #f1f4f8; }
