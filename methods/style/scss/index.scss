@@ -1,0 +1,20 @@
+@import "./../../../style/scss/global.scss";
+@import "./../../../style/scss/nav.scss";
+@import "./../../../style/scss/footer.scss";
+
+.nav {
+  color: $textColor;
+}
+
+.methods {
+  padding: 80px 0;
+
+  h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  a {
+    color: $secondaryColor;
+  }
+}
