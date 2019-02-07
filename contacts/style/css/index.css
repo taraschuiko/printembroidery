@@ -691,19 +691,12 @@ img {
 .contacts {
   position: relative;
   overflow: hidden;
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 120px 0; }
   .contacts .container {
     flex-direction: column;
     height: 100%;
     position: relative; }
-  @media (min-width: 768px) {
-    .contacts {
-      height: 100vh;
-      min-height: 680px;
-      padding: 0; }
-      .contacts .container {
-        display: flex;
-        justify-content: center; } }
   .contacts-main {
     width: 100%;
     display: flex;
