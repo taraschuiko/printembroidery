@@ -712,11 +712,14 @@ img {
     margin: 0; }
   @media (max-width: 768px) {
     .contacts-methods {
-      margin-bottom: 16px; } }
+      margin-bottom: 32px; } }
+  .contacts-methods h1 {
+    margin-bottom: 40px; }
   .contacts-methods-item {
     display: flex;
-    line-height: 1.5;
-    margin-bottom: 16px; }
+    line-height: 1.5; }
+    .contacts-methods-item:not(:last-child) {
+      margin-bottom: 16px; }
     .contacts-methods-item .icon {
       margin-right: 16px;
       font-size: 18px; }

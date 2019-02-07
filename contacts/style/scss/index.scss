@@ -38,13 +38,20 @@
 
   &-methods {
     @media (max-width: 768px) {
-      margin-bottom: 16px;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      margin-bottom: 40px;
     }
 
     &-item {
       display: flex;
       line-height: 1.5;
-      margin-bottom: 16px;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
 
       .icon {
         margin-right: 16px;
