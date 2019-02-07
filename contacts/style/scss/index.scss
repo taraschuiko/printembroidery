@@ -37,6 +37,10 @@
   }
 
   &-methods {
+    @media (max-width: 768px) {
+      margin-bottom: 16px;
+    }
+
     &-item {
       display: flex;
       line-height: 1.5;
@@ -54,6 +58,10 @@
       .phone-operator {
         color: #c8d3de;
         margin-left: 16px;
+      }
+
+      .btn-main {
+        margin-top: 16px;
       }
     }
   }

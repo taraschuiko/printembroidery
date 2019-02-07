@@ -708,6 +708,9 @@ img {
     align-items: center;
     z-index: 1;
     margin: 0; }
+  @media (max-width: 768px) {
+    .contacts-methods {
+      margin-bottom: 16px; } }
   .contacts-methods-item {
     display: flex;
     line-height: 1.5;
@@ -720,6 +723,8 @@ img {
     .contacts-methods-item .phone-operator {
       color: #c8d3de;
       margin-left: 16px; }
+    .contacts-methods-item .btn-main {
+      margin-top: 16px; }
   .contacts #map {
     height: 560px;
     width: 100%; }
