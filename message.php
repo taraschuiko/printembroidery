@@ -1,5 +1,4 @@
 <?php
-  if(isset($_POST['submit'])){
   // Get values
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -16,5 +15,4 @@
       // Направити на сторінку успіху
       header("Location:/message/success.html");
       exit;
-    }
 ?>

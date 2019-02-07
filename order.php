@@ -1,6 +1,5 @@
 <?php
   $baseURL = "http://new.printembroidery.com.ua";
-  if(isset($_POST['submit'])){
   // Get values
     $services = '';
     if(!empty($_POST['services'])) {    
@@ -64,5 +63,4 @@
       // Направити на сторінку успіху
       header("Location:/order/success.html");
       exit;
-    }
 ?>
