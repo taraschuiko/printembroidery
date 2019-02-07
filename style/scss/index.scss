@@ -182,7 +182,7 @@
 }
 
 .sewing {
-  background: #f7f6f4;
+  background: #fff;
 
   @media (min-width: 768px) {
     padding: 0;
@@ -230,10 +230,6 @@
         margin-bottom: 10px;
       }
     }
-  }
-
-  &-btn {
-    @extend .btn-main;
   }
 
   &-right {

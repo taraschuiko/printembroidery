@@ -176,7 +176,7 @@ img {
 .fade.show {
   display: block; }
 
-.btn, .btn-main, .sewing-btn, .btn-secondary, .btn-white {
+.btn, .btn-main, .btn-secondary, .btn-white {
   display: inline-block;
   padding: 8px 20px;
   border-radius: 8px;
@@ -184,13 +184,13 @@ img {
   border: 2px solid transparent;
   transition: all .1s ease;
   text-align: center; }
-  .btn:hover, .btn-main:hover, .sewing-btn:hover, .btn-secondary:hover, .btn-white:hover {
+  .btn:hover, .btn-main:hover, .btn-secondary:hover, .btn-white:hover {
     text-decoration: none; }
 
-.btn-main, .sewing-btn {
+.btn-main {
   background-color: #3bce95;
   color: #fff; }
-  .btn-main:hover, .sewing-btn:hover {
+  .btn-main:hover {
     background: #3c8a74;
     color: #fff; }
 
@@ -417,7 +417,7 @@ img {
 .fade.show {
   display: block; }
 
-.btn, .btn-main, .sewing-btn, .btn-secondary, .btn-white {
+.btn, .btn-main, .btn-secondary, .btn-white {
   display: inline-block;
   padding: 8px 20px;
   border-radius: 8px;
@@ -425,13 +425,13 @@ img {
   border: 2px solid transparent;
   transition: all .1s ease;
   text-align: center; }
-  .btn:hover, .btn-main:hover, .sewing-btn:hover, .btn-secondary:hover, .btn-white:hover {
+  .btn:hover, .btn-main:hover, .btn-secondary:hover, .btn-white:hover {
     text-decoration: none; }
 
-.btn-main, .sewing-btn {
+.btn-main {
   background-color: #3bce95;
   color: #fff; }
-  .btn-main:hover, .sewing-btn:hover {
+  .btn-main:hover {
     background: #3c8a74;
     color: #fff; }
 
@@ -506,13 +506,13 @@ img {
       justify-content: space-between; }
     .nav-menu li {
       list-style: none; }
-      .nav-menu li > a:not(.btn-main):not(.sewing-btn) {
+      .nav-menu li > a:not(.btn-main) {
         padding: 10px 0; }
-      .nav-menu li a:not(.btn-main):not(.sewing-btn) {
+      .nav-menu li a:not(.btn-main) {
         color: inherit;
         font-size: 16px;
         transition: all .1s ease; }
-        .nav-menu li a:not(.btn-main):not(.sewing-btn):hover {
+        .nav-menu li a:not(.btn-main):hover {
           opacity: 0.5;
           text-decoration: none; }
     .nav-menu-dropdown {
@@ -789,7 +789,7 @@ img {
         margin: 0; }
 
 .sewing {
-  background: #f7f6f4; }
+  background: #fff; }
   @media (min-width: 768px) {
     .sewing {
       padding: 0; } }
