@@ -183,7 +183,8 @@ img {
   color: #3d4853;
   border: 2px solid transparent;
   transition: all .1s ease;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
   .btn:hover, .btn-main:hover, .btn-secondary:hover, .btn-white:hover {
     text-decoration: none; }
 
@@ -424,7 +425,8 @@ img {
   color: #3d4853;
   border: 2px solid transparent;
   transition: all .1s ease;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
   .btn:hover, .btn-main:hover, .btn-secondary:hover, .btn-white:hover {
     text-decoration: none; }
 
