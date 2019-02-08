@@ -1,0 +1,38 @@
+.footer {
+  background: #3d4853;
+  padding: 100px 0;
+  color: #fff;
+  line-height: 1.56;
+
+  &-cards {
+    margin-top: 60px;
+  }
+
+  &-card {
+    margin-bottom: 60px;
+
+    h3 {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #c8d3de;
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+
+  &-icon {
+    font-family: icon;
+    font-size: 25px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      opacity: 0.5;
+    }
+  }
+}
