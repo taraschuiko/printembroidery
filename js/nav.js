@@ -1,9 +1,13 @@
 jQuery(document).ready(function ($) {
 
-  // Mobile scroll
+  // Scroll
 
   var $prevImage = $('#nav .nav-logo img').attr("src");
-  $(window).scroll(function () {
+
+  changeNavOnScroll();
+  $(window).scroll(changeNavOnScroll);
+
+  function changeNavOnScroll() {
     var $height = $(window).scrollTop();
 
     if ($height > 40) {
@@ -17,7 +21,7 @@ jQuery(document).ready(function ($) {
         $('#nav .nav-logo img').attr("src", $prevImage);
       }
     }
-  });
+  }
 
   // Mobile menu
 
