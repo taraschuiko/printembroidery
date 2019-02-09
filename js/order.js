@@ -42,3 +42,21 @@ jQuery(document).ready(function ($) {
     button.attr("disabled", "disabled");
   })
 })
+
+function onFileUpload(input) {
+  var label = input.parentNode.childNodes[3],
+    labelVal = label.innerText;
+
+  var fileName = '';
+  if (input.files && input.files.length > 1) {
+    fileName = (input.getAttribute('data-multiple-caption') || '').replace('{count}', input.files.length);
+  } else {
+    fileName = input.value.split('\\').pop();
+  }
+
+  if (fileName) {
+    label.innerText = fileName;
+  } else {
+    label.innerHTML = labelVal;
+  }
+}

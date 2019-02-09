@@ -467,7 +467,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                   <input type="file" name="file[]" class="input-file" id="input-file" data-multiple-caption="Вибрано {count} файлів"
-                    multiple>
+                    multiple onchange="onFileUpload(event.target)">
                   <label for="input-file" class="btn-secondary">Вибрати файл</label>
                 </div>
               </div>
@@ -508,6 +508,7 @@
   <script src="/js/smoothScroll.js"></script>
   <script src="/js/order.js"></script>
   <script src="/js/message.js"></script>
+  <script src="/js/order-file-upload.js"></script>
 </body>
 
 </html>
