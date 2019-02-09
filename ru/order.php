@@ -47,20 +47,20 @@
               }
             } else {
               // Направити на сторінку помилки
-              header("Location:/order/fail.html?size=".$fileSize);
+              header("Location:/ru/order/fail.html?size=".$fileSize);
               exit;
             }
         } else {
           // Направити на сторінку помилки
-          header("Location:/order/fail.html?extension=".$fileExtension);
+          header("Location:/ru/order/fail.html?extension=".$fileExtension);
           exit;
         }
       }
       if(!(mail("info@printembroidery.com.ua", "Нове замовлення!", $message, "Content-Type: text/html; charset=UTF-8"))) {
-        header("Location:/order/fail.html");
+        header("Location:/ru/order/fail.html");
         exit;
       }
       // Направити на сторінку успіху
-      header("Location:/order/success.html");
+      header("Location:/ru/order/success.html");
       exit;
 ?>
