@@ -1,0 +1,68 @@
+<div class="order-window col-12 col-md-8 offset-md-2">
+  <div class="order-top">
+    <h1>Заказать услуги</h1>
+    <span class="icon js-order-close">p</span>
+  </div>
+  <p>Заполните форму и мы свяжемся с вами для деталей.</p>
+  <form action="/orderModalRu.php" class="order-form" method="POST" enctype="multipart/form-data">
+    <div class="order-form-section row">
+      <p class="order-form-section-name col-12">Выберите услуги</p>
+      <div class="col-12 col-md-6">
+        <div class="order-form-checkbox">
+          <input type="checkbox" id="checkbox-direct-printing" name="services[]" value="Прямий цифровий друк">
+          <label for="checkbox-direct-printing">Прямая цифровая печать</label>
+        </div>
+        <div class="order-form-checkbox">
+          <input type="checkbox" id="checkbox-embroidery" name="services[]" value="Машинна вишивка нитками">
+          <label for="checkbox-embroidery">Машинная вышивка нитками</label>
+        </div>
+        <div class="order-form-checkbox">
+          <input type="checkbox" id="checkbox-rhinestone" name="services[]" value="Нанесення стразів">
+          <label for="checkbox-rhinestone">Нанесение стразов</label>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="order-form-checkbox">
+          <input type="checkbox" id="checkbox-thermo-printing" name="services[]" value="Термотрансферний друк">
+          <label for="checkbox-thermo-printing">Термотрансферная печать</label>
+        </div>
+        <div class="order-form-checkbox">
+          <input type="checkbox" id="checkbox-sequin" name="services[]" value="Машинна вишивка паєтками">
+          <label for="checkbox-sequin">Машинная вышивка пайетками</label>
+        </div>
+      </div>
+    </div>
+    <div class="order-form-section row">
+      <div class="col-12 col-md-6">
+        <p class="order-form-section-name required">Имя</p>
+        <input type="text" name="nameModal" autocomplete="name" required>
+      </div>
+      <div class="col-12 col-md-6">
+        <p class="order-form-section-name required">Телефон</p>
+        <input type="tel" name="telModal" autocomplete="tel" value="+380" required>
+      </div>
+    </div>
+    <div class="order-form-section row">
+      <div class="col-12">
+        <p class="order-form-section-name">Комментарий</p>
+        <input type="text" name="commentModal">
+      </div>
+    </div>
+    <div class="order-form-section row order-form-section-file">
+      <div class="col-12 col-md-8">
+        <p class="order-form-section-name">Изображение</p>
+        <p>Файл должен быть в формате .png, .jpg, .gif, .psd, .ai або .cdr</p>
+      </div>
+      <div class="col-12 col-md-4">
+        <input type="file" name="fileModal[]" class="input-file" id="input-file-modal" data-multiple-caption="Выбрано {count} файлов"
+          multiple onchange="onFileUpload(event.target)">
+        <label for="input-file-modal" class="btn-secondary">Выбрать файл</label>
+      </div>
+    </div>
+    <div class="order-form-section row">
+      <div class="col-12">
+        <input type="submit" class="btn-main" value="Заказать" name="submit">
+      </div>
+    </div>
+  </form>
+</div>

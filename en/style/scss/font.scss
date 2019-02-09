@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Museo";
+  src: url("/data/font/Museosanscyrl500.woff2") format("woff2"),
+    url("/data/font/Museosanscyrl500.woff") format("woff"),
+    url("/data/font/Museosanscyrl500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo";
+  src: url("/data/font/MuseoSansCyrl-700.woff") format("woff"),
+    url("/data/font/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icon";
+  src: url("/data/font/print-embroidery.eot");
+  src: url("/data/font/print-embroidery.eot?#iefix") format("embedded-opentype"),
+    url("/data/font/print-embroidery.woff") format("woff"),
+    url("/data/font/print-embroidery.ttf") format("truetype"),
+    url("/data/font/print-embroidery.svg#print-embroidery") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}

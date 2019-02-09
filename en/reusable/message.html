@@ -1,0 +1,29 @@
+<div class="order-window col-12 col-md-8 offset-md-2">
+  <div class="order-top">
+    <h1>Отправить сообщение</h1>
+    <span class="icon js-message-close">p</span>
+  </div>
+  <form action="/ru/message.php" class="order-form" method="POST" enctype="multipart/form-data">
+    <div class="order-form-section row">
+      <div class="col-12 col-md-6">
+        <p class="order-form-section-name required">Имя</p>
+        <input type="text" name="name" autocomplete="name" required>
+      </div>
+      <div class="col-12 col-md-6">
+        <p class="order-form-section-name required">Email</p>
+        <input type="email" name="email" autocomplete="email" required>
+      </div>
+    </div>
+    <div class="order-form-section row">
+      <div class="col-12">
+        <p class="order-form-section-name">Сообщение</p>
+        <textarea name="message"></textarea>
+      </div>
+    </div>
+    <div class="order-form-section row">
+      <div class="col-12">
+        <input type="submit" class="btn-main" value="Отправить" name="submit">
+      </div>
+    </div>
+  </form>
+</div>
