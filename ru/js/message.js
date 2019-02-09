@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
   // Open order window
   $(".js-message-open").click(function (event) {
     event.preventDefault();
-    modal.load("/reusable/message.html", function () {
+    modal.load("/ru/reusable/message.html", function () {
       if (modal.outerHeight() < $(window).height()) {
         modal.css("overflow-y", "hidden");
       }
