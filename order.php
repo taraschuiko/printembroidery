@@ -42,8 +42,8 @@
                   $message .= ' <a href="'.$baseURL.'/uploads/'.$fileName.'">'.$fileName.'</a>';
               } else {
                   // Направити на сторінку помилки
-                  header("Location:/order/fail.html");
-                  exit;
+                  // header("Location:/order/fail.html");
+                  // exit;
               }
             } else {
               // Направити на сторінку помилки
