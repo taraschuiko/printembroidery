@@ -28,10 +28,10 @@ jQuery(document).ready(function ($) {
   var size = getUrlParameter('size') / 1000000;
 
   if (extension) {
-    error.text("Формат файла, который вы выбрали - ." + extension + ". Файл должен быть в формате .png, .jpg, .gif, .psd, .ai або.cdr. Выберите файл в правильном формате и попробуйте еще раз.")
+    error.text("The extension of your file is ." + extension + ". Your file must have the following extensions: .png, .jpg, .gif, .psd, .ai or .cdr. Select the file in the correct extension and try again.")
   } else if (size) {
-    error.text("Размер файла, который вы выбрали - " + size + " МБ. Максимально допустимый размер файла - 25 МБ. Уменьшите размер файла и попробуйте еще раз.");
+    error.text("The size of your file is " + size + " MB. Maximum allowed file size - 25 MB. Reduce the file size and try again.");
   } else {
-    error.text("Простите, по неизвестным причинам ваш заказ не было отправлено.")
+    error.text("Sorry, for unknown reasons, your order was not sent.")
   }
 });
