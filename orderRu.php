@@ -1,5 +1,5 @@
 <?php
-  $baseURL = "http://new.printembroidery.com.ua";
+  $baseURL = "https://printembroidery.com.ua";
   // Get values
     $services = '';
     if(!empty($_POST['services'])) {    
