@@ -19,6 +19,7 @@
                 .'Номер телефону: '.$tel."<br>"
                 .'Коментар: '.$comment."<br>"
                 .'Послуги: '.$services."<br>"
+                .'Мова: англійська<br>'
                 .'Файли:';
 
     $fileExtensions = ['jpeg','jpg','png','gif','psd','ai','cdr',''];

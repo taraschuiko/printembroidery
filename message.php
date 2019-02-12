@@ -6,6 +6,7 @@
 
     $message = '<h1>Нове повідомлення від '.$name."!</h1><br>"
                 .'Email: '.$email."<br>"
+                .'Мова: українська<br>'
                 .'Повідомлення: '.$text;
                 
       if(!(mail("info@printembroidery.com.ua", "Нове повідомлення!", $message, "Content-Type: text/html; charset=UTF-8"))) {
