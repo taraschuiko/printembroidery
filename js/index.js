@@ -5,6 +5,7 @@ jQuery(document).ready(function ($) {
   if ($(window).width() > 768) {
     var src = source.getAttribute("data-src");
     source.setAttribute("src", src);
+    $(".header-video").css("display", "block");
     video.load();
   }
 });
