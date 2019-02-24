@@ -240,6 +240,27 @@ img {
   .card p {
     font-size: 16px; }
 
+.ourwork {
+  background: #fff;
+  padding-bottom: 100px; }
+  .ourwork h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-left: 0; }
+    .ourwork h2::before {
+      display: none; }
+  .ourwork-gallery {
+    display: flex; }
+    .ourwork-gallery a {
+      margin-bottom: 30px; }
+      .ourwork-gallery a img {
+        border-radius: 8px; }
+    .ourwork-gallery__button {
+      display: flex;
+      justify-content: center; }
+      .ourwork-gallery__button .btn-secondary {
+        margin-top: 10px; }
+
 @font-face {
   font-family: "Museo";
   src: url("/data/font/Museosanscyrl500.woff2") format("woff2"), url("/data/font/Museosanscyrl500.woff") format("woff"), url("/data/font/Museosanscyrl500.ttf") format("truetype");
@@ -481,6 +502,27 @@ img {
     margin: 25px 0 10px 0; }
   .card p {
     font-size: 16px; }
+
+.ourwork {
+  background: #fff;
+  padding-bottom: 100px; }
+  .ourwork h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-left: 0; }
+    .ourwork h2::before {
+      display: none; }
+  .ourwork-gallery {
+    display: flex; }
+    .ourwork-gallery a {
+      margin-bottom: 30px; }
+      .ourwork-gallery a img {
+        border-radius: 8px; }
+    .ourwork-gallery__button {
+      display: flex;
+      justify-content: center; }
+      .ourwork-gallery__button .btn-secondary {
+        margin-top: 10px; }
 
 .nav {
   width: 100%;
