@@ -1,2 +1,4 @@
 User-Agent: *
 Disallow: 
+
+Sitemap: https://printembroidery.com.ua/sitemap-new.xml
