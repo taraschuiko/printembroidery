@@ -567,38 +567,86 @@ img {
   color: #3d4853;
   box-shadow: 0 5px 10px 0 rgba(61, 72, 83, 0.1); }
 
-.container {
-  height: 100vh;
-  min-height: 600px; }
-  .container .logo {
+.footer {
+  background: #3d4853;
+  padding: 100px 0;
+  color: #fff;
+  line-height: 1.56; }
+  .footer-cards {
+    margin-top: 60px; }
+  .footer-card {
+    margin-bottom: 60px; }
+    .footer-card h3 {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #c8d3de; }
+    .footer-card a {
+      color: inherit; }
+  .footer-icon {
+    font-family: icon;
+    font-size: 25px; }
+    .footer-icon:not(:last-child) {
+      margin-right: 20px; }
+    .footer-icon:hover {
+      text-decoration: none;
+      opacity: 0.5; }
+
+.nav {
+  color: #3d4853; }
+
+.order {
+  width: 100%;
+  padding: 150px 0; }
+  .order .order-top {
     display: flex;
-    justify-content: center; }
-    .container .logo img {
-      width: 100%;
-      margin-top: 40px; }
-  .container .message {
-    text-align: center;
+    justify-content: space-between;
+    align-items: center; }
+    .order .order-top .icon {
+      cursor: pointer; }
+  .order .order-form-checkbox {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    position: absolute;
+    margin-bottom: 10px; }
+    .order .order-form-checkbox label {
+      padding-left: 20px; }
+  .order .order-form input[type="text"],
+  .order .order-form input[type="tel"],
+  .order .order-form input[type="email"],
+  .order .order-form textarea {
     width: 100%;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%); }
-    .container .message .col {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-    .container .message-icon {
-      font-size: 76px;
-      margin-bottom: 0;
-      line-height: 76px; }
-      .container .message-icon--success {
-        color: #3bce95; }
-      .container .message-icon--fail {
-        color: #f49879; }
-    .container .message-text {
-      margin-bottom: 20px; }
-      .container .message-text h1 {
-        margin-bottom: 10px; }
+    border-radius: 8px;
+    border: 1px solid #c8d3de;
+    padding: 9px 20px;
+    color: #3d4853; }
+  .order .order-form-section-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px; }
+    .order .order-form-section-name.required:after {
+      content: " *";
+      color: #f49879; }
+  .order .order-form-section input[type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1; }
+  .order .order-form-section input[type="file"] + label {
+    margin-top: 20px;
+    float: right;
+    cursor: pointer; }
+    @media (max-width: 991.98px) {
+      .order .order-form-section input[type="file"] + label {
+        float: left; } }
+  .order .order-form-section input[type="file"]:focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px; }
+  .order .order-form-section-file {
+    display: flex;
+    align-items: center; }
+    .order .order-form-section-file .order-form-section-name {
+      margin-bottom: 4px; }
+  .order .order-form-section input[type="submit"] {
+    margin-top: 20px;
+    cursor: pointer; }

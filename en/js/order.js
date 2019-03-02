@@ -5,28 +5,29 @@ jQuery(document).ready(function ($) {
   // Open order window
   $(".js-order-open").click(function (event) {
     event.preventDefault();
-    modal.load("/en/reusable/order.html", function () {
-      if (modal.outerHeight() < $(window).height()) {
-        modal.css("overflow-y", "hidden");
-      }
-    });
-    modal.addClass("order-modal");
-    fade.addClass("show");
+    window.location.href = "/en/order/";
+    // modal.load("/en/reusable/order.html", function () {
+    //   if (modal.outerHeight() < $(window).height()) {
+    //     modal.css("overflow-y", "hidden");
+    //   }
+    // });
+    // modal.addClass("order-modal");
+    // fade.addClass("show");
   });
 
   // Close order window
-  modal.on('click', '.js-order-close', closeOrder);
-  fade.on('click', closeOrder);
-  modal.on('click', function (e) {
-    if (e.target == this)
-      closeOrder();
-  });
+  // modal.on('click', '.js-order-close', closeOrder);
+  // fade.on('click', closeOrder);
+  // modal.on('click', function (e) {
+  //   if (e.target == this)
+  //     closeOrder();
+  // });
 
-  function closeOrder() {
-    modal.removeClass("order-modal");
-    modal.html("");
-    fade.removeClass("show");
-  }
+  // function closeOrder() {
+  //   modal.removeClass("order-modal");
+  //   modal.html("");
+  //   fade.removeClass("show");
+  // }
 
   // Change button text on submit
 
