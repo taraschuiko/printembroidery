@@ -25,6 +25,7 @@
   }
 
   &-overlay {
+    height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
@@ -32,6 +33,10 @@
     left: 0;
     background-color: rgba(61, 72, 83, 0.9);
     z-index: 1;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   .container {

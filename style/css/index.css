@@ -588,6 +588,7 @@ img {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%); }
   .header-overlay {
+    height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
@@ -595,6 +596,9 @@ img {
     left: 0;
     background-color: rgba(61, 72, 83, 0.9);
     z-index: 1; }
+    @media (max-width: 768px) {
+      .header-overlay {
+        display: none; } }
   .header .container {
     flex-direction: column;
     height: 100%;
