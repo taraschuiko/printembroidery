@@ -71,6 +71,10 @@ h5,
 h6 {
   font-weight: 700; }
 
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 2.1rem !important; } }
+
 h2 {
   font-size: 36px;
   line-height: 1.25; }
@@ -182,16 +186,20 @@ img {
     .ourwork h2::before {
       display: none; }
   .ourwork-gallery {
-    display: flex; }
+    display: flex;
+    justify-content: center; }
     .ourwork-gallery a {
       margin-bottom: 30px; }
       .ourwork-gallery a img {
         border-radius: 8px; }
     .ourwork-gallery__button {
+      padding-top: 10px;
       display: flex;
       justify-content: center; }
-      .ourwork-gallery__button .btn-secondary {
-        margin-top: 10px; }
+  .ourwork-view-all {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center; }
 
 @font-face {
   font-family: "Museo";
@@ -266,6 +274,10 @@ h5,
 h6 {
   font-weight: 700; }
 
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 2.1rem !important; } }
+
 h2 {
   font-size: 36px;
   line-height: 1.25; }
@@ -377,16 +389,20 @@ img {
     .ourwork h2::before {
       display: none; }
   .ourwork-gallery {
-    display: flex; }
+    display: flex;
+    justify-content: center; }
     .ourwork-gallery a {
       margin-bottom: 30px; }
       .ourwork-gallery a img {
         border-radius: 8px; }
     .ourwork-gallery__button {
+      padding-top: 10px;
       display: flex;
       justify-content: center; }
-      .ourwork-gallery__button .btn-secondary {
-        margin-top: 10px; }
+  .ourwork-view-all {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center; }
 
 .nav {
   width: 100%;
