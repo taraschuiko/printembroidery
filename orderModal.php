@@ -57,7 +57,7 @@
           exit;
         }
       }
-      if(!(mail("info@printembroidery.com.ua", "=?utf-8?B?".base64_encode("Нове замовлення!")."?=", $message, "Content-Type: text/html; charset=UTF-8"))) {
+      if(!(mail("info@printembroidery.com.ua", "=?utf-8?B?".base64_encode("Нове замовлення від ".$name."!")."?=", $message, "Content-Type: text/html; charset=UTF-8"))) {
         header("Location:/order/fail.html");
         exit;
       }
