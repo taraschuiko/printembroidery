@@ -819,6 +819,24 @@ h2 {
           left: 50%;
           transform: translateX(-50%); } }
 
+.howto {
+  background: #fff !important; }
+  .howto .card-icon-container {
+    background: #f1f4f8;
+    margin-bottom: 20px; }
+    .howto .card-icon-container .card-icon {
+      font-family: "Museo";
+      color: #3d4853;
+      font-size: 48px !important;
+      padding-top: 8px; }
+    .howto .card-icon-container .card-icon-success {
+      font-family: "icon";
+      font-size: 80px !important;
+      color: #3bce95;
+      padding-top: 18px; }
+  .howto a {
+    color: #f49879; }
+
 .about {
   background: #fff; }
   @media (max-width: 1199.98px) {
@@ -839,17 +857,17 @@ h2 {
         .about-info-image.mt {
           margin-top: 44px; } }
 
-.features {
+.features, .howto {
   background: #f1f4f8; }
-  .features .card {
+  .features .card, .howto .card {
     height: 320px;
     padding: 30px 12px; }
-    .features .card-icon-container {
+    .features .card-icon-container, .howto .card-icon-container {
       width: 120px;
       height: 120px; }
-      .features .card-icon-container .card-icon {
+      .features .card-icon-container .card-icon, .howto .card-icon-container .card-icon {
         font-size: 80px; }
-    .features .card h3 {
+    .features .card h3, .howto .card h3 {
       font-size: 16px;
       margin-top: 10px; }
 
