@@ -118,6 +118,33 @@ h2 {
   }
 }
 
+.howto {
+  @extend .features;
+  background: #fff !important;
+
+  .card-icon-container {
+    background: $bgLight;
+
+    .card-icon {
+      font-family: "Museo";
+      color: $textColor;
+      font-size: 48px !important;
+      padding-top: 8px;
+    }
+
+    .card-icon-success {
+      font-family: "icon";
+      font-size: 80px !important;
+      color: $mainColor;
+      padding-top: 18px;
+    }
+  }
+
+  a {
+    color: $secondaryColor;
+  }
+}
+
 .about {
   background: #fff;
 
@@ -164,6 +191,7 @@ h2 {
     &-icon-container {
       width: 120px;
       height: 120px;
+      margin-bottom: 20px;
 
       .card-icon {
         font-size: 80px;
