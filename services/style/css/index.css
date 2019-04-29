@@ -694,7 +694,8 @@ h2 {
 .howto {
   background: #fff !important; }
   .howto .card-icon-container {
-    background: #f1f4f8; }
+    background: #f1f4f8;
+    margin-bottom: 20px; }
     .howto .card-icon-container .card-icon {
       font-family: "Museo";
       color: #3d4853;
@@ -735,8 +736,7 @@ h2 {
     padding: 30px 12px; }
     .features .card-icon-container, .howto .card-icon-container {
       width: 120px;
-      height: 120px;
-      margin-bottom: 20px; }
+      height: 120px; }
       .features .card-icon-container .card-icon, .howto .card-icon-container .card-icon {
         font-size: 80px; }
     .features .card h3, .howto .card h3 {

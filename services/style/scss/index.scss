@@ -124,6 +124,7 @@ h2 {
 
   .card-icon-container {
     background: $bgLight;
+    margin-bottom: 20px;
 
     .card-icon {
       font-family: "Museo";
@@ -191,7 +192,6 @@ h2 {
     &-icon-container {
       width: 120px;
       height: 120px;
-      margin-bottom: 20px;
 
       .card-icon {
         font-size: 80px;
