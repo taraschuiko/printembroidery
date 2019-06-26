@@ -40,12 +40,6 @@ h6 {
   font-weight: 700;
 }
 
-h1 {
-  @media (max-width: 575.98px) {
-    font-size: 2.1rem !important;
-  }
-}
-
 h2 {
   font-size: 36px;
   line-height: 1.25;
@@ -151,7 +145,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 30px;
+  padding: 30px 20px;
   text-align: center;
   margin-bottom: 30px;
 
