@@ -1,103 +1,103 @@
-// .order-modal {
-//   width: 100%;
-//   position: fixed;
-//   top: 50%;
-//   left: 0;
-//   transform: translate(0, -50%);
-//   z-index: 4;
-//   max-height: 100vh;
-//   // When it has height lower than max it has no
-//   overflow-y: scroll;
+.order-modal {
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  z-index: 4;
+  max-height: 100vh;
+  // When it has height lower than max it has no
+  overflow-y: scroll;
 
-//   .order-window {
-//     background: #fff;
-//     border-radius: 8px;
-//     box-shadow: 0 0 10px 0 rgba(61, 72, 83, 0.1);
-//     padding: 30px;
-//   }
+  .order-window {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(61, 72, 83, 0.1);
+    padding: 30px;
+  }
 
-//   .order-top {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
+  .order-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-//     .icon {
-//       cursor: pointer;
-//     }
-//   }
+    .icon {
+      cursor: pointer;
+    }
+  }
 
-//   .order-form {
-//     &-checkbox {
-//       display: flex;
-//       align-items: center;
-//       margin-bottom: 10px;
+  .order-form {
+    &-checkbox {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
 
-//       label {
-//         padding-left: 20px;
-//       }
-//     }
+      label {
+        padding-left: 20px;
+      }
+    }
 
-//     input[type="text"],
-//     input[type="tel"],
-//     input[type="email"],
-//     textarea {
-//       width: 100%;
-//       border-radius: 8px;
-//       border: 1px solid #c8d3de;
-//       padding: 9px 20px;
-//       color: $textColor;
-//     }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #c8d3de;
+      padding: 9px 20px;
+      color: $textColor;
+    }
 
-//     &-section {
-//       &-name {
-//         font-weight: bold;
-//         margin-bottom: 10px;
-//         margin-top: 20px;
+    &-section {
+      &-name {
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 20px;
 
-//         &.required:after {
-//           content: " *";
-//           color: $secondaryColor;
-//         }
-//       }
+        &.required:after {
+          content: " *";
+          color: $secondaryColor;
+        }
+      }
 
-//       // Hiding and customizing the input
-//       input[type="file"] {
-//         width: 0.1px;
-//         height: 0.1px;
-//         opacity: 0;
-//         overflow: hidden;
-//         position: absolute;
-//         z-index: -1;
-//       }
+      // Hiding and customizing the input
+      input[type="file"] {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
 
-//       input[type="file"]+label {
-//         margin-top: 20px;
-//         float: right;
-//         cursor: pointer;
+      input[type="file"]+label {
+        margin-top: 20px;
+        float: right;
+        cursor: pointer;
 
-//         @media (max-width: 991.98px) {
-//           float: left;
-//         }
-//       }
+        @media (max-width: 991.98px) {
+          float: left;
+        }
+      }
 
-//       input[type="file"]:focus+label {
-//         outline: 1px dotted #000;
-//         outline: -webkit-focus-ring-color auto 5px;
-//       }
+      input[type="file"]:focus+label {
+        outline: 1px dotted #000;
+        outline: -webkit-focus-ring-color auto 5px;
+      }
 
-//       &-file {
-//         display: flex;
-//         align-items: center;
+      &-file {
+        display: flex;
+        align-items: center;
 
-//         .order-form-section-name {
-//           margin-bottom: 4px;
-//         }
-//       }
+        .order-form-section-name {
+          margin-bottom: 4px;
+        }
+      }
 
-//       input[type="submit"] {
-//         margin-top: 20px;
-//         cursor: pointer;
-//       }
-//     }
-//   }
-// }
+      input[type="submit"] {
+        margin-top: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
