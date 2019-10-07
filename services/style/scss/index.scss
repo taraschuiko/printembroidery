@@ -157,7 +157,22 @@ h2 {
 
   &-info {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+
+    & img {
+          width: 100%
+        }
+
+    &-block {
+      flex-direction: column;
+      justify-content: space-between;
+
+
+      & div  {
+        margin-top: 16px;
+      }
+
+    }
 
     &:not(:last-child) {
       margin-bottom: 44px;

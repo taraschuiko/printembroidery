@@ -856,7 +856,14 @@ h2 {
       margin-bottom: 24px; } }
   .about-info {
     display: flex;
-    align-items: center; }
+    align-items: flex-start; }
+    .about-info img {
+      width: 100%; }
+    .about-info-block {
+      flex-direction: column;
+      justify-content: space-between; }
+      .about-info-block div {
+        margin-top: 16px; }
     .about-info:not(:last-child) {
       margin-bottom: 44px; }
     @media (min-width: 991.98px) {
