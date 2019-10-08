@@ -158,6 +158,19 @@ h2 {
   &-info {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
+    
+    &-left {  
+      @media only screen and (min-width: 992px) {
+        margin-right: 30px;
+      }
+    }
+
+    &-right {
+      @media only screen and (min-width: 992px) {
+        margin-left: 30px;
+      }
+    }
 
     & img {
           width: 100%
@@ -166,11 +179,15 @@ h2 {
     &-block {
       flex-direction: column;
       justify-content: space-between;
-
+      @media only screen and (max-width: 991px) {
+        margin-bottom: 50px;
+      }
 
       & div  {
         margin-top: 16px;
       }
+
+
 
     }
 
@@ -352,6 +369,10 @@ h2 {
     }
   }
 
+  .list {
+    margin-top: 15px;
+  }
+  
   .prices-info {
   margin-top: 40px;
   display: flex;
