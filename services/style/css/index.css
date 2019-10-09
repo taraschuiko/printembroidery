@@ -1067,7 +1067,7 @@ h2 {
   .prices-info {
     border-radius: 4px;
     margin-top: 40px;
-    padding: 20px 28px;
+    padding: 20px 0;
     display: flex; }
     .prices-info .icon {
       color: #c8d3de;

@@ -244,11 +244,17 @@ img {
   background: #fff;
   padding-bottom: 100px; }
   .ourwork h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 40px;
-    margin-left: 0; }
+    margin-left: 48px; }
     .ourwork h2::before {
-      display: none; }
+      content: '+';
+      font-size: 46px;
+      font-weight: 700;
+      color: #f49879;
+      position: absolute;
+      top: -8px;
+      left: -48px; }
   .ourwork-gallery {
     display: flex;
     justify-content: center; }
