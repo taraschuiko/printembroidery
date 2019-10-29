@@ -182,14 +182,21 @@ img {
 .ourwork {
   background: #fff;
   padding-bottom: 100px;
+  padding-top: 120px;
 
   h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 40px;
-    margin-left: 0;
+    margin-left: 48px;
 
     &::before {
-      display: none;
+      content: '+';
+    font-size: 46px;
+    font-weight: 700;
+    color: $secondaryColor;
+    position: absolute;
+    top: -8px;
+    left: -48px;
     }
   }
 
