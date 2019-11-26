@@ -965,16 +965,23 @@ h2 {
 
 .list-block {
   margin-top: 3vh; }
-
-.list-element {
-  background-color: #ffffff;
-  box-shadow: inset 0 -1px 0 0 #f1f4f8;
-  white-space: nowrap;
-  height: 56px; }
-  .list-element p {
-    line-height: 56px;
-    margin: o auto;
-    text-align: justify; }
+  .list-block .list-element {
+    background-color: #ffffff;
+    box-shadow: inset 0 -1px 0 0 #f1f4f8;
+    white-space: nowrap;
+    height: 56px; }
+    .list-block .list-element p {
+      line-height: 56px;
+      margin: o auto;
+      text-align: justify; }
+    .list-block .list-element .describe-text {
+      font-size: 11px; }
+  .list-block .header-element div {
+    margin-top: 10px; }
+  .list-block .header-element p {
+    line-height: 20px;
+    font-weight: 700;
+    text-align: right; }
 
 .prices {
   background: #f7f6f4; }
