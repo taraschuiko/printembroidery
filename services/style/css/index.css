@@ -981,7 +981,7 @@ h2 {
   .list-block .header-element p {
     line-height: 20px;
     font-weight: 700;
-    text-align: right; }
+    text-align: left; }
 
 .prices {
   background: #f7f6f4; }
