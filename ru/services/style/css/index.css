@@ -975,7 +975,7 @@ h2 {
     .list-block .list-element p {
       line-height: 56px;
       margin: o auto;
-      text-align: justify; }
+      text-align: left; }
     .list-block .list-element .describe-text {
       font-size: 11px; }
   .list-block .header-element div {
@@ -984,6 +984,27 @@ h2 {
     line-height: 20px;
     font-weight: 700;
     text-align: left; }
+
+.flex-list {
+  display: flex; }
+  .flex-list-block {
+    flex-direction: column;
+    display: flex; }
+  .flex-list-element {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex; }
+    .flex-list-element-part {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 40px; }
+      .flex-list-element-part-child {
+        margin-left: 5%;
+        margin-right: 5%; }
+      .flex-list-element-part-right {
+        flex-basis: 25%;
+        margin-right: 40px; }
 
 .prices {
   background: #f7f6f4; }

@@ -319,6 +319,8 @@ h2 {
 
 .list-block {
   margin-top: 3vh;
+  border-radius: 4px;
+  overflow: hidden;
 
   .list-element {
     background-color: #ffffff;
@@ -329,7 +331,7 @@ h2 {
      p {
       line-height: 56px;
       margin: o auto;
-      text-align: justify;
+      text-align: left;
     }
   .describe-text {
     font-size: 11px;
@@ -344,6 +346,36 @@ h2 {
     line-height: 20px;
     font-weight: 700;
     text-align: left;
+  }
+}
+
+.flex-list {
+  display: flex;
+  &-block {
+    flex-direction: column;
+    display: flex;
+  }
+  &-element {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+     
+    &-part {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 40px;
+
+      &-child {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+
+      &-right {
+        flex-basis: 25%;
+        margin-right: 40px;
+      }
+    }
   }
 }
 
