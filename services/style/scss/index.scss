@@ -354,7 +354,7 @@ h2 {
 
     &:after {
       content: "Тимчасово недоступний";
-      z-index: 999;
+      text-align: center;
       position: absolute;
       top: 50%;
       left: 50%;
