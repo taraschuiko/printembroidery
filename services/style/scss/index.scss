@@ -388,6 +388,11 @@ h2 {
       &-child {
         margin-left: 5%;
         margin-right: 5%;
+
+        &--from p::before {
+          content: "від  ";
+          font-size: 11px;
+        }
       }
 
       &-right {

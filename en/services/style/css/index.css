@@ -1485,9 +1485,13 @@ h2::before {
   margin-left: 5%;
   margin-right: 5%;
 }
+.flex-list-element-part-child--from p::before {
+  content: "from  ";
+  font-size: 11px;
+}
 .flex-list-element-part-right {
-  -ms-flex-preferred-size: 34%;
-      flex-basis: 34%;
+  -ms-flex-preferred-size: 44%;
+      flex-basis: 44%;
   margin-right: 40px;
 }
 

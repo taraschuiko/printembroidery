@@ -388,10 +388,15 @@ h2 {
       &-child {
         margin-left: 5%;
         margin-right: 5%;
+
+        &--from p::before {
+          content: "from  ";
+          font-size: 11px;
+        }
       }
 
       &-right {
-        flex-basis: 34%;
+        flex-basis: 44%;
         margin-right: 40px;
       }
     }
