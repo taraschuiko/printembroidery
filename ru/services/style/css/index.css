@@ -1487,8 +1487,8 @@ h2::before {
   margin-right: 5%;
 }
 .flex-list-element-part-right {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 34%;
+      flex-basis: 34%;
   margin-right: 40px;
 }
 
