@@ -149,26 +149,29 @@
               <h1>Замовити послуги</h1>
             </div>
             <p>Заповніть форму і ми сконтактуємось з вами щодо уточнення деталей.</p>
-            <form action="/orderModal.php" class="order-form" method="POST" enctype="multipart/form-data">
+            <form action="https://formsubmit.co/info@printembroidery.com.ua" class="order-form" method="POST" enctype="multipart/form-data">
+              <input type="hidden" name="_next" value="https://printembroidery.com.ua/order/success.html">
+              <input type="hidden" name="_subject" value="Нове замовлення!">
+              <input type="hidden" name="_template" value="table">
               <div class="order-form-section row">
                 <p class="order-form-section-name col-12">Виберіть послуги</p>
                 <div class="col-12 col-md-6">
                   <div class="order-form-checkbox">
-                    <input type="checkbox" id="checkbox-direct-printing" name="services[]" value="Друк">
+                    <input type="checkbox" id="checkbox-direct-printing" name="Services[]" value="Друк">
                     <label for="checkbox-direct-printing">Друк на одязі</label>
                   </div>
                   <div class="order-form-checkbox">
-                    <input type="checkbox" id="checkbox-embroidery" name="services[]" value="Машинна вишивка нитками">
+                    <input type="checkbox" id="checkbox-embroidery" name="Services[]" value="Машинна вишивка нитками">
                     <label for="checkbox-embroidery">Машинна вишивка нитками</label>
                   </div>
                 </div>
                 <div class="col-12 col-md-6">
                   <div class="order-form-checkbox">
-                    <input type="checkbox" id="checkbox-rhinestone" name="services[]" value="Нанесення стразів">
+                    <input type="checkbox" id="checkbox-rhinestone" name="Services[]" value="Нанесення стразів">
                     <label for="checkbox-rhinestone">Нанесення стразів</label>
                   </div>
                   <div class="order-form-checkbox">
-                    <input type="checkbox" id="checkbox-sequin" name="services[]" value="Машинна вишивка паєтками">
+                    <input type="checkbox" id="checkbox-sequin" name="Services[]" value="Машинна вишивка паєтками">
                     <label for="checkbox-sequin">Машинна вишивка паєтками</label>
                   </div>
                 </div>
@@ -176,17 +179,23 @@
               <div class="order-form-section row">
                 <div class="col-12 col-md-6">
                   <p class="order-form-section-name required">Ім’я</p>
-                  <input type="text" name="nameModal" autocomplete="name" required>
+                  <input type="text" name="Name" autocomplete="name" required>
                 </div>
                 <div class="col-12 col-md-6">
                   <p class="order-form-section-name required">Телефон</p>
-                  <input type="tel" name="telModal" autocomplete="tel" required>
+                  <input type="tel" name="Phone" autocomplete="tel" required>
+                </div>
+              </div>
+              <div class="order-form-section row">
+                <div class="col-12">
+                  <p class="order-form-section-name required">Електронна пошта</p>
+                  <input type="email" name="Email" required>
                 </div>
               </div>
               <div class="order-form-section row">
                 <div class="col-12">
                   <p class="order-form-section-name">Коментар</p>
-                  <input type="text" name="commentModal">
+                  <input type="text" name="Message">
                 </div>
               </div>
               <div class="order-form-section row order-form-section-file">
@@ -195,7 +204,7 @@
                   <p>Файл повинен бути у форматі .png, .jpg, .gif, .psd, .ai або .cdr</p>
                 </div>
                 <div class="col-12 col-md-4">
-                  <input type="file" name="fileModal[]" class="input-file" id="input-file-modal"
+                  <input type="file" name="File[]" class="input-file" id="input-file-modal"
                     data-multiple-caption="Вибрано {count} файлів" multiple onchange="onFileUpload(event.target)">
                   <label for="input-file-modal" class="btn-secondary">Вибрати файл</label>
                 </div>
