@@ -3,7 +3,7 @@ jQuery(document).ready(function ($) {
   var backButton = $('.message-button .btn-main');
   backButton.click(function (event) {
     event.preventDefault();
-    window.history.go(-2);
+    window.history.go(-3);
   })
 
   // Get error message
