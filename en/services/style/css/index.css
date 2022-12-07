@@ -1230,6 +1230,9 @@ h2::before {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.about-info img {
+  border-radius: 4px;
+}
 @media only screen and (min-width: 992px) {
   .about-info-left {
     margin-right: 30px;
