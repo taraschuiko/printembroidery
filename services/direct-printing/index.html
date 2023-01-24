@@ -653,55 +653,14 @@
         </div>
       </div>
     </section>
-    <section class="order">
+    <section class="readytoorder">
       <div class="container">
-        <div class="row">
-          <div class="order-container col-12 col-lg-8 offset-lg-2">
-            <div class="order-top">
-              <h1>Замовте друк</h1>
-            </div>
-            <p>
-              Залиште ваші дані та додайте зображення, яке хотіли б надрукувати і ми сконтактуємось з вами щодо деталей.
-            </p>
-            <form action="/order.php" class="order-form" method="POST" enctype="multipart/form-data">
-              <div class="order-form-section row">
-                <input type="hidden" name="services[]" value="Друк">
-              </div>
-              <div class="order-form-section row">
-                <div class="col-12 col-md-6">
-                  <p class="order-form-section-name required">Ім’я</p>
-                  <input type="text" name="name" autocomplete="name" required>
-                </div>
-                <div class="col-12 col-md-6">
-                  <p class="order-form-section-name required">Телефон</p>
-                  <input type="tel" name="tel" autocomplete="tel" required>
-                </div>
-              </div>
-              <div class="order-form-section row">
-                <div class="col-12">
-                  <p class="order-form-section-name">Коментар</p>
-                  <input type="text" name="comment">
-                </div>
-              </div>
-              <div class="order-form-section row order-form-section-file">
-                <div class="col-12 col-md-8">
-                  <p class="order-form-section-name">Зображення</p>
-                  <p>Файл повинен бути у форматі .png, .jpg, .gif, .psd, .ai або .cdr</p>
-                </div>
-                <div class="col-12 col-md-4">
-                  <input type="file" name="file[]" class="input-file" id="input-file"
-                    data-multiple-caption="Вибрано {count} файлів" multiple onchange="onFileUpload(event.target)">
-                  <label for="input-file" class="btn-secondary">Вибрати файл</label>
-                </div>
-              </div>
-              <div class="order-form-section row">
-                <div class="col-12">
-                  <input type="submit" class="btn-main" value="Замовити" name="submit">
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+        <h2>Готові замовити?</h2>
+        <p>
+          Ви лише один крок від замовлення вашого наступного унікального
+          дизайну.
+        </p>
+        <a href="#" class="btn-main js-order-open"> Замовити </a>
       </div>
     </section>
     <footer class="footer" id="footer"></footer>

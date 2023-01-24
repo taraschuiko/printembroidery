@@ -1742,86 +1742,17 @@ h2::before {
   background: #3d4853;
 }
 
-.order {
+.readytoorder {
+  padding: 100px 0;
+  text-align: center;
   background: #f1f4f8;
 }
-.order .order-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.readytoorder h2,
+.readytoorder p {
+  margin-bottom: 20px;
+  margin-left: 0;
 }
-.order .order-top .icon {
-  cursor: pointer;
-}
-.order .order-form-checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 10px;
-}
-.order .order-form-checkbox label {
-  padding-left: 20px;
-}
-.order .order-form input[type=text],
-.order .order-form input[type=tel] {
-  width: 100%;
-  border-radius: 8px;
-  border: 1px solid #c8d3de;
-  padding: 9px 20px;
-  color: #3d4853;
-}
-.order .order-form-section-name {
-  font-weight: bold;
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-.order .order-form-section-name.required:after {
-  content: " *";
-  color: #f49879;
-}
-.order .order-form-section input[type=file] {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-}
-.order .order-form-section input[type=file] + label {
-  margin-top: 20px;
-  float: right;
-  cursor: pointer;
-}
-@media (max-width: 991.98px) {
-  .order .order-form-section input[type=file] + label {
-    float: left;
-  }
-}
-.order .order-form-section input[type=file]:focus + label {
-  outline: 1px dotted #000;
-  outline: -webkit-focus-ring-color auto 5px;
-}
-.order .order-form-section-file {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.order .order-form-section-file .order-form-section-name {
-  margin-bottom: 4px;
-}
-.order .order-form-section input[type=submit] {
-  margin-top: 20px;
-  cursor: pointer;
+.readytoorder h2::before,
+.readytoorder p::before {
+  content: none;
 }
