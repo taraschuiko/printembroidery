@@ -18,23 +18,11 @@
     position: relative;
   }
 
-  // @media (min-width: 768px) {
-  //   height: 100vh;
-  //   min-height: 680px;
-  //   padding: 0;
-
-  //   .container {
-  //     display: flex;
-  //     justify-content: center;
-  //   }
-  // }
-
   &-main {
     width: 100%;
     display: flex;
     align-items: center;
     z-index: 1;
-    margin: 0;
   }
 
   &-methods {
