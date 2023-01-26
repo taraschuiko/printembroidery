@@ -5,6 +5,7 @@ jQuery(document).ready(function ($) {
   // Open order window
   $(".js-order-open").click(function (event) {
     event.preventDefault();
+    gtag('event', 'open_order_form');
     window.location.href = "/en/order/";
     // modal.load("/en/reusable/order.html", function () {
     //   if (modal.outerHeight() < $(window).height()) {
