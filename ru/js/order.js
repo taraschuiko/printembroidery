@@ -6,7 +6,8 @@ jQuery(document).ready(function ($) {
   $(".js-order-open").click(function (event) {
     event.preventDefault();
     gtag('event', 'open_order_form');
-    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdRiRK98eUSyvesuW34pmtkWFOBjpUubBxW1BQ3-r3FEfDALw/viewform?usp=sf_link";
+    const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdRiRK98eUSyvesuW34pmtkWFOBjpUubBxW1BQ3-r3FEfDALw/viewform?usp=sf_link";
+    window.open(formUrl, '_blank').focus();
     // modal.load("/ru/reusable/order.html", function () {
     //   if (modal.outerHeight() < $(window).height()) {
     //     modal.css("overflow-y", "hidden");
