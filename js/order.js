@@ -36,6 +36,7 @@ jQuery(document).ready(function ($) {
   // Change button text on submit
 
   $(document).on("submit", ".order-form", function (e) {
+    gtag('event', 'send_order_form');
     var button = $(e.target).find("input[type=submit]")
     var val = button.val();
     if (val === "Замовити") {
