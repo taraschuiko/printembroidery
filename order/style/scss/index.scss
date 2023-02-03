@@ -40,18 +40,26 @@
       border: 1px solid #c8d3de;
       padding: 9px 20px;
       color: $textColor;
+      margin-top: 10px;
     }
 
     &-section {
       &-name {
         font-weight: bold;
-        margin-bottom: 10px;
         margin-top: 20px;
 
         &.required:after {
           content: " *";
           color: $secondaryColor;
         }
+      }
+
+      &-description {
+        opacity: 0.7;
+      }
+
+      &-checkbox-container {
+        margin-top: 10px;
       }
 
       // Hiding and customizing the input
