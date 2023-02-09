@@ -3,6 +3,6 @@ jQuery(document).ready(function ($) {
   var backButton = $('.message-button .btn-main');
   backButton.click(function (event) {
     event.preventDefault();
-    window.history.go(-1);
+    window.history.go(-2);
   })
 });
